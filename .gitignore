@@ -1,0 +1,8 @@
+node_modules
+pnpm-lock.yaml
+pnpm-workspace.yaml
+
+# Vitepress
+.vitepress/dist
+.vitepress/cache
+.vitepress/.temp
