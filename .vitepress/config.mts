@@ -252,7 +252,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/qiannqq/napcat-adapter' }
+      { icon: 'github', link: 'https://github.com/OrbiterStellarTrek/Phira-Doc' }
     ]
   },
   markdown: {
@@ -270,7 +270,7 @@ export default defineConfig({
     },
   },
   sitemap: {
-    hostname: 'https://nca-doc.star-trip.space/',
+    hostname: 'https://phira-doc.star-trip.space/',
     transformItems(items) {
       return items.filter((item) => !item.url.includes('migration'))
     }
