@@ -32,6 +32,6 @@
 
 1. 若执行编译步骤时出现：warning: spurious network error \(3 tries remaining\): \[55\] Failed sending data to the peer \(HTTP/2 stream 105 was not closed cleanly before end of the underlying connection\) 可开启VPN重新执行编译步骤即可。
 2. 编译步骤耗时较长，建议提前设置好系统网络。
-3. 如果文档内容有误，请在[Phira官方](https://pd.qq.com/s/ezgv3q71g)QQ频道联系@Dmockenm，或前往[问题反馈](https://phira.dmocken.top/report)提交反馈。
+3. 如果文档内容有误，请在[Phira官方](https://pd.qq.com/s/ezgv3q71g)QQ频道联系@Dmocken，或前往[问题反馈](https://phira.dmocken.top/report)提交反馈。
 
 [Phira常见问题（持续更新）](/help/)
