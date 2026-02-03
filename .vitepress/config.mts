@@ -69,7 +69,7 @@ export default defineConfig({
 
     nav: [
       { text: '简介', link: '/README' },
-      { text: '总览', link: '/SUMMARY' }
+      { text: '基础帮助文档', link: '/help/' }
     ],
 
     sidebar: [
@@ -87,8 +87,9 @@ export default defineConfig({
       },
       {
         text: '谱面标准',
-        link: '/chart-standard/',
+        collapsed: true,
         items: [
+          { text: '标准', link: '/chart-standard/' },
           { text: '谱面信息', link: '/chart-standard/chartinfo' },
           {
             text: '谱面文件格式',
@@ -176,9 +177,9 @@ export default defineConfig({
       },
       {
         text: 'UML文档',
-        link: '/uml/README',
         collapsed: true,
         items: [
+          { text: 'UML文档', link: '/uml/README' },
           {
             text: '语法',
             link: '/uml/syntax/README',
@@ -225,7 +226,6 @@ export default defineConfig({
       },
       {
         text: 'Phira 构建指南',
-        link: '/phira_build_guide/README',
         collapsed: true,
         items: [
           { text: 'cargo 安装教程', link: '/phira_build_guide/cargo' },
@@ -246,9 +246,9 @@ export default defineConfig({
       },
       {
         text: '糗事集锦',
-        link: '/dev-incident/README',
         collapsed: true,
         items: [
+          { text: '总结', link: '/dev-incident/README' },
           { text: '长风的柳絮', link: '/dev-incident/长风的柳絮' },
           { text: 'v0.6.0 更新消息', link: '/dev-incident/v0.6.0更新消息' },
           { text: '6th PecJam', link: '/dev-incident/6thpecjam' },
