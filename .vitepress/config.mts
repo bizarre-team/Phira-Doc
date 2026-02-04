@@ -76,11 +76,7 @@ export default defineConfig({
       {
         text: '简介',
         link: '/README'
-      },
-      {
-        text: '资源包',
-        link: '/respack/'
-      },
+      }, 
       {
         text: '基础帮助文档',
         link: '/help/'
@@ -167,6 +163,10 @@ export default defineConfig({
           },
           { text: '解锁动画', link: '/chart-standard/unlock_video/' },
         ]
+      },
+      {
+        text: '资源包说明',
+        link: '/respack/'
       },
       {
         text: '活动指南',
