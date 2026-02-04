@@ -25,7 +25,11 @@ note，即音符，是谱面的主要构成之一，每个note都应该含有以
 - `hitsound` 字段在没有自定义音效时不存在。
 - 假note没有判定，没有打击特效与音效，不计分，不计物量，若为 `Hold` 则始终显示为未打击样式。
 - `color` 字段用于给note染色，染色方式为顶点颜色乘法，即 `noteColor = noteColor * color`。
-    - <span style="color:red;">color字段修改过字段名称，由于color版本被公测，后续版本更换为tint，所以这两个字段可能都有被使用，定义不变，请注意兼容。</span>
+
+::: danger
+color字段修改过字段名称，由于color版本被公测，后续版本更换为tint，所以这两个字段可能都有被使用，定义不变，请注意兼容。
+:::
+
 - `tintHitEffects` 字段用于给note的打击特效染色，当此字段出现时，无论判定是`Good`还是`Perfect`，打击特效均使用此颜色（使用原始材质进行顶点颜色算法），不需要额外计算。
 
 ## Note类型对照

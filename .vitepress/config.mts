@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { MermaidMarkdown, MermaidPlugin } from 'vitepress-plugin-mermaid';
-import markdownItTaskCheckbox from 'markdown-it-task-checkbox'
-import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons'
+import markdownItTaskCheckbox from 'markdown-it-task-checkbox';
+import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -98,7 +98,6 @@ export default defineConfig({
             items: [
               {
                 text: 'RPE',
-                link: '/chart-standard/chart-format/rpe/',
                 collapsed: true,
                 items: [
                   { text: '谱面根目录', link: '/chart-standard/chart-format/rpe/root' },
@@ -123,7 +122,6 @@ export default defineConfig({
               },
               {
                 text: 'Official',
-                link: '/chart-standard/chart-format/phi/',
                 collapsed: true,
                 items: [
                   { text: '谱面根目录', link: '/chart-standard/chart-format/phi/root' },
@@ -147,7 +145,6 @@ export default defineConfig({
                 items: [
                   {
                     text: '内置着色器',
-                    link: '/chart-standard/extra/effect/builtin/',
                     collapsed: true,
                     items: [
                       { text: 'chromatic', link: '/chart-standard/extra/effect/builtin/chromatic' },
@@ -179,7 +176,6 @@ export default defineConfig({
         text: 'UML文档',
         collapsed: true,
         items: [
-          { text: 'UML文档', link: '/uml/README' },
           {
             text: '语法',
             link: '/uml/syntax/README',
@@ -207,7 +203,6 @@ export default defineConfig({
           { text: '如何调试', link: '/uml/debugging' },
           {
             text: '样例 UML',
-            link: '/uml/examples/README',
             collapsed: true,
             items: [
               { text: '模板活动', link: '/uml/examples/template_event' },

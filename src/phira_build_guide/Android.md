@@ -1,18 +1,23 @@
 # Android
 ## 构建
 
-> <span style="color:red;">注意：此构建方案的产物**不包含成绩上传**的部分（与Windows端类似）</span> 
+::: warning 
+此构建方案的产物**不包含成绩上传**的部分（与Windows端类似）
+:::
 
 1. 方便起见，这里使用**Github Action**构建Android端Phira，本地构建待补充。~~才不是因为几次都失败了惹~~
 2. **Fork**官方Phira仓库，创建 `.github/workflows/`目录并在该目录下创建一个.yml文件，名称任意。
 3. 在该.yml文件写入以下内容并commit，进入Action页面的Build Android Phira工作流，**请求一个workflow**（可选择构建分支），等待约5分钟，工作流即可运行完毕。**下载Artifact解压**备用。
-> 如果需要armeabi-v7a架构构建，请将"arm64-v8a"，"aarch64-linux-android"分别全部**替换**为"armeabi-v7a"，"armv7-linux-androideabi"（未测试）
+
+::: tip
+如果需要armeabi-v7a架构构建，请将"arm64-v8a"，"aarch64-linux-android"分别全部**替换**为"armeabi-v7a"，"armv7-linux-androideabi"（未测试）
+:::
+
 ```yaml
 name: Build Android Phira
 
 on:
   workflow_dispatch:
-
 
 env:
   CARGO_TERM_COLOR: always
@@ -78,11 +83,12 @@ jobs:
 
 
 ## 替换
+
 > 由于未提供打包工具，需要我们手动替换apk下libphira.so文件
 
 > **直接安装运行，会提示找不到quad_native.QuadNative.preprocessInput的定义**
 
-#### 方法一：
+### 方法一：
 
 1. 将libphira.so文件**推送到Android设备上**你熟悉的位置。
 
@@ -92,15 +98,15 @@ jobs:
 
 4. 用Dex编辑器++打开classes.dex，进入org，flos.phira，查看**QuadSurface**类。
 
-5. ##### 找到153行（或其他调用preprocessInput的语句），移除这一行的内容（或注释掉）。
+5. 找到153行（或其他调用preprocessInput的语句），移除这一行的内容（或注释掉）。
 
 6. 根据MT管理器的提示，保存退出文件，重新签名。
 
 7. 按需可选择进行apk共存操作。
 
-#### 方法二：
+### 方法二：
 
-##### 在phira/src/lib.rs中加入以下声明：
+#### 在phira/src/lib.rs中加入以下声明：
 
 ```Rust
 #[cfg(target_os = "android")]
@@ -118,6 +124,6 @@ pub unsafe extern "C" fn Java_quad_1native_QuadNative_preprocessInput(
 }
 ```
 
-# 原理
+## 原理
 - *特别感谢[qaqFei进行的测试](https://github.com/qaqFei/phira/tree/main)*。
 

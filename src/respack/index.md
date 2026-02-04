@@ -36,8 +36,8 @@ holdAtlasMH: [50, 110]
 - `name`：资源包的名字；
 - `author`：资源包的作者；
 - `description`：资源包介绍；
-- `hitFx`：打击特效宽、高的帧数。打击特效是将多帧动画存储在一张图中的，因此需要指定这张图中横竖各有几帧，例如，在 [此图](image/hit_fx.jpg) 中横、竖的帧数分别为 5 与 6（最后一行不太看得见，但是是存在的）（图片为了便于辨识使用了黑色背景，但在制作资源包时应当使用透明背景）；
-- `holdAtlas`：Hold 贴图的尾、头高度。Hold 的皮肤是 **一张图片**，从上到下分别为 Hold 的尾部、中间和头部。而 `holdAtlas` 的两个数字则分别指定了图片中尾部和头部的高度。例如，在 [此图](image/hold.png) 中，尾部和头部高度均为 50 像素。
+- `hitFx`：打击特效宽、高的帧数。打击特效是将多帧动画存储在一张图中的，因此需要指定这张图中横竖各有几帧，例如，在 此图<tooltip> ![图](/assets/img/respack/hit_fx.jpg) </tooltip> 中横、竖的帧数分别为 5 与 6（最后一行不太看得见，但是是存在的）（图片为了便于辨识使用了黑色背景，但在制作资源包时应当使用透明背景）；
+- `holdAtlas`：Hold 贴图的尾、头高度。Hold 的皮肤是 **一张图片**，从上到下分别为 Hold 的尾部、中间和头部。而 `holdAtlas` 的两个数字则分别指定了图片中尾部和头部的高度。例如，在 此图<tooltip> <img src="/assets/img/respack/hold.png" width="50%"> </tooltip> 中，尾部和头部高度均为 50 像素。
 - `holdAtlasMH`：意义与上一条类似，指定多押 Hold 的相关信息。
 
 此外还有选填项：
@@ -48,7 +48,7 @@ holdAtlasMH: [50, 110]
 - `hitFxTinted`（布尔值，默认 `true`）：打击特效是否依照判定线颜色着色；
 - `hideParticles`（布尔值，默认 `false`）：打击时是否隐藏方形粒子效果；
 - `holdKeepHead`（布尔值，默认 `false`）：Hold 触线后是否还显示头部；
-- `holdRepeat`（布尔值，默认 `false`）：Hold 的中间部分是否采用重复式拉伸。[这里的三张图](image/hold_repeat.jpg) 从左到右依次是 Hold 资源图、不启用 `holdRepeat` 时的长条和启用 `holdRepeat` 时的长条；
-- `holdCompact`（布尔值，默认 `false`）：是否把 Hold 的头部和尾部与 Hold 中间重叠(将锚点居中)。还是用上面的 [示例](image/hold_repeat.jpg)，如果不开启 `holdCompact`，效果就会是左边第一张图，Hold 的头尾是和中间隔开的；而右边两张图都是开启了 `holdCompact` 的效果；
+- `holdRepeat`（布尔值，默认 `false`）：Hold 的中间部分是否采用重复式拉伸。这里的三张图<tooltip> ![示例图](/assets/img/respack/hold_repeat.jpg) </tooltip> 从左到右依次是 Hold 资源图、不启用 `holdRepeat` 时的长条和启用 `holdRepeat` 时的长条；
+- `holdCompact`（布尔值，默认 `false`）：是否把 Hold 的头部和尾部与 Hold 中间重叠(将锚点居中)。还是用上面的 示例<tooltip> ![示例图](/assets/img/respack/hold_repeat.jpg) </tooltip>，如果不开启 `holdCompact`，效果就会是左边第一张图，Hold 的头尾是和中间隔开的；而右边两张图都是开启了 `holdCompact` 的效果；
 - `colorPerfect`（十六进制颜色代码，默认 `0xe1ffec9f`）：AP（全 Perfect）情况下的判定线颜色；
 - `colorGood`（十六进制颜色代码，默认 `0xebb4e1ff`）：FC（全连）情况下的判定线颜色。

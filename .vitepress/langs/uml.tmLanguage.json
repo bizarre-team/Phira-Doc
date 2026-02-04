@@ -1,0 +1,364 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "UI markup language",
+    "patterns": [
+        {
+            "include": "#announcement"
+        },
+        {
+            "include": "#comment"
+        },
+        {
+            "include": "#element"
+        },
+        {
+            "include": "#expression"
+        },
+        {
+            "include": "#string"
+        }
+    ],
+    "repository": {
+        "announcement": {
+            "patterns": [
+                {
+                    "captures": {
+                        "1": {
+                            "name": "storage.type.uml"
+                        },
+                        "2": {
+                            "patterns": [
+                                {
+                                    "include": "#variables"
+                                }
+                            ]
+                        },
+                        "3": {
+                            "name": "keyword.operator.assignment.uml"
+                        },
+                        "4": {
+                            "patterns": [
+                                {
+                                    "include": "#expression"
+                                },
+                                {
+                                    "include": "#rectLiteral"
+                                }
+                            ]
+                        }
+                    },
+                    "match": "\\b(let)\\b([^=]*)\\s*(=)\\s*(.*)"
+                }
+            ]
+        },
+        "boolean": {
+            "patterns": [
+                {
+                    "match": "\\b(true|false)\\b",
+                    "name": "constant.language.uml"
+                }
+            ]
+        },
+        "comment": {
+            "patterns": [
+                {
+                    "match": "(^#)([^>].*)?$\\n?",
+                    "name": "comment.line.number-sign.uml"
+                }
+            ]
+        },
+        "element": {
+            "patterns": [
+                {
+                    "captures": {
+                        "1": {
+                            "name": "entity.name.tag.uml"
+                        },
+                        "2": {
+                            "name": "punctuation.paren.open.uml"
+                        },
+                        "3": {
+                            "patterns": [
+                                {
+                                    "match": ",",
+                                    "name": "keyword.separator.uml"
+                                },
+                                {
+                                    "include": "#parameterAssignment"
+                                }
+                            ]
+                        },
+                        "4": {
+                            "name": "punctuation.paren.close.uml"
+                        }
+                    },
+                    "match": "^(btn|img|p|col)(\\()((?:[^,]+,\\s*)*[^,]+)(\\))"
+                },
+                {
+                    "include": "#v2-element"
+                }
+            ]
+        },
+        "expression": {
+            "patterns": [
+                {
+                    "include": "#literals"
+                },
+                {
+                    "include": "#presetFunctions"
+                },
+                {
+                    "include": "#variables"
+                },
+                {
+                    "include": "#paren-expression"
+                }
+            ]
+        },
+        "literals": {
+            "patterns": [
+                {
+                    "match": "-?\\b(\\d+(\\.\\d+)?)\\b",
+                    "name": "constant.numeric.uml"
+                }
+            ]
+        },
+        "parameterAssignment": {
+            "patterns": [
+                {
+                    "captures": {
+                        "1": {
+                            "patterns": [
+                                {
+                                    "match": "\\b(id|url|c|r|t|action|cid|rn|rh|x|y|size|ml|mw)\\b",
+                                    "name": "variable.parameter.uml"
+                                }
+                            ]
+                        },
+                        "2": {
+                            "name": "keyword.operator.assignment.uml"
+                        },
+                        "3": {
+                            "patterns": [
+                                {
+                                    "include": "#rectLiteral"
+                                },
+                                {
+                                    "include": "#string"
+                                },
+                                {
+                                    "include": "#boolean"
+                                },
+                                {
+                                    "include": "#expression"
+                                }
+                            ]
+                        }
+                    },
+                    "match": "\\b([a-zA-Z$_][a-zA-Z0-9-$_]*)\\b\\s*(:)\\s*([^,]*)"
+                }
+            ]
+        },
+        "paren-expression": {
+            "captures": {
+                "1": {
+                    "name": "punctuation.paren.open.uml"
+                },
+                "2": {
+                    "patterns": [
+                        {
+                            "include": "#expression"
+                        }
+                    ]
+                },
+                "3": {
+                    "name": "punctuation.paren.close.uml"
+                }
+            },
+            "match": "(\\()(.*)(\\))"
+        },
+        "presetFunctions": {
+            "patterns": [
+                {
+                    "captures": {
+                        "1": {
+                            "name": "support.function.uml"
+                        }
+                    },
+                    "match": "\\b(sin|cos|tan|abs|exp|ln|sig|floor|ceil|round)\\b(?=\\s*\\([^,]+\\))"
+                },
+                {
+                    "captures": {
+                        "1": {
+                            "name": "support.function.uml"
+                        }
+                    },
+                    "match": "\\b(atan2|step)\\b(?=\\s*\\(([^,]+,)[^,]+\\))"
+                },
+                {
+                    "captures": {
+                        "1": {
+                            "name": "support.function.uml"
+                        }
+                    },
+                    "match": "\\b(clamp)\\b(?=\\s*\\(([^,]+,){2}[^,]+\\))"
+                },
+                {
+                    "captures": {
+                        "1": {
+                            "name": "support.function.uml"
+                        }
+                    },
+                    "match": "\\b(min|max)\\b(?=\\s*\\(([^,]+,)*[^,]+\\))"
+                }
+            ]
+        },
+        "rectLiteral": {
+            "captures": {
+                "1": {
+                    "name": "punctuation.bracket.angle.uml"
+                },
+                "2": {
+                    "patterns": [
+                        {
+                            "match": ",",
+                            "name": "keyword.separator.uml"
+                        },
+                        {
+                            "include": "#expression"
+                        }
+                    ]
+                },
+                "3": {
+                    "name": "punctuation.bracket.angle.uml"
+                }
+            },
+            "match": "(\\[)((?:[^,]+,){3}[^,]+)(\\])"
+        },
+        "string": {
+            "patterns": [
+                {
+                    "captures": {
+                        "1": {
+                            "name": "punctuation.quote.double.uml"
+                        },
+                        "3": {
+                            "name": "punctuation.quote.double.uml"
+                        }
+                    },
+                    "match": "(\")([^\"]*)(\")",
+                    "name": "string.quoted.double.uml"
+                },
+                {
+                    "begin": "\\{",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "punctuation.curly.open.uml"
+                        }
+                    },
+                    "end": "\\}",
+                    "endCaptures": {
+                        "0": {
+                            "name": "punctuation.curly.close.uml"
+                        }
+                    },
+                    "name": "string.quoted.other.uml"
+                }
+            ]
+        },
+        "v2-element": {
+            "patterns": [
+                {
+                    "captures": {
+                        "1": {
+                            "name": "entity.name.tag.uml"
+                        },
+                        "2": {
+                            "name": "punctuation.paren.open.uml"
+                        },
+                        "3": {
+                            "patterns": [
+                                {
+                                    "match": ",",
+                                    "name": "keyword.separator.uml"
+                                },
+                                {
+                                    "include": "#v2-parameterAssignment"
+                                }
+                            ]
+                        },
+                        "4": {
+                            "name": "punctuation.paren.close.uml"
+                        }
+                    },
+                    "match": "^(#>(?:rot|tr|alpha|mat|if-no-v2))(\\()((?:[^,]+,\\s*)*[^,]+)(\\))"
+                },
+                {
+                    "captures": {
+                        "1": {
+                            "name": "entity.name.tag.uml"
+                        }
+                    },
+                    "match": "^(#>pop)"
+                }
+            ]
+        },
+        "v2-parameterAssignment": {
+            "patterns": [
+                {
+                    "captures": {
+                        "1": {
+                            "patterns": [
+                                {
+                                    "match": "\\b(angle|cx|cy|dx|dy|a|x[0-4]{2})\\b",
+                                    "name": "variable.parameter.uml"
+                                }
+                            ]
+                        },
+                        "2": {
+                            "name": "keyword.operator.assignment.uml"
+                        },
+                        "3": {
+                            "patterns": [
+                                {
+                                    "include": "#rectLiteral"
+                                },
+                                {
+                                    "include": "#string"
+                                },
+                                {
+                                    "include": "#boolean"
+                                },
+                                {
+                                    "include": "#expression"
+                                }
+                            ]
+                        }
+                    },
+                    "match": "\\b([a-zA-Z$_][a-zA-Z0-9-$_]*)\\b\\s*(:)\\s*([^,]*)"
+                }
+            ]
+        },
+        "variables": {
+            "patterns": [
+                {
+                    "match": "(top|\\$h)\\b",
+                    "name": "variable.language.uml"
+                },
+                {
+                    "captures": {
+                        "1": {
+                            "name": "entity.other.attribute-name.uml"
+                        }
+                    },
+                    "match": "\\.(x|y|w|h|l|t|r|b|cx|cy|l|last|c|cnt|count|t|touching|)\\b"
+                },
+                {
+                    "match": "\\b([@a-zA-Z$_][a-zA-Z0-9-$_]*)\\b",
+                    "name": "variable.other.uml"
+                }
+            ]
+        }
+    },
+    "scopeName": "source.uml"
+}
