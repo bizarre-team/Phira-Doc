@@ -7,7 +7,7 @@
     - __注意：千万不要直接回车安装 MSVC，这在后续构建将会出现大量问题！__
 
 3. 前往 [MSYS2](https://www.msys2.org/) 官网下载 MSYS2 安装程序，下载完成后双击打开，如无特殊需求，一路下一步即可，直到提示 `Finished the MSYS2 Setup`，点击右下角的按钮后将弹出一个窗口，输入以下指令，安装过程一路回车即可。
-    ```bash
+    ```shell
     pacman -Sy && pacman -Syu
     pacman -S mingw-w64-x86_64-toolchain
     ```
@@ -28,7 +28,7 @@ A. 请不要更改文件名
 ### Debian 分支 Linux 系统
 
 1. 打开终端，输入以下命令：
-```bash
+```shell
 sudo apt update
 sudo apt install cargo -y
 ```

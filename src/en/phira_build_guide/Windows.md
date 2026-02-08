@@ -3,8 +3,10 @@
 ## Preparation
 
 1. Check for cargo: in cmd or PowerShell run `cargo -V`. If you see:
-   - `'cargo' is not recognized as an internal or external command...`
-   - or PowerShell equivalent,
+   ```shell
+   `'cargo' is not recognized as an internal or external command...`
+   or PowerShell equivalent,
+   ```
    then install the build tools: see [here](./cargo.md).
 2. Get the source:
    - With git: `git clone https://github.com/TeamFlos/phira.git`
@@ -39,8 +41,8 @@ cd ffmpeg && mkdir build && cd build
 ../configure --disable-programs --disable-doc --disable-everything --disable-debug --arch=i686 --target_os=mingw32 --cross-prefix=i686-w64-mingw32-
 make
 ```
-
-Note: If you get errors, try copying from `msys64\mingw32\bin` the files `i686-w64-mingw32-gcc-ar.exe`, `i686-w64-mingw32-gcc-nm.exe`, `i686-w64-mingw32-gcc-ranlib.exe` and renaming the copies to `i686-w64-mingw32-ar.exe`, `i686-w64-mingw32-nm.exe`, `i686-w64-mingw32-ranlib.exe`. Then copy all `*.a` from `build` to `phira\prpr-avc\static-lib\i686-pc-windows-gnu`.
+> [!NOTE]
+> If you get errors, try copying from `msys64\mingw32\bin` the files `i686-w64-mingw32-gcc-ar.exe`, `i686-w64-mingw32-gcc-nm.exe`, `i686-w64-mingw32-gcc-ranlib.exe` and renaming the copies to `i686-w64-mingw32-ar.exe`, `i686-w64-mingw32-nm.exe`, `i686-w64-mingw32-ranlib.exe`. Then copy all `*.a` from `build` to `phira\prpr-avc\static-lib\i686-pc-windows-gnu`.
 
 ## FAQ
 

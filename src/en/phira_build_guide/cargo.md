@@ -7,7 +7,7 @@
    - **Do not use the default MSVC option; it causes many build issues later.**
 
 3. Download [MSYS2](https://www.msys2.org/), install it, then in the MSYS2 shell run:
-   ```bash
+   ```shell
    pacman -Sy && pacman -Syu
    pacman -S mingw-w64-x86_64-toolchain
    ```
@@ -26,7 +26,7 @@ A. Do not rename the downloaded file.
 ### Debian-based
 
 1. In a terminal:
-   ```bash
+   ```shell
    sudo apt update
    sudo apt install cargo -y
    ```
@@ -34,5 +34,5 @@ A. Do not rename the downloaded file.
 
 ### Linux FAQ
 
-Q. `bash: /usr/bin/cargo: No such file or directory` or `cargo: command not found`  
+Q. `shell: /usr/bin/cargo: No such file or directory` or `cargo: command not found`  
 A. Cargo did not install correctly; check for any error messages during installation.

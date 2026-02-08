@@ -6,3 +6,5 @@ pnpm-workspace.yaml
 .vitepress/dist
 .vitepress/cache
 .vitepress/.temp
+src_files.txt
+en_files.txt

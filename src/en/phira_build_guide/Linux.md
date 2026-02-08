@@ -10,7 +10,7 @@
    - **Warning: avoid non-ASCII in the path.**
 3. Static libs: [download](./prpr-avc.zip) or [mirror](https://www.nuanr-mxi.com/prpr-avc.zip), extract into repo root.
 4. Install dependencies:
-   ```bash
+   ```shell
    sudo apt update
    sudo apt install libasound2-dev
    sudo apt install libgtk-3-dev
