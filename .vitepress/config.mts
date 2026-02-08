@@ -31,7 +31,6 @@ export default defineConfig({
       ], 
     }, 
   }, 
-  description: "有关Phira的文档",
   lang: "zh-Hans",
   srcDir: './src',
   head: [
@@ -58,6 +57,7 @@ export default defineConfig({
       lang: 'zh-Hans',
       dir: 'ltr',
       title: "Phira 文档",
+      description: "有关Phira的文档",
       themeConfig: {
         editLink: {
           pattern: 'https://github.com/OrbiterStellarTrek/Phira-Doc/edit/main/src/:path',
@@ -271,6 +271,7 @@ export default defineConfig({
       lang: 'en',
       dir: 'ltr',
       title: "Phira Documentation",
+      description: "Documentation for Phira",
       themeConfig: {
         editLink: {
           pattern: 'https://github.com/OrbiterStellarTrek/Phira-Doc/edit/main/src/:path',
