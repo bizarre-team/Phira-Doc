@@ -15,7 +15,7 @@ For issues with this document, contact @Dmocken in the [Phira QQ Channel](https:
 
 1. A device to play on (Android 7+ for online services, iOS 12+ for Apple devices).
 2. A personal email address.
-3. Some basics: e.g. IPA is the iOS app package and needs signing; APK is the Android/Harmony app package (32-bit and 64-bit—choose according to your device), and where phone storage paths are.
+3. Understand some basic knowledge: e.g. IPA is the iOS app package and needs signing; APK is the Android/Harmony app package (32-bit and 64-bit—choose according to your device), and where phone storage paths are.
 
 ## Android download
 
@@ -26,36 +26,38 @@ For issues with this document, contact @Dmocken in the [Phira QQ Channel](https:
 
 ## iOS download
 
-> [!NOTE]
-> For iOS Recommended Trun To [App Store](https://apps.apple.com/us/app/phira/id6447435864) To Download
+1. For iOS users, we recommend searching for and downloading Phira from the [App Store](https://apps.apple.com/us/app/phira/id6447435864).
+2. Install via IPA sideloading. Download link: [Official GitHub](https://github.com/F-Unction/phira_ipa/releases).
+3. iOS sideloading requires a computer or jailbreak tools.
+4. If you see an "Untrusted Enterprise Developer" prompt, go to Settings → General → VPN & Device Management to trust the developer.
 
 ## FAQ
 
 ### [Terms of Service](https://phira.moe/terms-of-use) and [Privacy Policy](https://phira.moe/privacy-policy)
 
-- You must read and agree to them; Phira may refuse service if you do not.
-- After you read them, the popup will close, which means you have read and agreed.
+- You must read and agree to the [Terms of Service](https://phira.moe/terms-of-use) and [Privacy Policy](https://phira.moe/privacy-policy). Phira reserves the right to refuse to provide services to you if you do not agree.
+- After you have read the [Terms of Service](https://phira.moe/terms-of-use) and [Privacy Policy](https://phira.moe/privacy-policy), the pop-up window will disappear automatically, which means that you have read and agreed to the contents of the terms.
 
 ### Account and password
 
-- After registering, check your email for the verification message; check spam or refresh if it doesn’t arrive.
-- If an invite link says "invalid activation code" within 10 minutes, it may be a bug; try logging in with your email and password in Phira.
-- To reset password: [Reset password](https://phira.5wyxi.com/reset-password). Enter your email to receive a reset link. A blank screen after submitting is a known bug; if you don’t get the link within 5 minutes, try again.
+- After registering, please check your email promptly. A verification email will be sent. If you haven't received it, please check your spam/junk mail folder or refresh the page.
+- If the invitation link displays "Invalid Activation Code" within 10 minutes of receiving it, it may be a system bug. In this case, please try logging in to Phira using your registered account and password.
+- To change your password, please go to: [Reset password](https://phira.5wyxi.com/reset-password). After clicking the link and entering your email address, a password reset link will be sent to your inbox. Enter the link to change your password. A blank screen after entering your email address is a bug. If you do not receive the password reset link within 5 minutes, please try submitting your password reset request again.
 ::: warning
-If the link in the email doesn’t open, replace `api.phira.cn` at the start of the URL with `phira.5wyxi.com`
+If you encounter issues accessing the link in the email, please replace `api.phira.cn` at the beginning of the link with `phira.5wyxi.com`.
 :::
 
 ### Online services
 
-- For chart load/download errors, check that your app version is the latest (0.6.7.1). If it is, the issue may be server-side or rate limiting; try again later.
-- If scores don’t upload and you see "Uploading score", the server is having network issues; you can enable Offline mode if you don’t care about uploading.
-- If charts fail to download (long error message) or download very slowly, try:
-  - Wait about an hour and try again
-  - Switch network (e.g. Wi‑Fi ↔ mobile data)
-  - Enable "Insecure mode" in-game and restart
-  - Turn on airplane mode or restart the device
-  - Change carrier / use a proxy
-  - Wait for server recovery
+- For chart loading/download errors, check if your software version is the latest (0.6.7.1). If it is, the problem is with the server or your access may be restricted due to frequent access. It should resolve itself after a while.
+- If chart scores cannot be uploaded successfully, the message "Uploading score" indicates a current network problem. If you don't care about your scores, try playing in offline mode.
+- For recent chart download failures (a long string of error messages) or slow download speeds, try the following:
+  - Wait 1 hour before logging back in.
+  - Switch your network (from Wi-Fi to mobile data).
+  - Open insecure mode in the game and restart the game.
+  - Turn on airplane mode or restart your device.
+  - Switch your network provider.
+  - Wait for the server to restore access.
 
 ### Multiplayer
 
@@ -71,27 +73,27 @@ If the link in the email doesn’t open, replace `api.phira.cn` at the start of 
 
 - iOS: Enable Guided Access.
 - Android: Add the app to the system game space, or turn off multi-finger gestures and similar features.
-- General: Turn off aggressive optimization / use low graphics; overheating can cause CPU throttling. Dirty screen can affect touch. If issues persist, check that the screen supports multi-touch.
+- General: Disable aggressive optimization or/and use low graphics. Overheating can cause CPU throttling. Dirty screen can affect touch. If issues persist, please check if the screen supports multi-finger touch.
 
 ### Resource packs
 
-- Resource packs (skins and charts) are imported as zip files; do not unzip.
+- Resource packs (skins and charts) are imported as zip files. Do not unzip.
 - Resource pack site: [prprBlog](https://prprblog.kevin2106.top/).
 - QQ Channel: [Phira 资源包制作分享](https://pd.qq.com/s/blwfryimz).
 - (Android) QQ file save path: `Android/data/com.tencent.mobileqq/Tencent/QQfile_recv`.
-- Import on iOS: TestFlight builds can import; IPA (self-signed) builds often cannot import files (local chart import, resource pack import, avatar import may all fail).
-- Resource pack import: Home → Resource pack → “+” on the left. Chart import: Play → “Import” (top right). Or choose “Phira (resource pack)” as the open-with app for the zip; if you see a purple title and white screen, try opening the zip from the file manager with “Phira (resource pack)”.
+- Importing resource packs (iOS): Testflight installations can import directly. Self-signed IPA builds often have issues importing files on many devices (e.g., importing local charts/resource packs/avatars will all fail).
+- To import resource packs, go to the homepage > Resource Packs > the plus sign on the left; to import charts, go to Play > Import (top right corner). Alternatively, select "Phira (Resource Pack)" as the opening method for the zip archive. If you see a purple title and a white interface, try opening the zip archive with Phira (Resource Pack) in your file manager to import it.
 
 ::: warning
-The *Phigros Official Resource Pack* is © Pigeon Games. Phira does not have the right to distribute it; distribution has been stopped. Please do not share it without permission.
+The copyright of the *Phigros Official Resource Pack* belongs to © Pigeon Games. Phira does not own the right to use it and has stopped providing it. We also ask all players to respect the copyright and not to distribute it indiscriminately.
 :::
 
 ### Custom charts
 
-- To find charts for a specific song, searching on Bilibili and following the chart author’s download link is often fastest.
-- Uploading: Before uploading, read and agree to [Phira chart upload notice](https://docs.qq.com/doc/DU2dUaEt5WnFJV2Zh) and [Phira chart content policy (chart creators)](https://docs.qq.com/doc/DU1dISHdEb0NuYVpB). **Phigros-exclusive tracks, original art, official charts, and official-chart derivatives are not allowed; violators may be banned.**
-- For non-exclusive tracks, do not use original art; ensure your chart design differs from the official one. See the upload notice for more.
-- On Windows and Linux, story charts and character art cannot be loaded for copyright reasons.
+- To find custom charts for a specific song, the fastest way is to search on Bilibili and download them under the guidance of the chart creator.
+- Uploading: Before uploading a chart, please ensure you have carefully and completely read, understood, and agreed to [Chart Upload Guidelines](https://docs.qq.com/doc/DU2dUaEt5WnFJV2Zh) and [Phira Chart Content Policy (Chart Creators)](https://docs.qq.com/doc/DU1dISHdEb0NuYVpB). Additionally, **uploading any Phigros-exclusive tracks, original artwork, official charts and official-chart derivatives is prohibited. Violators may have their accounts banned.**
+- For non-exclusive songs, please do not use original artwork. Ensure the chart's design differs from the official chart before uploading. For other questions, please refer to the Chart Upload Guidelines for detailed information.
+- To protect the copyright of in-game charts and character art, story charts and character art cannot be loaded on Windows and Linux.
 
 ### Official contacts
 

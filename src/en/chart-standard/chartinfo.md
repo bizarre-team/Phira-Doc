@@ -112,7 +112,7 @@ End time of the music preview (seconds). If empty, 15.0 seconds after preview st
 `f32`, default `16.0 / 9.0`
 
 > [!NOTE]
-> Chart display aspect ratio. If the device aspect ratio is larger (e.g. tall phones or 4:3), the chart keeps this ratio; if smaller, the chart is stretched to fill the screen (source: TBD).
+> The aspect ratio displayed on the chart will be adjusted according to the device's aspect ratio. If the device's aspect ratio is greater than this value (e.g., some extended phones, or if this value is set to 4:3 on a regular phone), the chart will be kept at this aspect ratio. If the aspect ratio is less than this value, the chart will be stretched to fill the screen. (Source: TBD)
 
 ### Background dim `backgroundDim` <Badge type="warning" text="required" />
 
@@ -130,10 +130,10 @@ Length of the judge line in the chart (units TBD; relates to rendering).
 
 `f32`, default `0.0`
 
-Time offset between chart and music (seconds). When positive:
+Time offset between chart and music (seconds). When positive (compared to when it is zero):
 
-- If music starts at the same time in both cases, the chart starts later when `offset` is positive.
-- If the chart starts at the same time in both cases, the music starts earlier when `offset` is positive.
+- If the music starts simultaneously in both cases, the chart starts later when `offset` is positive.
+- If the chart starts simultaneously in both cases, the music starts earlier when `offset` is positive.
 
 ### Tip `tip` <Badge type="info" text="optional" />
 

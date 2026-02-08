@@ -1,17 +1,64 @@
-# beat
+# Beat  
 
-`beat` is the time unit for all RPE events. It is an `int[3]`, displayed in RPE as `[0]:[1]/[2]`. For a single BPM:
+In RPE, `beat` is the time unit for all events. It is represented as an `int[3]` and displayed in RPE as `[0]:[1]/[2]`.  
+
+The calculation for a single BPM is as follows:  
 
 ```csharp
 double beat = RPEBeat[1] / RPEBeat[2] + RPEBeat[0];
 double seconds = 60 / BPM * beat;
 ```
 
-For multiple BPMs see the Python example.
+For multiple BPM calculation, refer to the Python example below.
 
-## Python example
+## Python Example  
+- Assume `self.BPMList` is a `list[BPMEvent]`.  
+- Definition of `BPMEvent`:  
+```python
+@dataclass
+class BPMEvent:
+    startTime: Beat
+    bpm: float
+```
+- In `sec2beat`, `t` represents seconds, and `bpmfactor` corresponds to the `bpmfactor` field in the judgment line.  
+- In `beat2sec`, `t` represents beats, and `bpmfactor` corresponds to the `bpmfactor` field in the judgment line.  
+- It holds that `beat2sec(sec2beat(x)) == x` and `sec2beat(beat2sec(x)) == x` both evaluate to `True`.  
 
-- Let `self.BPMList` be a `list[BPMEvent]` with `BPMEvent` having `startTime: Beat` and `bpm: float`.
-- In `sec2beat`, `t` is time in seconds, `bpmfactor` is the judge line’s `bpmfactor`.
-- In `beat2sec`, `t` is in beats, `bpmfactor` as above.
-- Then `beat2sec(sec2beat(x)) == x` and `sec2beat(beat2sec(x)) == x` should both be True. Implementation as in the source doc.
+The functions are defined as follows:  
+
+```python
+def sec2beat(self, t: float, bpmfactor: float):
+    beat = 0.0
+    for i, e in enumerate(self.BPMList):
+        bpmv = e.bpm / bpmfactor
+        if i != len(self.BPMList) - 1:
+            et_beat = self.BPMList[i + 1].startTime.value - e.startTime.value
+            et_sec = et_beat * (60 / bpmv)
+            
+            if t >= et_sec:
+                beat += et_beat
+                t -= et_sec
+            else:
+                beat += t / (60 / bpmv)
+                break
+        else:
+            beat += t / (60 / bpmv)
+    return beat
+
+def beat2sec(self, t: float, bpmfactor: float):
+    sec = 0.0
+    for i, e in enumerate(self.BPMList):
+        bpmv = e.bpm / bpmfactor
+        if i != len(self.BPMList) - 1:
+            et_beat = self.BPMList[i + 1].startTime.value - e.startTime.value
+            
+            if t >= et_beat:
+                sec += et_beat * (60 / bpmv)
+                t -= et_beat
+            else:
+                sec += t * (60 / bpmv)
+                break
+        else:
+            sec += t * (60 / bpmv)
+    return sec
+```

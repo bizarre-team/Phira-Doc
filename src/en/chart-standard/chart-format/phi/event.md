@@ -25,8 +25,18 @@ This page describes all judge line events.
 | start | int | Start coordinate | - |
 | end | int | End coordinate | - |
 
-- Coordinate (Python): `x = (v - v % 1000) // 1000`, `y = v % 1000`. Units: `x` in 1/880 of chart width, `y` in 1/520 of chart height.
-- Convert to formatVersion 3: `ne.start = (e.start - e.start % 1000) // 1000`, `ne.end = (e.end - e.end % 1000) // 1000`, `ne.start2 = e.start % 1000`, `ne.end2 = e.end % 1000`.
+- Coordinate calculation (Python):
+  - `x = (v - v % 1000) // 1000`
+  - `y = v % 1000`
+  - Units:
+    - `x`: `1 / 880` of the chart width
+    - `y`: `1 / 520` of the chart height
+- Conversion to formatVersion 3 coordinates (Python):
+  - Original event denoted as `e`, new event as `ne`
+  - `ne.start = (e.start - e.start % 1000) // 1000`
+  - `ne.end = (e.end - e.end % 1000) // 1000`
+  - `ne.start2 = e.start % 1000`
+  - `ne.end2 = e.end % 1000`
 
 - For `formatVersion` `3`:
 

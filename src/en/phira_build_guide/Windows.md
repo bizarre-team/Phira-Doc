@@ -1,39 +1,44 @@
 # Windows
 
-## Preparation
+## Preparation Phase
 
-1. Check for cargo: in cmd or PowerShell run `cargo -V`. If you see:
-   ```shell
-   `'cargo' is not recognized as an internal or external command...`
-   or PowerShell equivalent,
-   ```
-   then install the build tools: see [here](./cargo.md).
-2. Get the source:
-   - With git: `git clone https://github.com/TeamFlos/phira.git`
-   - Without git: on the Phira repo page click Code → Download ZIP, then extract.
-   - If you cannot reach GitHub, use a git mirror. For a specific version, download `Source code (zip)` from the release Assets and extract.
-   - **Warning: avoid non-ASCII characters in the path to prevent build issues.**
-3. Perl: run `perl -v`. If not installed, open MSYS2 UCRT64 and run `pacman -S perl`.
-4. Static libs: [download](./prpr-avc.zip) or from [mirror](https://www.nuanr-mxi.com/prpr-avc.zip), then extract into the repo root (overwrite if prompted).
+1. Ensure that cargo is installed on your system. You can use `cargo -V` in Command Prompt (cmd) or PowerShell to check if cargo is installed. If you see the following prompts:
+    ```shell
+    'cargo' is not recognized as an internal or external command, operable program or batch file.
+    cargo : The term 'cargo' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+    ```
+    - Please click [here](./cargo.md) and follow the steps to install the build tools.
+2. Download the source code from GitHub to your local machine:
+    - If you have git installed, use `git clone https://github.com/TeamFlos/phira.git` to clone the repository locally.
+    - If you do not have git installed, you can also click the Code button on the Phira repository page, select `Download ZIP` to download the code locally, then extract it to any directory on your machine.
+    - **If you cannot connect to GitHub, you can also use the accelerated addresses provided by git acceleration websites to clone or download.**
+    - **If you want to build a specific version of Phira, go to the release page and select `Source code(zip)` under Assets to download it locally, then extract it to any path.**
+    - **Warning: To prevent build issues, we do not recommend including any characters other than those in the ASCII encoding in the path.**
+3. Perl: You can use `perl -v` in Command Prompt (cmd) or PowerShell to check if perl is installed. If not, search for and open `MSYS2 UCRT64` and enter `pacman -S perl` to install perl.
+4. Static library files: You can download from [here](./prpr-avc.zip) . After downloading, extract the files directly to the root directory of the code. If prompted to overwrite files, click "Overwrite."
 
-## Build
+## Starting the Build
 
-1. In cmd or PowerShell, `cd` to the repo root (e.g. `D:\phira\`).
-2. Run `cargo build -r --bin phira-main`. It may hang for a long time at `openssl-sys(build)`; that is normal.
-3. After build, the binary is in `.\target\release\`.
-4. Copy everything from `.\assets\` to `.\target\release\assets\`. Then you can run `phira-main.exe` to verify.
-   - At the time of writing, repo assets may be incomplete; if the app crashes, download any release and use its assets.
+1. In Command Prompt (cmd) or PowerShell, navigate to the root directory of the code (e.g., `D:\phira\`).
+2. In Command Prompt (cmd) or PowerShell, use `cargo build -r --bin phira-main`. If everything goes smoothly, you will be stuck for a very long time at `openssl-sys(build)`. Do not exit; this is normal.
+3. After the build is complete, you can find the compiled main program in the `.\target\release\` directory.
+4. Copy all files from the `.\assets\` directory to `.\target\release\assets\`. At this point, the entire build process is complete. You can directly run `phira-main.exe` to check if the resource files are intact.
 
-## 32-bit build
+:::warning
+Note: At the time of writing this document, the resource files in the code directory are not complete. If you find that the main program crashes, you can go to the release page to download any version to obtain the resource files.
+:::
 
-1. `cd` to repo root.
-2. Extract the static libs into `phira\prpr-avc\static-lib` or build them yourself.
-3. Run `cargo build --target=i686-pc-windows-gnu --release --package phira-main`. Again, long wait at openssl-sys is normal.
-4. Binary in `.\target\release\`. Copy `.\assets\` to `.\target\release\assets\`.
+## 32-bit Version
 
-## Building static libs (e.g. i686-pc-windows-gnu)
+1. In Command Prompt (cmd) or PowerShell, navigate to the root directory of the code (e.g., `D:\phira\`).
+2. Download the static library files mentioned above and extract them to `phira\prpr-avc\static-lib`, or build them yourself.
+3. In Command Prompt (cmd) or PowerShell, use `cargo build --target=i686-pc-windows-gnu --release --package phira-main`. If everything goes smoothly, you will be stuck for a very long time at `openssl-sys(build)`. Do not exit; this is normal.
+4. After the build is complete, you can find the compiled main program in the `.\target\release\` directory.
+5. Copy all files from the `.\assets\` directory to `.\target\release\assets\`. At this point, the entire build process is complete. You can directly run `phira-main.exe` to check if the resource files are intact.
 
-In a shell (e.g. MSYS2):
+## About Building Static Libraries (Using i686-pc-windows-gnu as an Example)
+
+Operate in a shell (using msys2 here):
 
 ```sh
 git clone https://git.ffmpeg.org/ffmpeg.git --depth=1
@@ -42,30 +47,46 @@ cd ffmpeg && mkdir build && cd build
 make
 ```
 > [!NOTE]
-> If you get errors, try copying from `msys64\mingw32\bin` the files `i686-w64-mingw32-gcc-ar.exe`, `i686-w64-mingw32-gcc-nm.exe`, `i686-w64-mingw32-gcc-ranlib.exe` and renaming the copies to `i686-w64-mingw32-ar.exe`, `i686-w64-mingw32-nm.exe`, `i686-w64-mingw32-ranlib.exe`. Then copy all `*.a` from `build` to `phira\prpr-avc\static-lib\i686-pc-windows-gnu`.
+> There's a pitfall here... If you encounter an error, try copying `i686-w64-mingw32-gcc-ar.exe`, `i686-w64-mingw32-gcc-nm.exe`, and `i686-w64-mingw32-gcc-ranlib.exe` from the `msys64\mingw32\bin` directory, paste them, and rename them to `i686-w64-mingw32-ar.exe`, `i686-w64-mingw32-nm.exe`, and `i686-w64-mingw32-ranlib.exe`.
 
-## FAQ
+Then, copy all files in the `build` folder that look like `*.a` to `phira\prpr-avc\static-lib\i686-pc-windows-gnu`, and you're done!
 
-Q. `failed to send request: operation timed out`  
-A. Check network and access to GitHub.
+## Common Issues
 
-Q. `failed to send request: could not resolve server name or address`  
-A. Check or change DNS and flush DNS cache.
+Q. Error: `failed to send request: operation timed out`
 
-Q. `error: failed to run custom build command for openssl-sys v0.9.99`  
-A. Perl is missing or wrong; install/check Perl.
+A. Please check your network environment to ensure you can access GitHub normally.
 
-Q. `Failed to find tool. Is gcc.exe installed?`  
-A. Install MSYS2 and add it to PATH.
+Q. Error: `failed to send request: could not resolve server name or address`
 
-Q. `Error building OpenSSL... "make" "depend" ... program not found`  
-A. Install make in MSYS2: `pacman -S make`.
+A. Check your DNS or change your DNS. After changing, refresh your DNS cache.
 
-Q. `This perl implementation doesn't produce unix like paths`  
-A. Your Perl is not compatible with this gcc; remove it from PATH or uninstall.
+Q. Error during build: `error: failed to run custom build command for openssl-sys v0.9.99`
 
-Q. `undefined reference to libiconv`  
-A. Install in MSYS2: `pacman -S libiconv`.
+A. Perl is missing. Please check if perl is correctly installed and try again.
 
-Q. This is too much hassle  
-A. You can just download a build from the release page.
+Q. Build error: `error occurred: Failed to find tool. Is gcc.exe installed? (see https://github.com/rust-lang/cc-rs#compile-time-requirements for help)`
+
+A. Please check if `MSYS2` is installed and if the environment variables are configured.
+
+Q. The following error occurs:
+
+```shell
+Error building OpenSSL dependencies:
+Command: "make" "depend"
+Failed to execute: program not found
+```
+
+A. The `make` command is missing. Please go to the MSYS2 terminal and install this command using `pacman -S make`.
+
+Q. Error includes: `This perl implementation doesn't produce Unix-like paths`
+
+A. The `perl` being used is not compatible with `gcc`. Please remove the environment variables for the existing `perl` or directly uninstall the existing `perl`.
+
+Q. Error includes: `undefined reference to libiconv`
+
+A. There is an issue with the `libiconv` being used. Please use `pacman -S libiconv` in the MSYS2 terminal.
+
+Q. This is too troublesome.
+
+A. Just go to the release page and download it. We have every right to love Microsoft.

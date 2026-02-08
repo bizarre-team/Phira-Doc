@@ -1,22 +1,37 @@
-# Phira-mp Linux Guide
+# Phira-MP Linux Help Documentation
 
-### Using pre-built binaries
+### For Users Who Want to Use a One-Click Deployment
 
-1. Get the pre-built binary from [Phira download site](https://phira.dmocken.top/mulity) (or another source).
-2. Download with `wget [url]`. If the file is a zip, unzip it and `cd` to the directory containing the binary.
-3. Run with `./[filename]` or `./[filename] --port [port]`.
+1. Go to the [Phira Download Site](https://phira.dmocken.top/mulity) (or other sources) to obtain the precompiled executable files.
+2. Use `wget [link]` to download the executable file to the server. If the downloaded file is a compressed archive (.zip), you need to extract it first and use `cd [path]` to navigate to the location of the executable.
+3. Use `./[filename]` or `./[filename] --port [port]` to run it directly.
 
-### Building the official Rust version
+### If You Want to Compile the Official Rust Version Yourself
 
-1. Install Rust if needed: follow [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install).
-   - Ubuntu/Debian: install curl first: `sudo apt install curl`
-   - Fedora/CentOS: `sudo yum install curl`
-   - Then: `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+1. If Rust is not installed, please install it first. You can follow the instructions at [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install).
 
-2. Clone the repo:
-   - Install git:
+   For Ubuntu or Debian users, if `curl` is not installed, use the following command to install it:
 
-   | Distro | Command |
+   ```shell
+   sudo apt install curl
+   ```
+
+   For Fedora or CentOS users, use the following command:
+
+   ```shell
+   sudo yum install curl
+   ```
+
+   After installing curl, use the following command to install Rust:
+
+   ```shell
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+   ```
+
+2. Next, clone the repository to the server:
+   Install the git tool:
+
+   | Linux Distribution | Installation Command |
    | :--- | :--- |
    | **Debian / Ubuntu** | `sudo apt update && sudo apt install git` |
    | **RHEL / CentOS 7 and below** | `sudo yum install git` |
@@ -24,34 +39,77 @@
    | **Arch Linux** | `sudo pacman -S git` |
    | **openSUSE** | `sudo zypper install git` |
 
-   Then: `git clone https://github.com/TeamFlos/phira-mp.git`
+   After installation, clone the repository to a local folder:
 
-3. Build:
+   ```shell
+   git clone https://github.com/TeamFlos/phira-mp.git
+   ```
+
+3. Then, build the project:
+
    ```shell
    cd phira-mp
    cargo build --release -p phira-mp-server
    ```
 
-#### Running the server
+#### Running the Server
 
-- Run: `RUST_LOG=info target/release/phira-mp-server`
-- Or with a port: `RUST_LOG=info target/release/phira-mp-server --port 8080`
+- You can run the application using the following command:
 
-### Docker
+   ```shell
+   RUST_LOG=info target/release/phira-mp-server
+   ```
 
-1. Create a Dockerfile (see source for full content). Use Ubuntu 22.04, install curl/git/build-essential/openssl, install Rust, clone phira-mp, build with cargo. ENTRYPOINT runs phira-mp-server with your preferred port.
+- You can also specify a port via parameters:
 
-2. Build: `docker build --tag phira-mp .`
-3. Run: `docker run -it --name phira-mp -p <port>:<port> --restart=unless-stopped phira-mp`
+   ```shell
+   RUST_LOG=info target/release/phira-mp-server --port 8080
+   ```
+
+### For Docker
+
+1. Create a Dockerfile:
+
+```dockerfile
+FROM ubuntu:22.04
+
+RUN apt-get update && apt-get -y upgrade && apt-get install -y curl git build-essential pkg-config openssl libssl-dev
+
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+ENV PATH="/root/.cargo/bin:${PATH}"
+WORKDIR /root/
+RUN git clone https://github.com/TeamFlos/phira-mp
+WORKDIR /root/phira-mp
+RUN cargo build --release -p phira-mp-server
+
+ENTRYPOINT ["/root/phira-mp/target/release/phira-mp-server", "--port", "<preferred-port>"]
+```
+
+2. Build the image:
+   `docker build --tag phira-mp .`
+3. Run the container:
+   `docker run -it --name phira-mp -p <preferred-port>:<preferred-port> --restart=unless-stopped phira-mp`
 
 #### Troubleshooting
 
-- For OpenSSL issues, install libssl-dev (Ubuntu/Debian) or openssl-devel (Fedora/CentOS). You can set OPENSSL_DIR if needed.
-- For pkg-config: `sudo apt install pkg-config libssl-dev` (Debian/Ubuntu) or `sudo dnf install pkg-config openssl-devel` (Fedora/CentOS).
+If you encounter issues related to OpenSSL, ensure that libssl-dev (for Ubuntu or Debian) or openssl-devel (for Fedora or CentOS) is installed. If the issue persists, you can set the OPENSSL_DIR environment variable for the compilation process.
+
+If you are compiling on Linux for Linux and receive a message about missing pkg-config, you may need to install it:
+
+```shell
+# For Ubuntu or Debian
+sudo apt install pkg-config libssl-dev
+
+# For Fedora or CentOS
+sudo dnf install pkg-config openssl-devel
+```
+
+For other issues, refer to the specific error messages and adjust your environment accordingly.
 
 #### Monitoring
 
-Check process and port:
+You can check the running processes and the ports they are listening on:
+
 ```shell
 ps -aux | grep phira-mp-server
 netstat -tuln | grep 12346

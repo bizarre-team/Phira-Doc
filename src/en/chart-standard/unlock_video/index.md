@@ -6,7 +6,7 @@ Unlock animation allows a video to play before the player plays the chart for th
 
 ## How to use
 
-The UI for this is not fully in place yet, so the process is a bit manual. The steps below are best done on Windows.
+The UI for this is not fully in place yet, so the process is a bit cumbersome. The steps below are best done on Windows.
 
 If your chart already has `info.yml`, skip to step 3.
 

@@ -1,21 +1,25 @@
-# Basic Info
+# Basic Information  
 
-This page describes basic chart data. Note that PEC does not store metadata (title, charter, etc.); that must come from elsewhere. PEC allows at most `30` judge lines; PhiEditor does not allow more. PhiEditor does not support separate X/Y.
+This page describes some basic information about the chart. Note that PEC does **not** store chart metadata (such as song title, charter, etc.); such information must be obtained from other sources.  
+PEC supports a maximum of `30` judgelines. PhiEditor does not allow creating more judgelines.  
+PhiEditor does not support XY separation.
 
-## Coordinate system
+## Coordinate System  
 
-Screen center is `0,0`. Bottom-left X is `-1024`, Y is `-700`. Top-right X is `1024`, Y is `700`.
+The center of the screen is point `(0, 0)`.  
+The bottom‑left corner has coordinates `(-1024, -700)`.  
+The top‑right corner has coordinates `(1024, 700)`.
 
-## Chart offset
+## Chart Offset  
 
-The first line of PEC is the chart `offset` in milliseconds (integer).
+The first line of a PEC file is the chart’s `offset`, in milliseconds, given as an integer.
 
-## BPM list
+## BPM List  
 
-Lines starting with `bp` are BPM entries, e.g.:
+In PEC, lines starting with `bp` are BPM list entries. Example:
 
 ```txt
 bp 0.000 180.000
 ```
 
-Meaning at beat `0.000`, BPM is `180.000`.
+This indicates that at beat `0.000`, the BPM is `180.000`.
