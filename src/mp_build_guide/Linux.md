@@ -1,4 +1,4 @@
-# Phira-mp Linux帮助文档
+# Phira-MP Linux帮助文档
 
 ### 对于想要使用一键端的用户
 
@@ -41,7 +41,7 @@
 
 	安装完成后克隆仓库到本地文件夹：
 
-	```
+	```shell
 	git clone https://github.com/TeamFlos/phira-mp.git
 	```
 
@@ -70,7 +70,7 @@
 
 1. 创建 Dockerfile
 
-```
+```dockerfile
 FROM ubuntu:22.04
 
 RUN apt-get update && apt-get -y upgrade && apt-get install -y curl git build-essential pkg-config openssl libssl-dev
