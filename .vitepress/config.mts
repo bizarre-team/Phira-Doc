@@ -48,7 +48,7 @@ export default defineConfig({
     logo: "/favicon.png",
     externalLinkIcon: true,
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/OrbiterStellarTrek/Phira-Doc' }
+      { icon: 'github', link: 'https://github.com/Bizarre-Team/Phira-Doc' }
     ]
   },
   locales: {
@@ -60,7 +60,7 @@ export default defineConfig({
       description: "有关Phira的文档",
       themeConfig: {
         editLink: {
-          pattern: 'https://github.com/OrbiterStellarTrek/Phira-Doc/edit/main/src/:path',
+          pattern: 'https://github.com/Bizarre-Team/Phira-Doc/edit/main/src/:path',
           text: '在 GitHub 上编辑此页'
         },
         lastUpdated: {
@@ -505,7 +505,7 @@ export default defineConfig({
     },
   },
   sitemap: {
-    hostname: 'https://phira-doc.star-trip.space/',
+    hostname: 'https://docs.dmocken.top/',
     transformItems(items) {
       return items.filter((item) => !item.url.includes('migration'))
     }
