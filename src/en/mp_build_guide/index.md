@@ -21,4 +21,4 @@ For pre-built packages, see [Dmocken's download site](https://phira.dmocken.top/
 | [phira-mp-nodejsver](https://github.com/chuzouX/phira-mp-nodejsver)| Typescript | [chuzouX](https://github.com/chuzouX)       |
 | [PhiraMpServerCSharp](https://github.com/NuanRMxi-Lazy-Team/PhiraMpServerCSharp)| C# | [NuanRMxi-Lazy-Team](https://github.com/NuanRMxi-Lazy-Team)       |
 
-If you have your own Phira-mp build or run a Phira-mp server, contact us via [Feedback](https://phira.dmocken.top/report).
+If you have your own Phira-MP build or run a Phira-MP server, contact us via [Feedback](https://phira.dmocken.top/report).
