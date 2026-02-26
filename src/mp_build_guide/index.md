@@ -17,7 +17,7 @@
 | [tphira-mp](https://github.com/Pimeng/tphira-mp)| Typescript | [Pimeng](https://github.com/Pimeng)       |
 | [jphiramp](https://github.com/lRENyaaa/jphira-mp)| Java | [lRENyaaa](https://github.com/lRENyaaa)       |
 | [pyphira-mp](https://github.com/Evi233/pyphira-mp)| Python | [Evi233](https://github.com/Evi233)、[lRENyaaa](https://github.com/lRENyaaa)       |
-| [gphira-mp](https://github.com/PhiraMp/gphira-mp)| Go | [Pimeng](https://github.com/Pimeng)       |
+| [gphira-mp](https://github.com/Pimeng/gphira-mp)| Go | [Pimeng](https://github.com/Pimeng)       |
 | [dotphira-mp](https://github.com/BennettNotFound/dotphira-mp)| C# | [BennettNOTFound](https://github.com/BennettNotFound)       |
 | [phira-mp-nodejsver](https://github.com/chuzouX/phira-mp-nodejsver)| Typescript | [chuzouX](https://github.com/chuzouX)       |
 | [PhiraMpServerCSharp](https://github.com/NuanRMxi-Lazy-Team/PhiraMpServerCSharp)| C# | [NuanRMxi-Lazy-Team](https://github.com/NuanRMxi-Lazy-Team)       |

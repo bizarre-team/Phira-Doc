@@ -11,7 +11,7 @@ hero:
       link: README
     - theme: alt
       text: 多人联机服务器状态
-      link: "https://status.dmocken.top/"
+      link: "https://phira.dmocken.top/status/"
     - theme: alt
       text: Github
       link: "https://github.com/Teamflos/Phira"

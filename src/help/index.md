@@ -69,7 +69,7 @@
 ### 多人联机服务相关问题：
    
    - Phira官方联机服务器（mp2.phira.cn:12345）目前暂时不可用。
-   - 目前有第三方监控站用于收集多人游戏服务器地址，[前往监测站](https://status.dmocken.top)
+   - 目前有第三方监控站用于收集多人游戏服务器地址，[前往监测站](https://phira.dmocken.top/status)
    - 我们支持并且建议个人开设私服进行多人联机，详见[官方GitHub](https://github.com/TeamFlos/phira-mp)
    - 如需获取即开即用的已编译服务器文件，请前往：[多人游戏服务端](https://phira.dmocken.top/mulity)
    - [安卓搭建Phira多人游戏服务器教程](/mp_build_guide/Termux)

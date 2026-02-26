@@ -62,7 +62,7 @@ If you encounter issues accessing the link in the email, please replace `api.phi
 ### Multiplayer
 
 - Official Phira multiplayer server (mp2.phira.cn:12345) is currently unavailable.
-- Third-party monitoring for multiplayer servers: [Status page](https://status.dmocken.top).
+- Third-party monitoring for multiplayer servers: [Status page](https://phira.dmocken.top/status).
 - We support and recommend self-hosted multiplayer servers: [phira-mp on GitHub](https://github.com/TeamFlos/phira-mp).
 - Pre-built server files: [Multiplayer server](https://phira.dmocken.top/mulity).
 - [Android: Phira multiplayer server (Termux)](/en/mp_build_guide/Termux)

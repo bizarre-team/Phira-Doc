@@ -11,7 +11,7 @@ hero:
       link: /en/README
     - theme: alt
       text: Multiplayer Server Status
-      link: "https://status.dmocken.top/"
+      link: "https://phira.dmocken.top/status/"
     - theme: alt
       text: GitHub
       link: "https://github.com/Teamflos/Phira"
