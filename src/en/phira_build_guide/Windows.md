@@ -15,7 +15,7 @@
     - **If you want to build a specific version of Phira, go to the release page and select `Source code(zip)` under Assets to download it locally, then extract it to any path.**
     - **Warning: To prevent build issues, we do not recommend including any characters other than those in the ASCII encoding in the path.**
 3. Perl: You can use `perl -v` in Command Prompt (cmd) or PowerShell to check if perl is installed. If not, search for and open `MSYS2 UCRT64` and enter `pacman -S perl` to install perl.
-4. Static library files: You can download from [here](./prpr-avc.zip) . After downloading, extract the files directly to the root directory of the code. If prompted to overwrite files, click "Overwrite."
+4. Static library files: You can download from [here](https://www.nuanr-mxi.com/prpr-avc.zip) . After downloading, extract the files directly to the root directory of the code. If prompted to overwrite files, click "Overwrite."
 
 ## Starting the Build
 
