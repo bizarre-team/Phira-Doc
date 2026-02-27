@@ -43,7 +43,7 @@ jobs:
       uses: suisei-cn/actions-download-file@v1.3.0
       id: downlod-static-lib
       with:
-        url: "https://www.nuanr-mxi.com/prpr-avc.zip"
+        url: "https://s.07210700.xyz/prpr-avc.zip"
         target: ./
 
     - name: Set Up static-lib

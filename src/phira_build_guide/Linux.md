@@ -9,7 +9,7 @@
     - **如果您无法连接到 GitHub，您也可以使用 git 加速网站提供的加速地址克隆与下载。**
     - **若您要构建指定版本的 Phira，请前往 release 页面在 Assets 中选择下载 `Source code(tar.gz)` 到本地，解压到任意路径即可。**
     - **警告：为了防止玄学问题，我们不建议路径中包含除了 ASCII 编码包含字符以外的任何字符。**
-3. 静态库文件，您可以 [直接下载](./prpr-avc.zip) 或者在 [缓存站](https://www.nuanr-mxi.com/prpr-avc.zip) 下载静态库文件，下载完成后直接解压到代码根目录下，如果提示覆盖文件，请点击覆盖。
+3. 静态库文件，您可以在 [Cloudflare R2](https://s.07210700.xyz/prpr-avc.zip) 或者在 [缓存站](https://www.nuanr-mxi.com/prpr-avc.zip) 下载静态库文件，下载完成后直接解压到代码根目录下，如果提示覆盖文件，请点击覆盖。
 4. 构建过程需要库文件补充，输入以下命令即可：
 ```shell
 sudo apt update

