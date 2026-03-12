@@ -6,7 +6,7 @@
 :::
 
 1. 方便起见，这里使用**Github Action**构建Android端Phira，本地构建待补充。~~才不是因为几次都失败了惹~~
-2. **Fork**官方Phira仓库，创建 `.github/workflows/`目录并在该目录下创建一个.yml文件，名称任意。
+2. [**Fork**](https://github.com/TeamFlos/phira/fork)官方Phira仓库，创建 `.github/workflows/`目录并在该目录下创建一个.yml文件，名称任意。
 3. 在该.yml文件写入以下内容并commit，进入Action页面的Build Android Phira工作流，**请求一个workflow**（可选择构建分支），等待约5分钟，工作流即可运行完毕。**下载Artifact解压**备用。
 
 ::: tip
@@ -43,7 +43,7 @@ jobs:
       uses: suisei-cn/actions-download-file@v1.3.0
       id: downlod-static-lib
       with:
-        url: "https://s.07210700.xyz/prpr-avc.zip"
+        url: "https://www.nuanr-mxi.com/prpr-avc.zip"
         target: ./
 
     - name: Set Up static-lib
@@ -92,7 +92,7 @@ jobs:
 
 1. 将libphira.so文件**推送到Android设备上**你熟悉的位置。
 
-2. 从Phira官方仓库的Release下载libphira.so对应架构的apk，用MT管理器查看。
+2. 从Phira官方仓库的[Release](https://github.com/TeamFlos/phira/releases)下载libphira.so对应架构的apk，用[MT管理器](https://mt2.cn/)查看。
 
 3. 将构建出来的libphira.so**替换掉**lib/arm64-v8a（或armeabi-v7a）/**libphira.so**。
 

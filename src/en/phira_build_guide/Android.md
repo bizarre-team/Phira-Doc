@@ -7,7 +7,7 @@ This build **does not include score upload** (similar to the Windows build).
 :::
 
 1. This guide uses **GitHub Actions** to build Android Phira; local build steps are TBD.
-2. **Fork** the official Phira repo, create `.github/workflows/` and add a `.yml` file (any name).
+2. [**Fork**](https://github.com/TeamFlos/phira/fork) the official Phira repo, create `.github/workflows/` and add a `.yml` file (any name).
 3. Put the workflow content below into that file, commit, go to Actions → "Build Android Phira", **trigger the workflow** (choose branch if needed), wait ~5 minutes, then **download the artifact** and extract it.
 
 ::: tip
@@ -44,7 +44,7 @@ jobs:
       uses: suisei-cn/actions-download-file@v1.3.0
       id: downlod-static-lib
       with:
-        url: "https://s.07210700.xyz/prpr-avc.zip"
+        url: "https://www.nuanr-mxi.com/prpr-avc.zip"
         target: ./
 
     - name: Set Up static-lib
@@ -91,7 +91,7 @@ jobs:
 ### Method 1
 
 1. Push `libphira.so` to your Android device (any path you know).
-2. Download the APK for your architecture from the official Phira release; open it with MT Manager (or similar).
+2. Download the APK for your architecture from the official Phira [Release](https://github.com/TeamFlos/phira/releases); open it with [MT Manager](https://mt2.cn/) (or similar).
 3. **Replace** `lib/arm64-v8a/libphira.so` (or armeabi-v7a) with your built `libphira.so`.
 4. Open `classes.dex` with Dex Editor++, go to `org.flos.phira` and find the **QuadSurface** class.
 5. Find the line that calls `preprocessInput` (e.g. around line 153) and remove or comment it.

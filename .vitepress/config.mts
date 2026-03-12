@@ -238,7 +238,12 @@ export default defineConfig({
           { text: 'cargo 安装教程', link: '/phira_build_guide/cargo' },
           { text: 'Windows', link: '/phira_build_guide/Windows' },
           { text: 'Linux', link: '/phira_build_guide/Linux' },
+          { text: 'macOS', link: '/phira_build_guide/macOS' },
           { text: 'Android', link: '/phira_build_guide/Android' },
+          { text: 'OpenHarmony', link: '/phira_build_guide/OpenHarmony' },
+          { text: '静态库构建', link: '/phira_build_guide/StaticLib' },
+          { text: 'Windows GNU', link: '/phira_build_guide/Windows_Gnu' },
+          { text: 'Windows MSVC', link: '/phira_build_guide/Windows_Msvc' },
         ]
       },
       {
@@ -439,8 +444,13 @@ export default defineConfig({
             items: [
               { text: 'Cargo install', link: '/en/phira_build_guide/cargo' },
               { text: 'Windows', link: '/en/phira_build_guide/Windows' },
+              { text: 'Windows GNU', link: '/en/phira_build_guide/Windows_Gnu' },
+              { text: 'Windows MSVC', link: '/en/phira_build_guide/Windows_Msvc' },
               { text: 'Linux', link: '/en/phira_build_guide/Linux' },
+              { text: 'macOS', link: '/en/phira_build_guide/macOS' },
               { text: 'Android', link: '/en/phira_build_guide/Android' },
+              { text: 'OpenHarmony', link: '/en/phira_build_guide/OpenHarmony' },
+              { text: 'Static Library', link: '/en/phira_build_guide/StaticLib' },
             ]
           },
           {
