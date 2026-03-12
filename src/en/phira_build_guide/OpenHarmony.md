@@ -95,7 +95,7 @@ phira/phira> ohrs build --release --arch aarch  # --arch can be omitted to build
 
 Connect your device, go to `Project Structure`, find `Signing configs`, select `Automatically generate signature`, and click `Apply`. The project will automatically trigger a Sync.
 
-![](image.png)
+![Project Structure location](/assets/img/phira_build_guide/ohos_project_structure.png)
 
 The location of Project Structure is shown by the arrow.
 
