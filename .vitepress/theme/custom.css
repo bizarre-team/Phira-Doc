@@ -7,11 +7,21 @@
 @font-face {
   font-family: 'Google Sans';
   src: url('./fonts/GoogleSans-VariableFont_GRAD,opsz,wght.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Mi Sans';
   src: url('./fonts/MiSans-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MesloLGS NF';
+  src: url('./fonts/MesloLGS NF Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 :root {
