@@ -2,12 +2,33 @@
 
 This is the *Phira FAQ* written by Phira support volunteers. Before playing Phira, please read and agree to the official [Terms of Service](https://phira.moe/terms-of-use) and [Privacy Policy](https://phira.moe/privacy-policy).
 
-v0.6.7.1 update highlights:
+v0.7.0 update highlights:
 
-- Cache management in Settings
-- Localization improvements
-- RPE text support improvements
-- Fixed black screen bug in some cases
+New Features & Improvements:
+- ! **All-new chart collection feature**: Create collections to organize charts, with cloud sync and sharing support
+- ! **More powerful local chart management**: Supports batch import/export, manual reordering, search & filter, and more
+- ! **New gameplay modifier modules**: Fade-In, Rainbow (colorful effects), Night Club (high speed multiplier), Sudden Death, Disable Shaders
+- ! **New audio system & advanced configuration**: Supports multiple output types and preferred sample rate configuration; smarter output device selection
+- Video support upgrades: Added support for HEVC/H.265, AV1, VP9, and other video formats
+- UI refinements (chart browsing, loading screen, and results screen) for improved visual experience and interaction smoothness
+- Chart support upgrades: RPE 1.7.0 speed easing (requires manual enable), parent-child line rotation, hit areas, note coloring, video-bound lines, and more
+- In-game message quick navigation: Jump directly to related charts or links from messages
+- Miscellaneous new features: Reduced animation effects, Early/Late display on results screen, forgot password entry point, optional AP/FC indicator toggle
+- Internal performance optimizations
+
+Platform Compatibility:
+- ! **Native HarmonyOS support** by [@ljlVink](https://github.com/ljlVink)
+- ! **Desktop improvements**: Text input in input fields, mouse wheel scrolling support
+- ! **Windows touch support**: The Windows version now natively supports multi-touch input and score uploading
+
+Bug Fixes:
+- Video support improvements: Fixed incorrect audio in unlock videos for some charts, and fixed certain videos failing to play
+- RPE UI binding fix: Enabled by default for newly imported charts; must be manually enabled for existing charts
+- Crash fixes: Fixed crashes caused by incomplete deletion of local charts, importing invalid resource packs, and related issues
+- Resource pack color support: Fixed semi-transparent colors not being supported in resource packs
+
+Localization:
+- Added/fixed translations for multiple languages (zh-TW, vi-VN, ru-RU, fr-FR, th-TH, tr-TR, etc.), including translation key corrections and wording improvements
 
 For issues with this document, contact @Dmocken in the [Phira QQ Channel](https://pd.qq.com/s/ezgv3q71g), or use [Feedback](https://phira.dmocken.top/report).
 
@@ -30,6 +51,11 @@ For issues with this document, contact @Dmocken in the [Phira QQ Channel](https:
 2. Install via IPA sideloading. Download link: [Official GitHub](https://github.com/F-Unction/phira_ipa/releases).
 3. iOS sideloading requires a computer or jailbreak tools.
 4. If you see an "Untrusted Enterprise Developer" prompt, go to Settings → General → VPN & Device Management to trust the developer.
+
+## Harmony NEXT download
+
+If you need a **HAP sideloading guide**, see: [HarmonyOS HAP Sideloading Guide](/en/help/harmony-sideload).
+
 
 ## FAQ
 

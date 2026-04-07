@@ -16,7 +16,7 @@
 - 内部功能优化
 
 平台适配：
-- ! 新增鸿蒙系统原生支持 by @ljlVink
+- ! 新增鸿蒙系统原生支持 by [@ljlVink](https://github.com/ljlVink)
 - ! 桌面端优化：支持输入框输入文本，支持鼠标滚轮滑动界面
 - ! Windows触摸支持：现在Windows版本原生支持多点触控与成绩上传
 
@@ -42,7 +42,6 @@
 1. 国内下载源：
    - [好游快爆](https://www.3839.com/a/154061.htm)（需实名认证，官方授权）、
    - [Dmocken的Phira下载站](https://phira.dmocken.top)（第三方，国内）、
-   - [Puremoon下载站](https://pmnet.work/)（第三方，国内）
    下载最新版本APK即可。
 2. 国外下载源:
    - [Github](https://github.com/TeamFlos/phira/releases)
@@ -59,6 +58,7 @@
 
 ## 鸿蒙下载看这里
 
+如果你需要 **HAP 侧载安装教程**，可以直接查看：[鸿蒙 HAP 侧载安装教程](/help/harmony-sideload)。
 
 ## 相关问题合集：
 
