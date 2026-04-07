@@ -22,7 +22,7 @@ ca judge_line_index beat opacity
 
 - `cv`: speed (velocity) instant event. Speed events do not support easing.
 - `cp`: position instant event.
-- `cd`: rotation instant event. Note: the editor inverts the angle from the UI when saving; reason unknown.
+- `cd`: rotation instant event.
 - `ca`: opacity instant event.
 
 ## Easing events

@@ -6,9 +6,18 @@ PhiEditor does not support XY separation.
 
 ## Coordinate System  
 
+### In the Editor
+
 The center of the screen is point `(0, 0)`.  
 The bottom‑left corner has coordinates `(-1024, -700)`.  
-The top‑right corner has coordinates `(1024, 700)`.
+The top‑right corner has coordinates `(1024, 700)`.  
+Angles are positive counter-clockwise and negative clockwise.
+
+### In the File
+The center of the screen is point `(1024, 700)`.  
+The bottom‑left corner has coordinates `(0, 0)`.  
+The top‑right corner has coordinates `(2048, 1400)`.  
+Angles are positive clockwise and negative counter-clockwise.
 
 ## Chart Offset  
 
