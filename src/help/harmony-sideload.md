@@ -4,17 +4,18 @@
 
 ## 准备工作
 
-- [Phira HAP 安装包](https://phira.dmocken.top/)
-- 一台鸿蒙设备，建议非 Harmony NEXT 设备优先参考
-- [小白调试助手](https://github.com/likuai2010/auto-installer/releases)
+- Phira hap 安装包，[国内源](https://phira.dmocken.top/)、[GitHub](https://github.com/TeamFlos/phira/releases)。
+- 一台鸿蒙设备，建议非 Harmony NEXT 设备优先参考。
+- [小白调试助手](https://github.com/likuai2010/auto-installer/releases)。
 
 ## 小白调试助手
 
 从 GitHub Release 中下载两个平台的安装包：
 
-- 其中一个需要是 `.hap` 安装包，用于后续软件更新使用
+- 其中一个需要是 `.hap/.app` 安装包，用于后续软件更新使用
 - 另一个可以为任意平台
-- **下载的两个版本需要相同才能正常工作**
+- **注意下载的版本号需要相同才能正常工作**
+
 （或许可以通过**卓易通**安装apk版小白调试助手进行操作？本人没尝试过，希望有动手能力的同学可以试试看！[下载链接点此](https://github.com/likuai2010/auto-installer/releases/tag/2.5.0)）
 ::: tip
 **Windows**：首次打开会提示安装 Java，下载安装即可。
@@ -53,9 +54,9 @@
 
     ![连接设备](../public/assets/img/help/连接设备.png)
 
-3. 选择 `.hap` 文件
+3. 选择 `.hap/.app` 文件
 
-    点击 **选择**，选中下载好的 Phira HAP 包。完成后，软件内会显示软件包名及支持安装的设备。
+    点击 **选择**，选中下载好的 Phira 包。完成后，软件内会显示软件包名及支持安装的设备。
 
 4. 侧载安装
 
@@ -63,7 +64,7 @@
 
 ## 便捷更新
 
-使用相同方法侧载小白调试助手的 `.hap` 包。后续软件内更新时，会将新的 HAP 包发送到小白调试助手；之后只需要登录华为账号并连接设备，就可以快速完成更新侧载。
+使用相同方法侧载小白调试助手的 `.hap/.app` 包。后续软件内更新时，会将新的 HAP 包发送到小白调试助手；之后只需要登录华为账号并连接设备，就可以快速完成更新侧载。
 
 ## 其它
 
