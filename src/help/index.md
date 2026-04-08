@@ -46,7 +46,6 @@
 2. 国外下载源:
    - [Github](https://github.com/TeamFlos/phira/releases)
 3. 如出现设备不支持、CPU不兼容，或者提示安装失败，请下载**32位版本**进行安装。
-4. 64位版本兼容大部分安卓/鸿蒙设备，**暂无Harmony NEXT专用侧载安装包**。
 
 ## iOS下载看这里
 
@@ -58,7 +57,7 @@
 
 ## 鸿蒙下载看这里
 
-如果你需要 **HAP 侧载安装教程**，可以直接查看：[鸿蒙 HAP 侧载安装教程](/help/harmony-sideload)。
+- 如果你需要 **HAP 侧载安装教程**，可以直接查看：[鸿蒙 HAP 侧载安装教程](/help/harmony-sideload)。
 
 ## 相关问题合集：
 

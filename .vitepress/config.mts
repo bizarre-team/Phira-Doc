@@ -82,7 +82,7 @@ export default defineConfig({
         sidebarMenuLabel: '目录',
         nav: [
           { text: '简介', link: '/README' },
-          { text: '基础帮助文档', link: '/help/' }
+          { text: '常见问题', link: '/help/' }
         ],
         sidebar: [
       {
@@ -90,8 +90,12 @@ export default defineConfig({
         link: '/README'
       }, 
       {
-        text: '基础帮助文档',
-        link: '/help/'
+        text: '常见问题',
+        collapsed: true,
+        items: [
+          { text: '常见问题自助文档', link: '/help/' },
+          { text: '鸿蒙 HAP 侧载安装教程', link: '/help/harmony-sideload' },
+        ]
       },
       {
         text: '谱面标准',
@@ -305,7 +309,14 @@ export default defineConfig({
         ],
         sidebar: [
           { text: 'About', link: '/en/README' },
-          { text: 'FAQ', link: '/en/help/' },
+          {
+            text: 'FAQ',
+            collapsed: true,
+            items: [
+              { text: 'FAQ Home', link: '/en/help/' },
+              { text: 'HarmonyOS HAP Sideloading Guide', link: '/en/help/harmony-sideload' },
+            ]
+          },
           {
             text: 'Chart Standard',
             collapsed: true,
