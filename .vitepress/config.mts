@@ -3,97 +3,6 @@ import { MermaidMarkdown, MermaidPlugin } from 'vitepress-plugin-mermaid';
 import markdownItTaskCheckbox from 'markdown-it-task-checkbox';
 import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons';
 
-const localSearch = {
-  provider: 'local',
-  options: {
-    locales: {
-      root: {
-        translations: {
-          button: {
-            buttonText: '搜索',
-            buttonAriaLabel: '搜索文档'
-          },
-          modal: {
-            displayDetails: '显示详细列表',
-            resetButtonTitle: '重置搜索',
-            backButtonTitle: '关闭搜索',
-            noResultsText: '没有找到结果',
-            footer: {
-              selectText: '选择',
-              selectKeyAriaLabel: '回车键',
-              navigateText: '切换',
-              navigateUpKeyAriaLabel: '上箭头',
-              navigateDownKeyAriaLabel: '下箭头',
-              closeText: '关闭',
-              closeKeyAriaLabel: 'Esc 键'
-            }
-          }
-        }
-      },
-      en: {
-        translations: {
-          button: {
-            buttonText: 'Search',
-            buttonAriaLabel: 'Search documentation'
-          }
-        }
-      }
-    }
-  }
-} as const;
-
-const algoliaSearch = process.env.VITEPRESS_ALGOLIA_APP_ID
-  && process.env.VITEPRESS_ALGOLIA_API_KEY
-  && process.env.VITEPRESS_ALGOLIA_INDEX_NAME
-  ? {
-      provider: 'algolia',
-      options: {
-        appId: process.env.VITEPRESS_ALGOLIA_APP_ID,
-        apiKey: process.env.VITEPRESS_ALGOLIA_API_KEY,
-        indexName: process.env.VITEPRESS_ALGOLIA_INDEX_NAME,
-        locales: {
-          root: {
-            translations: {
-              button: {
-                buttonText: '搜索',
-                buttonAriaLabel: '搜索文档'
-              },
-              modal: {
-                searchBox: {
-                  clearButtonTitle: '清除',
-                  clearButtonAriaLabel: '清除查询',
-                  closeButtonText: '关闭',
-                  closeButtonAriaLabel: '关闭',
-                  placeholderText: '搜索文档'
-                },
-                footer: {
-                  selectText: '选择',
-                  navigateText: '切换',
-                  closeText: '关闭',
-                  searchByText: '搜索提供者'
-                },
-                noResultsScreen: {
-                  noResultsText: '没有找到结果',
-                  suggestedQueryText: '可以试试搜索',
-                  reportMissingResultsText: '觉得这里应该有结果？',
-                  reportMissingResultsLinkText: '告诉我们'
-                }
-              }
-            }
-          },
-          en: {
-            translations: {
-              button: {
-                buttonText: 'Search',
-                buttonAriaLabel: 'Search documentation'
-              }
-            }
-          }
-        }
-      }
-    } as const
-  : null;
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   vite: { 
@@ -131,10 +40,61 @@ export default defineConfig({
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "vcwukneqc8");`],
-    ['meta', { name: "algolia-site-verification", content: "D6029FE82849A6D9" }]
+    ['script', { src: 'https://umami.analytics.07210700.xyz/script.js' , 'data-website-id': '7431dadf-dee8-4463-9743-340cbc89cdd9' }]
   ],
   themeConfig: {// https://vitepress.dev/reference/default-theme-config
-    search: algoliaSearch ?? localSearch,
+    search: {
+      provider: 'algolia',
+      options: {
+        appId: process.env.VITEPRESS_ALGOLIA_APP_ID ?? '',
+        apiKey: process.env.VITEPRESS_ALGOLIA_API_KEY ?? '',
+        indexName: process.env.VITEPRESS_ALGOLIA_INDEX_NAME ?? '',
+        locales: {
+          root: {
+            searchParameters: {
+              facetFilters: ['lang:zh-Hans']
+            },
+            translations: {
+              button: {
+                buttonText: '搜索',
+                buttonAriaLabel: '搜索文档'
+              },
+              modal: {
+                searchBox: {
+                  resetButtonTitle: '清除',
+                  resetButtonAriaLabel: '清除查询',
+                  cancelButtonText: '关闭',
+                  cancelButtonAriaLabel: '关闭'
+                },
+                footer: {
+                  selectText: '选择',
+                  navigateText: '切换',
+                  closeText: '关闭',
+                  searchByText: '搜索提供者'
+                },
+                noResultsScreen: {
+                  noResultsText: '没有找到结果',
+                  suggestedQueryText: '可以试试搜索',
+                  reportMissingResultsText: '觉得这里应该有结果？',
+                  reportMissingResultsLinkText: '告诉我们'
+                }
+              }
+            }
+          },
+          en: {
+            searchParameters: {
+              facetFilters: ['lang:en']
+            },
+            translations: {
+              button: {
+                buttonText: 'Search',
+                buttonAriaLabel: 'Search documentation'
+              }
+            }
+          }
+        }
+      }
+    },
     logo: "/favicon.png",
     externalLinkIcon: true,
     socialLinks: [
