@@ -51,14 +51,8 @@ const algoliaSearch = process.env.VITEPRESS_ALGOLIA_APP_ID
         appId: process.env.VITEPRESS_ALGOLIA_APP_ID,
         apiKey: process.env.VITEPRESS_ALGOLIA_API_KEY,
         indexName: process.env.VITEPRESS_ALGOLIA_INDEX_NAME,
-        searchParameters: {
-          facetFilters: ['lang:zh-Hans']
-        },
         locales: {
           root: {
-            searchParameters: {
-              facetFilters: ['lang:zh-Hans']
-            },
             translations: {
               button: {
                 buttonText: '搜索',
@@ -88,9 +82,6 @@ const algoliaSearch = process.env.VITEPRESS_ALGOLIA_APP_ID
             }
           },
           en: {
-            searchParameters: {
-              facetFilters: ['lang:en']
-            },
             translations: {
               button: {
                 buttonText: 'Search',
@@ -139,7 +130,8 @@ export default defineConfig({
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "vcwukneqc8");`]
+    })(window, document, "clarity", "script", "vcwukneqc8");`],
+    ['meta', { name: "algolia-site-verification", content: "D6029FE82849A6D9" }]
   ],
   themeConfig: {// https://vitepress.dev/reference/default-theme-config
     search: algoliaSearch ?? localSearch,
