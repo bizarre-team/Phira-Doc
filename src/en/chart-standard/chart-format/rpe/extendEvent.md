@@ -1,12 +1,12 @@
 # Extended Events
 
-This page explains RPE's extended events, commonly known as storyboard events, located at the fifth level of event editing.  
-Each event field corresponds to a `JsonArray`, where each element represents one event.  
-**Except for `inclineEvents` (tilt events), all other events have no corresponding field when not in use.**
+This page explains RPE's extended events, commonly known as storyboard events. In the editor, they are located at the fifth level of event editing.  
+Each event field corresponds to a `JsonArray`, and each element in that array represents one event.  
+**Except for `inclineEvents` (tilt events), unused event types simply have no corresponding field.**
 
 ## colorEvents
 
-Color events control the color of judgment lines or textures. They contain the following fields:
+Color events control the color of judge lines or textures. They contain the following fields:
 
 | Field Name | Type | Description | Default Value | Version Added |
 | :---: | :---: | :---: | :---: | :---: |
@@ -23,7 +23,7 @@ Color events control the color of judgment lines or textures. They contain the f
 
 ## scaleXEvents
 
-X‑axis scaling events control the width scaling of judgelines, textures, or text. They contain the following fields:
+X-axis scaling events control the width scaling of judge lines, textures, or text. They contain the following fields:
 
 | Field Name | Type | Description | Default Value | Version Added |
 | :---: | :---: | :---: | :---: | :---: |
@@ -40,7 +40,7 @@ X‑axis scaling events control the width scaling of judgelines, textures, or te
 
 ## scaleYEvents
 
-Y‑axis scaling events control the height scaling of judgelines, textures, or text. They contain the following fields:
+Y-axis scaling events control the height scaling of judge lines, textures, or text. They contain the following fields:
 
 | Field Name | Type | Description | Default Value | Version Added |
 | :---: | :---: | :---: | :---: | :---: |
@@ -78,7 +78,7 @@ Text events control the display of text. They contain the following fields:
 
 Applying easing to text events may have no effect or cause undefined errors that crash the simulator. For details, see [this issue](https://github.com/TeamFlos/phira/issues/252).
 - When the text contains `%P%`, numbers in the text can change dynamically according to the easing during event playback.
-- A judgeline with a text event will always be hidden, displaying only the text (even when no text event is playing), and any custom texture will be cleared.
+- A judge line with a text event is always hidden, leaving only the text visible, even when no text event is currently playing. Any custom texture is also cleared.
 - If a text event exists but no color event is present, the text will always be white.
 - Starting from version `153`, text in text events can contain the `\n` newline character (other escape sequences are not supported).
 
@@ -103,7 +103,7 @@ Brush events. This event was replaced by the `shader` editing feature in version
 
 ## gifEvents
 
-GIF playback progress events. This event was introduced in version `150` alongside GIF judgment line textures to control GIF playback.
+GIF playback progress events. This event was introduced in version `150` alongside GIF judge line textures to control GIF playback.
 
 | Field Name | Type | Description | Default Value | Version Added |
 | :---: | :---: | :---: | :---: | :---: |
@@ -114,12 +114,12 @@ GIF playback progress events. This event was introduced in version `150` alongsi
 | `end` | `float` | End GIF playback progress. | – | – |
 | `endTime` | [beat](./beat.md) | Event end time. | – | – |
 
-- If a judgment line texture is a GIF but no `gifEvents` exist, the GIF will loop automatically.
+- If a judge line texture is a GIF but no `gifEvents` exist, the GIF loops automatically.
 - The first frame of a GIF corresponds to `0.0` and the last frame to `1.0`. If playback progress exceeds this range, the GIF will loop automatically.
 - If there is no `gifEvent` at the current playback progress, the GIF will loop automatically.
 - Text events also clear this texture.
 - GIFs larger than `15 MB` will cause RPE to display a decoding failure when loading the chart.
-- When a texture is a GIF, the speed event editing is replaced by this event, so theoretically this event cannot appear simultaneously with a speed event.
+- When a texture is a GIF, speed event editing is replaced by this event, so in theory this event cannot appear at the same time as a speed event.
 - `gifEvents` located in other levels are ignored, and RPE error correction will mark them in red.
 
 ## inclineEvents
@@ -127,5 +127,5 @@ GIF playback progress events. This event was introduced in version `150` alongsi
 Tilt events. These are likely deprecated, but a placeholder event is left under the `extended` field by default.  
 _This event cannot be edited in RPE._
 
-- The start and end values of a tilt event represent the Z‑axis tilt angle of the judgeline.
+- The start and end values of a tilt event represent the judge line's Z-axis tilt angle.
 - Specific behavior requires further documentation.

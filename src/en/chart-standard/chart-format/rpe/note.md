@@ -21,14 +21,14 @@ Each note has these parameters:
 | tintHitEffects | int[3]? | Hit effect color [R,G,B] | [255,255,255] | 170 |
 
 
-- The `size` field actually corresponds to the width in RPE, meaning it only controls the width of a note, not its entire size.
-- The `above` field is set to `2` for `Hold` notes that fall from the back by default. For all other notes, it is `0`. However, if it is set to `1`, the note will always fall from the front.
+- The `size` field actually corresponds to width in RPE, so it controls only the width of a note rather than its full size.
+- For `Hold` notes that fall from the back, the `above` field is `2` by default. For all other notes, it is `0`. If it is set to `1`, the note always falls from the front.
 - The `hitsound` field does not exist if there is no custom sound effect.
-- Fake notes do not have judgment, hit effects, or sound effects; they do not contribute to scoring or note count. If a note is a `Hold`, it will always be displayed in an unlit state.
+- Fake notes have no judgment, hit effects, or sound effects. They do not contribute to scoring or note count. If a fake note is a `Hold`, it is always displayed in an unlit state.
 - The `color` field is used to tint notes by applying vertex color multiplication, i.e., `noteColor = noteColor * color`.
 
 ::: danger
-The `color` field has undergone a name change. Since the `color` version was used during public testing, later versions switched to `tint`. Therefore, either of these field names may be present in practice, while their definition remains the same. Please ensure compatibility accordingly.
+The `color` field was renamed over time. The name `color` was used during public testing, while later versions switched to `tint`. In practice, either field name may appear, but they mean the same thing, so implementations should remain compatible with both.
 :::
 
 - The `tintHitEffects` field is used to tint the hit effects of notes. When this field is present, regardless of whether the judgment is `Good` or `Perfect`, the hit effects will use this color (applied using the original material via vertex color calculation), with no additional computation required.

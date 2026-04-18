@@ -1,10 +1,10 @@
 # Events
 
-Events are a main part of the chart. There are instant events and easing events.
+Events are a major part of a PEC chart. They are divided into instant events and easing events.
 
 ## Instant events
 
-Instant events set the judge line value at the given beat immediately:
+Instant events immediately set the judge line value at the specified beat:
 
 ```text
 cv 0 0.000 10.000
@@ -27,7 +27,7 @@ ca judge_line_index beat opacity
 
 ## Easing events
 
-Easing events take the current value at start time as the start value and ease to the end value using the given easing.
+Easing events use the current value at the start time as the starting value, then ease toward the specified end value using the chosen easing type.
 
 ```text
 cm 0 1.000 2.000 2048.000 700.000 1

@@ -1,4 +1,4 @@
-# Image element `img`
+# Image Element `img`
 
 ```js
 img(id, url, r, c, t)

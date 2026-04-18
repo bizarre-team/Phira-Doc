@@ -1,11 +1,11 @@
 # Extended Features
 
-Besides the official Phigros chart format, `pec`, and `rpe`, prpr supports additional chart features. These are available only in prpr and clients built on it:
+Besides the official Phigros chart format, `pec`, and `rpe`, prpr also supports additional chart features. These are available only in prpr and clients built on top of it:
 
 - [Effects](./effect/index.md)
 - [Video background](./video/index.md)
 
-All such configuration must live in `extra.json` at the root of the chart package. To use these features, edit the JSON by hand. If you are not familiar with JSON, see e.g. [JSON tutorial](https://www.json.org/).
+All such configuration must be placed in `extra.json` at the root of the chart package. To use these features, you currently need to edit the JSON by hand. If you are not familiar with JSON, see for example the [JSON tutorial](https://www.json.org/).
 
 ## BPM configuration
 
@@ -25,9 +25,9 @@ This means the chart starts at BPM `200`, then at 10.5 beats it changes to `250`
 
 ## Animation variables
 
-Configs often use animation variables. For example, in RPE, the X position event is just the X coordinate as an animation variable.
+These configs often use animation variables. For example, in RPE, an X-position event is simply the X coordinate expressed as an animation variable.
 
-prpr supports two forms. The first is a single value (constant over time). The second is the same as in RPE: a list of `Event` objects. A single event looks like:
+prpr supports two forms. The first is a single value, which stays constant over time. The second is the same as in RPE: a list of `Event` objects. A single event looks like this:
 
 ```json
 {

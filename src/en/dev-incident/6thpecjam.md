@@ -1,9 +1,9 @@
 # 6thPecJam
 
-This incident occurred around 00:40 on the early morning of 2024-02-10, which was over half an hour later than the scheduled PecJam submission opening time of 00:00 on 2024-02-10.
+This incident took place at around 00:40 on 2024-02-10, more than half an hour later than the scheduled PecJam submission opening time of 00:00.
 
 > Note: 2024-02-09 was New Year's Eve. Everyone was staying up late, waiting to submit their PecJam entries.
 
 ## Incident Details
 
-Seeing everyone in the group chat asking why the PecJam submission channel hadn't opened yet, sjfhsjfh hastily and carelessly modified the Phira backend code in a state of anxiety. The changes were submitted without even performing a compilation check, ultimately forcing Mivik to crawl out of a warm bed to help fix the issue. This was truly a grave offense.
+As people in the group chat kept asking why the PecJam submission channel was still not open, sjfhsjfh panicked and made a rushed, messy change to the Phira backend. The change was submitted without even running a compilation check, which ultimately forced Mivik to climb out of a warm bed and help fix the issue. A truly heinous act.

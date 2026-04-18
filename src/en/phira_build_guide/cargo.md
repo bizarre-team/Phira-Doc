@@ -2,7 +2,7 @@
 
 ## Windows GNU Toolchain
 
-- The Windows GNU toolchain relies on the GCC build toolchain and is relatively complex to set up. If you prefer a simpler build method, refer to the MSVC toolchain installation below. Follow these steps:
+- The Windows GNU toolchain depends on the GCC-based build toolchain and is relatively cumbersome to set up. If you want a simpler build path, use the MSVC toolchain instead. Otherwise, follow these steps:
 
 1. Click [here](https://win.rustup.rs/) to download the build tool installer.
 2. Double-click `rustup-init.exe` to open the installation window; input `2`, then input `y`, then input `2` again, and then input `x86_64-pc-windows-gnu`. Finally, press Enter all the way to start the installation until you see the output `Rust is installed now. Great!`
@@ -13,14 +13,14 @@
     pacman -Sy && pacman -Syu
     pacman -S mingw-w64-x86_64-toolchain
     ```
-4. Open Command Prompt (cmd) or PowerShell, and enter `cargo -V` to check if the installation was successful. If the version number is returned, the installation is successful. If other prompts appear, please refer to the Windows Common Issues section.
+4. Open Command Prompt (cmd) or PowerShell and run `cargo -V` to check whether the installation succeeded. If a version number is shown, the installation was successful. Otherwise, refer to the Windows troubleshooting section.
 5. Modify the environment variables as shown in the following images:
 ![sys_path_I](/assets/img/phira_build_guide/sys_path_I.png)
 ![sys_path_II](/assets/img/phira_build_guide/sys_path_II.png)
 ![sys_path_III](/assets/img/phira_build_guide/sys_path_III.png)
 ![sys_path_IV](/assets/img/phira_build_guide/sys_path_IV.png)
 ![sys_path_V](/assets/img/phira_build_guide/sys_path_V.png)
-6. Open Command Prompt (cmd) or PowerShell, and enter `gcc -v` to check if the installation was successful. If the version number is returned, the installation is successful. If other prompts appear, please refer to the Windows Common Issues section.
+6. Open Command Prompt (cmd) or PowerShell and run `gcc -v` to check whether the installation succeeded. If a version number is shown, the installation was successful. Otherwise, refer to the Windows troubleshooting section.
 
 ### Windows GNU Toolchain Common Issues
 
@@ -52,7 +52,7 @@ A. Please do not change the file name.
 sudo apt update
 sudo apt install cargo -y
 ```
-2. If no errors occur, enter `cargo -V` to check if the version number is output. If other outputs appear, please refer to the Linux Common Issues section.
+2. If no errors occur, run `cargo -V` to check whether a version number is printed. If not, refer to the Linux troubleshooting section.
 
 Other systems to be added.
 

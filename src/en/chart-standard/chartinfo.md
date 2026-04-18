@@ -1,10 +1,10 @@
 # Chart Info Format
 
-Chart info is metadata ([Wikipedia](https://en.wikipedia.org/wiki/Metadata)) that describes basic information about a chart besides the chart data itself, such as author, illustration, and music.
+Chart info is metadata ([Wikipedia](https://en.wikipedia.org/wiki/Metadata)) that describes basic information about a chart beyond the chart data itself, such as the author, illustration, and music.
 
-There are two variants: [ChartInfo](https://github.com/TeamFlos/phira/blob/207c4724146c5a48c4e304d6e20447a39a72e0d3/prpr/src/info.rs#L17) and [BriefChartInfo](https://github.com/TeamFlos/phira/blob/207c4724146c5a48c4e304d6e20447a39a72e0d3/phira/src/data.rs#L21). Chart info (`ChartInfo`) is stored in YAML; the chart’s `info.yml` file is an instance of `ChartInfo`.
+There are two variants: [ChartInfo](https://github.com/TeamFlos/phira/blob/207c4724146c5a48c4e304d6e20447a39a72e0d3/prpr/src/info.rs#L17) and [BriefChartInfo](https://github.com/TeamFlos/phira/blob/207c4724146c5a48c4e304d6e20447a39a72e0d3/phira/src/data.rs#L21). `ChartInfo` is stored in YAML, and a chart's `info.yml` file is an instance of `ChartInfo`.
 
-On local import, all `ChartInfo` fields are filled automatically. The YAML format is straightforward; if you want to fill it and pack for import, pay attention to the following fields.
+When importing locally, all `ChartInfo` fields are filled automatically. Still, the YAML format itself is fairly straightforward. If you want to fill it out manually and package it for import, pay attention to the following fields.
 
 ## `ChartInfo`
 
@@ -112,7 +112,7 @@ End time of the music preview (seconds). If empty, 15.0 seconds after preview st
 `f32`, default `16.0 / 9.0`
 
 > [!NOTE]
-> The aspect ratio displayed on the chart will be adjusted according to the device's aspect ratio. If the device's aspect ratio is greater than this value (e.g., some extended phones, or if this value is set to 4:3 on a regular phone), the chart will be kept at this aspect ratio. If the aspect ratio is less than this value, the chart will be stretched to fill the screen. (Source: TBD)
+> The chart's displayed aspect ratio is adjusted based on the device's aspect ratio. If the device aspect ratio is greater than this value, the chart keeps this aspect ratio. If it is smaller, the chart is stretched to fill the screen. Source reference still needs to be added.
 
 ### Background dim `backgroundDim` <Badge type="warning" text="required" />
 
@@ -145,7 +145,7 @@ Tip text. If empty, a default tip may be shown.
 
 `String` array, default empty
 
-Tags for categorization and search. Tag docs TBD.
+Tags used for categorization and search. Documentation for tags has not been added yet.
 
 ### Intro `intro` <Badge type="warning" text="required" />
 

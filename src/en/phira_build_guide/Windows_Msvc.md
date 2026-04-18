@@ -9,9 +9,9 @@
 2. Download the source code from GitHub:
     - If git is installed, run `git clone https://github.com/TeamFlos/phira.git` to clone the repository.
     - If git is not installed, go to the Phira repository page, click the Code button, select `Download ZIP`, and extract to any local directory.
-    - __If you cannot connect to GitHub, you may use a Git mirror/accelerator.__
+    - __GitHub should be your primary source. Use a Git mirror or accelerator only if GitHub is genuinely inaccessible for you.__
     - __To build a specific version, go to the release page and download `Source code(zip)` from Assets.__
-    - __Warning: To avoid unexpected issues, we recommend the path not contain any characters outside ASCII.__
+    - __Warning: To avoid hard-to-diagnose build issues, we recommend using a path that contains only ASCII characters.__
 3. For static library files, download from [ESA](https://www.nuanr-mxi.com/prpr-avc.zip) or [EdgeOne](https://eo.nuanr-mxi.com/prpr-avc.zip) and extract to the project root. If prompted to overwrite, click overwrite.
 4. Ensure you have `x64 Native Tools Command Prompt for VS 20**`. If you have cargo but not this environment, install `Visual Studio 20xx` separately, selecting `MSVC` and `Windows SDK` components during installation. After installation, you will have `x64 Native Tools Command Prompt for VS 20**`.
    - If you don't have cargo yet, follow step 1 to install it; you will also get `x64 Native Tools Command Prompt for VS 20**`.
@@ -23,13 +23,13 @@
 3. After the build, find the compiled binary in `.\target\release\`.
 4. Copy all files from `.\assets\` to `.\target\release\assets\`. The build is now complete. Run `phira-main.exe` to check that resource files are intact.
 
-- __Note: At the time this document was written, the resource files in the code directory are incomplete. If the program crashes on startup, go to the [release](https://github.com/TeamFlos/phira/releases) page and download any version to get the missing resource files.__
+- __Note: At the time this document was written, the repository did not include a complete set of resource files. If the program crashes on startup, download any package from the [Releases](https://github.com/TeamFlos/phira/releases) page and copy the missing resource files from there.__
 
 ## Troubleshooting
 
 Q. Error: `failed to send request: connection timed out`
 
-A. Check your network and ensure you can access GitHub normally.
+A. Check your network first and make sure GitHub is accessible. Mirrors should be treated as a fallback, not the default source.
 
 Q. Error: `failed to send request: unable to resolve server name or address`
 

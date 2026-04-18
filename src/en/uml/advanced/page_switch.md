@@ -1,8 +1,8 @@
 # Page Switching
 
-If we want the active interface to include multiple pages, we can place the content of other pages in areas beyond the screen edges and achieve an effect similar to page switching by moving all elements on the entire page.
+If you want an event interface to contain multiple pages, you can place the content of the other pages outside the visible screen area, then move all page elements together to create a page-switching effect.
 
-For example, we can place the content for six pages (horizontally and vertically) like this:
+For example, you can arrange six pages like this:
 
 ```text
             |-----------|
@@ -17,7 +17,7 @@ For example, we can place the content for six pages (horizontally and vertically
 |-----------|-----------|-----------|-----------|
 ```
 
-We can place an `o` in the top-left corner of each page to facilitate calculating the position of elements on each page:
+You can place an `o` at the top-left corner of each page to make it easier to calculate element positions for that page:
 
 ```js
 # o

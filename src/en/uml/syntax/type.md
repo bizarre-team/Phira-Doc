@@ -1,14 +1,14 @@
-# Data types
+# Data Types
 
 UML has these types:
 
 ## Float
 
-Single-precision float. Any numeric literal is a Float.
+Single-precision floating-point value. Any numeric literal is a `Float`.
 
 ## Rect
 
-Rectangle, defined as `[left, top, width, height]` (top-left x, top-left y, width, height).
+A rectangle, defined as `[left, top, width, height]`, meaning top-left X, top-left Y, width, and height.
 
 After definition, a Rect has read-only properties:
 
@@ -23,11 +23,11 @@ After definition, a Rect has read-only properties:
 
 ## Bool
 
-Boolean: `true` or `false`. Currently only used in element attributes.
+Boolean value: `true` or `false`. Currently used only in element attributes.
 
 ## String
 
-Double-quoted text. Used for button actions, colors, URLs:
+Double-quoted text. Used for button actions, colors, and URLs:
 
 - **Color**: hex RGB or ARGB (e.g. `"#ff0000"`, `"#7fffffff"`) or name: `"white"`, `"black"`, `"red"`, `"blue"`, `"yellow"`, `"green"`, `"gray"`.
 - **Action**: button action. Values: `"join"` (join event), `"open:url"` (open URL).

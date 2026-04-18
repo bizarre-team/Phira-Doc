@@ -1,6 +1,6 @@
 # `fisheye`
 
-Fisheye effect. Negative `power` gives a tunnel-like look.
+Fisheye effect. Negative `power` can create a tunnel-like look.
 
 Negative `power`:
 
@@ -12,4 +12,4 @@ Positive `power`:
 
 ## Parameters
 
-- `power` (float, default `-0.1`): Fisheye scale.
+- `power` (float, default `-0.1`): Fisheye scaling factor.

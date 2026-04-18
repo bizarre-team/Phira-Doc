@@ -1,8 +1,8 @@
 # Phigros Official Chart Root Structure
 
-Phigros Official chart data and rendering are well established. All time units are in `128th notes`, i.e. `60 / 32 / bpm`, abbreviated below as `1.875 / bpm`.
+The official Phigros chart format and its rendering behavior are relatively well established. All time units use `128th notes`, that is, `60 / 32 / bpm`, abbreviated below as `1.875 / bpm`.
 
-## Chart root structure
+## Chart Root Structure
 
 ### formatVersion
 
@@ -18,4 +18,4 @@ Phigros Official chart data and rendering are well established. All time units a
 
 ### judgeLineList
 
-- `judgeLineList` is a `JsonArray` of `JsonObject`s; each object is one [judge line](./judgeLine.md).
+- `judgeLineList` is a `JsonArray` of `JsonObject`s, and each object represents one [judge line](./judgeLine.md).

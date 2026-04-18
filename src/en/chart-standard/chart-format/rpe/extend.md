@@ -2,7 +2,7 @@
 
 ## attachUI
 
-`attachUI` is an RPE‑exclusive feature that allows you to bind UI elements to a judgeline, enabling control over the UI’s position, opacity, size, etc.  
+`attachUI` is an RPE-specific feature that lets you bind UI elements to a judge line, allowing the UI element's position, opacity, size, and other properties to be controlled through line events.  
 Correspondence between property values and UI elements:  
 
 | Value | UI element | RPE setting number | Anchor |
@@ -15,21 +15,21 @@ Correspondence between property values and UI elements:
 | `name` | Chart name | 6 | Bottom‑left | – |
 | `level` | Chart level | 7 | Bottom‑right | – |
 
-- Once a UI element is bound, the judgeline is automatically hidden. The UI can be manipulated similarly to a child line, but with the added ability to control its rotation and opacity; the actual position of the judgeline remains unchanged.
+- Once a UI element is bound, the judge line is hidden automatically. The UI can then be manipulated similarly to a child line, with additional control over rotation and opacity, while the actual position of the judge line remains unchanged.
 
 ## anchor
 
-`anchor` is an RPE‑exclusive feature that allows you to set the anchor point of a judgment line. It was designed primarily for text events.  
+`anchor` is an RPE-specific feature that allows you to set the anchor point of a judge line. It was designed mainly for text events.  
 - In RPE, this setting is found in the second page of the top toolbar, with the two values separated by a space.  
-- It is a `float[2]`, where the two values correspond to the `x` and `y` coordinates of the texture.  
-- `x` defaults to `0.5` (center). `1` shifts the judgment line texture to the left, `0` shifts it to the right.  
-- `y` defaults to `0.5` (center). `1` shifts the judgment line texture downward, `0` shifts it upward.  
+- It is a `float[2]`, where the two values correspond to the texture's `x` and `y` coordinates.  
+- `x` defaults to `0.5` (center). `1` shifts the judge line texture to the left, and `0` shifts it to the right.  
+- `y` defaults to `0.5` (center). `1` shifts the judge line texture downward, and `0` shifts it upward.  
 - This field also affects the position of custom textures.
 
 ## Texture
 
-RPE allows you to set the `Texture` field of a judgeline to change its texture. Once the texture is modified, the judgeline color is no longer influenced by AP/FC indication colors.  
-- If you change the judgeline texture size without using [`scaleXEvents`](./extendEvent.md#scalexevents) or [`scaleYEvents`](./extendEvent.md#scaleyevents), the default scaling is `1`.  
+RPE allows you to set the `Texture` field of a judge line to change its texture. Once the texture is changed, the judge line color is no longer affected by AP/FC indication colors.  
+- If you change the judge line texture size without using [`scaleXEvents`](./extendEvent.md#scalexevents) or [`scaleYEvents`](./extendEvent.md#scaleyevents), the default scaling is `1`.  
 - If the texture is an animated GIF, it will be affected by [`gifEvents`](./extendEvent.md#gifevents) (supported starting from version `150`).
 
 ## easingType

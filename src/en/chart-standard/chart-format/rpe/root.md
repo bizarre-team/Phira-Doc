@@ -1,6 +1,6 @@
 # RPE Chart Root Structure
 
-**Warning: The following is written for RPE 1.4.1 as of 2024-07-25. Older versions and version history are TBD.**
+**Warning: This page was written against RPE 1.4.1 as of 2024-07-25. Information for older versions and detailed version history has not been added yet.**
 
 ## Root structure
 
@@ -52,7 +52,7 @@ _Not needed for simulators._
 
 _Not needed for simulators._
 
-- `judgeLineGroup` is a `string[]`; each string is a judge line group. Actual behavior TBD.
+- `judgeLineGroup` is a `string[]`; each string represents a judge line group. Its exact behavior still needs to be documented.
 
 ### judgeLineList
 

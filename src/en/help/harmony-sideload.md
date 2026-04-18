@@ -4,16 +4,21 @@ This page summarizes the general process for installing HAP packages on HarmonyO
 
 ## Prerequisites
 
-- [Phira HAP package](https://phira.dmocken.top/)
-- A HarmonyOS device (non-Harmony NEXT devices are recommended for this guide)
+- Phira HAP package:
+  - [GitHub Releases](https://github.com/TeamFlos/phira/releases)
+  - [Dmocken's Phira download site](https://phira.dmocken.top/) (third-party mirror)
+- A HarmonyOS device (this guide is mainly intended for non-Harmony NEXT devices)
 - [Auto Installer (Xiaobai Debugging Assistant)](https://github.com/likuai2010/auto-installer/releases)
 
 ## Auto Installer (Xiaobai Debugging Assistant)
 
 Download two packages from the GitHub Releases page:
 
-- One of them should be a `.hap` package (used for future in-app updates)
-- The other can be any platform package
+- One of them should be a `.hap` or `.app` package (used for future in-app updates)
+- The other can be a package for any platform
+- **Make sure both downloads are the same version, otherwise they may not work together**
+
+You may also be able to install the APK version of Auto Installer through Zhuoyitong, but this has not been tested. If you want to experiment, see [this release link](https://github.com/likuai2010/auto-installer/releases/tag/2.5.0).
 
 ::: tip
 **Windows**: On first launch, it will prompt you to install Java. Just install it and continue.
@@ -25,9 +30,9 @@ Download two packages from the GitHub Releases page:
 
 ## Enable Wireless Debugging
 
-1. Open **Settings** → **Device name** and go to **About phone**.
+1. Open **Settings** -> **Device name**, then go to **About phone**.
 2. Tap **Software version** 5 times quickly to enable Developer mode.
-3. Go back to **Settings** → **System** → **Developer options**.
+3. Go back to **Settings** -> **System** -> **Developer options**.
 4. Find and enable **Wireless debugging**.
 5. In the subpage, note the device IP address and port.
 
@@ -44,7 +49,7 @@ Sideloading requires signing with a developer account. Without real-name verific
 
 1. Sign in
 
-   Click **Sign in**, log in to your Huawei account in the browser, click **Allow**, and wait for “Login successful! Please return!”.
+   Click **Sign in**, log in to your Huawei account in the browser, click **Allow**, and wait until you see "Login successful! Please return!".
 
 2. Connect device
 
@@ -52,7 +57,7 @@ Sideloading requires signing with a developer account. Without real-name verific
 
    ![Connect device](/assets/img/help/连接设备.png)
 
-3. Select the `.hap` file
+3. Select the `.hap` or `.app` file
 
    Click **Select**, choose the downloaded Phira HAP package, and confirm the package name/device compatibility shown in the tool.
 
@@ -62,7 +67,7 @@ Sideloading requires signing with a developer account. Without real-name verific
 
 ## Easy Updates
 
-You can use the same method to sideload the Auto Installer `.hap` package. Later updates will download a HAP package and send it to Auto Installer. After signing in and connecting the device, you can quickly sideload updates.
+Use the same method to sideload Auto Installer's own `.hap` or `.app` package. After that, future app updates can send the new HAP package directly to Auto Installer. You only need to sign in to your Huawei account and reconnect the device to sideload updates quickly.
 
 ## Others
 

@@ -1,10 +1,10 @@
 # Video Background
 
-In prpr you can play a video as the background; audio from the video is not played. Video files are often large, and prpr’s chart upload limit is 10MB, so charts with large BGAs may fail to upload. If you use video background, prefer short clips and compress the video (e.g. remove the audio track).
+In prpr, you can use a video as the background. Audio from the video is not played. Video files are often large, and prpr's chart upload limit is 10 MB, so charts with large BGAs may fail to upload. If you use a video background, prefer short clips and compress the video, for example by removing the audio track.
 
 ## Format
 
-Add a `videos` array to `extra.json`. Each element is a `Video`:
+Add a `videos` array to `extra.json`. Each element in that array is a `Video`:
 
 ### Video
 

@@ -1,15 +1,15 @@
 # Beat  
 
-In RPE, `beat` is the time unit for all events. It is represented as an `int[3]` and displayed in RPE as `[0]:[1]/[2]`.  
+In RPE, `beat` is the time unit used for all events. It is represented as an `int[3]` and displayed in RPE as `[0]:[1]/[2]`.  
 
-The calculation for a single BPM is as follows:  
+For a single BPM, the calculation is as follows:  
 
 ```csharp
 double beat = RPEBeat[1] / RPEBeat[2] + RPEBeat[0];
 double seconds = 60 / BPM * beat;
 ```
 
-For multiple BPM calculation, refer to the Python example below.
+For charts with multiple BPM segments, refer to the Python example below.
 
 ## Python Example  
 - Assume `self.BPMList` is a `list[BPMEvent]`.  
@@ -20,8 +20,8 @@ class BPMEvent:
     startTime: Beat
     bpm: float
 ```
-- In `sec2beat`, `t` represents seconds, and `bpmfactor` corresponds to the `bpmfactor` field in the judgment line.  
-- In `beat2sec`, `t` represents beats, and `bpmfactor` corresponds to the `bpmfactor` field in the judgment line.  
+- In `sec2beat`, `t` represents seconds, and `bpmfactor` corresponds to the `bpmfactor` field of the judge line.  
+- In `beat2sec`, `t` represents beats, and `bpmfactor` corresponds to the `bpmfactor` field of the judge line.  
 - It holds that `beat2sec(sec2beat(x)) == x` and `sec2beat(beat2sec(x)) == x` both evaluate to `True`.  
 
 The functions are defined as follows:  

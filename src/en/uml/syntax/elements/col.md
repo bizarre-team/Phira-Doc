@@ -1,4 +1,4 @@
-# Chart collection element `col`
+# Chart Collection Element `col`
 
 ```js
 col(id, cid, r, rn, rh)

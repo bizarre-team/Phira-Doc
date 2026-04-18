@@ -1,6 +1,6 @@
 # Phira MP Build Guide
 
-## Rust Official
+## Official Rust Version
 
 ### [Termux](Termux.md)
 
@@ -10,16 +10,16 @@
 
 ## Other Dev Languages
 
-For pre-built packages, see [Dmocken's download site](https://phira.dmocken.top/mulity).
+If you need a prebuilt package, see [Dmocken's download site](https://phira.dmocken.top/mulity).
 
-| Project Name     |    Dev Language    |    Developer    |
+| Project Name     | Development Language | Developer |
 | -----------  | ----------- | ----------- |
-| [tphira-mp](https://github.com/Pimeng/tphira-mp)| Typescript | [Pimeng](https://github.com/Pimeng)       |
+| [tphira-mp](https://github.com/Pimeng/tphira-mp)| TypeScript | [Pimeng](https://github.com/Pimeng)       |
 | [jphiramp](https://github.com/lRENyaaa/jphira-mp)| Java | [lRENyaaa](https://github.com/lRENyaaa)       |
-| [pyphira-mp](https://github.com/Evi233/pyphira-mp)| Python | [Evi233](https://github.com/Evi233)、[lRENyaaa](https://github.com/lRENyaaa)      |
+| [pyphira-mp](https://github.com/Evi233/pyphira-mp)| Python | [Evi233](https://github.com/Evi233), [lRENyaaa](https://github.com/lRENyaaa)      |
 | [gphira-mp](https://github.com/Pimeng/gphira-mp)| Go | [Pimeng](https://github.com/Pimeng)       |
-| [phira-mp-nodejsver](https://github.com/chuzouX/phira-mp-nodejsver)| Typescript | [chuzouX](https://github.com/chuzouX)       |
+| [phira-mp-nodejsver](https://github.com/chuzouX/phira-mp-nodejsver)| TypeScript | [chuzouX](https://github.com/chuzouX)       |
 | [PhiraMpServerCSharp](https://github.com/NuanRMxi-Lazy-Team/PhiraMpServerCSharp)| C# | [NuanRMxi-Lazy-Team](https://github.com/NuanRMxi-Lazy-Team)       |
-| [PhiraMpServerCPP](https://github.com/HyperSynapseNetwork/cpp-phira-mp)| CPP | [HyperSynapseNetwork](https://github.com/HyperSynapseNetwork)       |
+| [PhiraMpServerCPP](https://github.com/HyperSynapseNetwork/cpp-phira-mp)| C++ | [HyperSynapseNetwork](https://github.com/HyperSynapseNetwork)       |
 
-If you have your own Phira-MP build or run a Phira-MP server, contact us via [Feedback](https://phira.dmocken.top/report).
+If you also have your own build or implementation of Phira MP, or if you run a Phira MP server yourself, feel free to contact us through [Feedback](https://phira.dmocken.top/report).

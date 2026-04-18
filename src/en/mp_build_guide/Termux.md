@@ -1,10 +1,10 @@
-# Running Phira multiplayer server on Android
+# Running a Phira Multiplayer Server on Android
 
 ## Using a pre-built binary
 
 1. Download and install [ZeroTermux](https://github.com/hanxinhao000/ZeroTermux/releases/tag/ZeroTermux-0.118.3.53) (Termux also works).
 2. Run `apt update && apt upgrade`.
-3. Copy the pre-built binary URL from [Phira download site](https://phira.dmocken.top/mulity).
+3. Copy the URL of the prebuilt binary from the [Phira download site](https://phira.dmocken.top/mulity).
 4. Run `wget [url]` to download.
 5. Run `./phira-mp-server` or `RUST_LOG=debug ./phira-mp-server` to start (second adds logging).
 6. To use a custom port, add `--port [port]`, e.g. `RUST_LOG=debug ./phira-mp-server --port 11451`.
@@ -13,7 +13,7 @@
 ## Building the server yourself
 
 1. Install [ZeroTermux](https://github.com/hanxinhao000/ZeroTermux/releases/tag/ZeroTermux-0.118.3.53) (or Termux).
-2. Open ZeroTermux, accept the agreement, swipe from the left edge and tap the menu to switch source (e.g. Tsinghua mirror); press Enter for Y/I/N prompts several times.
+2. Open ZeroTermux, accept the agreement, then swipe in from the left edge and use the menu to switch package sources if needed. Press Enter through the Y/I/N prompts as required.
 3. Run `pkg install rust`.
 4. Run `pkg install pkg-config`.
 5. Run `pkg install git`.
@@ -26,7 +26,7 @@
 
 ## Restarting the server
 
-- In ZeroTermux, go to the folder with `phira-mp-server` and run `./phira-mp-server`. If you built from source, the binary is under `phira-mp/target/release`.
+- In ZeroTermux, go to the folder containing `phira-mp-server` and run `./phira-mp-server`. If you built it from source, the binary is located under `phira-mp/target/release`.
 
 ## FAQ
 

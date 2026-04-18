@@ -6,8 +6,8 @@ Elements are visible or interactive objects on the event page. They are defined 
 type(attr1: value1, attr2: value2, ...) { Hello! }
 ```
 
-Here `type` is the element type; `attrN` and `valueN` are attribute names and values. Attributes depend on the element type; required ones are noted in each element’s docs.
+Here, `type` is the element type, and `attrN` / `valueN` are attribute names and values. The available attributes depend on the element type. Required attributes are marked in each element's documentation.
 
-The `id` attribute is optional and shared by all elements. After an element is defined, its `id` maps to a `Rect` variable representing the element’s draw bounds.
+The `id` attribute is an optional attribute shared by all elements. After an element is defined, its `id` automatically corresponds to a `Rect` variable representing that element's drawing bounds.
 
-The optional `{ Hello }` block is text content. It only applies to the `p` (paragraph) element.
+The trailing `{ Hello }` block is optional text content. It applies only to the `p` (paragraph) element.

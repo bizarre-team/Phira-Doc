@@ -1,7 +1,7 @@
 # Basic Information  
 
-This page describes some basic information about the chart. Note that PEC does **not** store chart metadata (such as song title, charter, etc.); such information must be obtained from other sources.  
-PEC supports a maximum of `30` judgelines. PhiEditor does not allow creating more judgelines.  
+This page covers some basic information about PEC charts. **Note that PEC does not store chart metadata** such as the song title or charter name, so that information must be obtained elsewhere.  
+PEC supports a maximum of `30` judge lines. PhiEditor does not allow creating more judge lines.  
 PhiEditor does not support XY separation.
 
 ## Coordinate System  
@@ -14,6 +14,7 @@ The top‑right corner has coordinates `(1024, 700)`.
 Angles are positive counter-clockwise and negative clockwise.
 
 ### In the File
+
 The center of the screen is point `(1024, 700)`.  
 The bottom‑left corner has coordinates `(0, 0)`.  
 The top‑right corner has coordinates `(2048, 1400)`.  
@@ -21,7 +22,7 @@ Angles are positive clockwise and negative counter-clockwise.
 
 ## Chart Offset  
 
-The first line of a PEC file is the chart’s `offset`, in milliseconds, given as an integer.
+The first line of a PEC file is the chart's `offset`, measured in milliseconds and stored as an integer.
 
 ## BPM List  
 

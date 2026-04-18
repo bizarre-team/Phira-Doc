@@ -6,8 +6,8 @@ Supported chart formats:
 - PEC format: see [PE docs](./pe/index.md)
 - PBC format (docs TBD)
 
-Format is inferred from the `format` field in `info.yml`; if empty, it is inferred from file content.
+The format is determined by the `format` field in `info.yml`. If that field is empty, it is inferred from the file contents.
 
 ::: warning Note
-Chart file extension is ignored.
+The chart file extension is ignored.
 :::

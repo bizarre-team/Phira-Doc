@@ -1,12 +1,12 @@
-# Phira-MP Linux Help Documentation
+# Phira MP Server Guide for Linux
 
-### For Users Who Want to Use a One-Click Deployment
+### Using a prebuilt server binary
 
-1. Go to the [Phira Download Site](https://phira.dmocken.top/mulity) (or other sources) to obtain the precompiled executable files.
+1. Go to the [Phira download site](https://phira.dmocken.top/mulity) or another trusted source to obtain the precompiled executable files.
 2. Use `wget [link]` to download the executable file to the server. If the downloaded file is a compressed archive (.zip), you need to extract it first and use `cd [path]` to navigate to the location of the executable.
-3. Use `./[filename]` or `./[filename] --port [port]` to run it directly.
+3. Run it with `./[filename]` or `./[filename] --port [port]`.
 
-### If You Want to Compile the Official Rust Version Yourself
+### Building the official Rust version yourself
 
 1. If Rust is not installed, please install it first. You can follow the instructions at [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install).
 
@@ -28,8 +28,8 @@
    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
    ```
 
-2. Next, clone the repository to the server:
-   Install the git tool:
+2. Next, clone the repository to the server.
+   First install git:
 
    | Linux Distribution | Installation Command |
    | :--- | :--- |

@@ -8,7 +8,7 @@ Controls are an RPE feature that allows you to adjust various note parameters in
 |:------:|:-----:|:----------------------------------------------:|:---:|:----:|
 | `easing` | `int` | Easing type to the next keyframe value. See [reference table](./extend.md#easingType). | `1` | – |
 | `alpha` | `float` | Note opacity. | `1.0` | – |
-| `x` | `float` | Vertical distance between the note and the judgeline. | – | – |
+| `x` | `float` | Vertical distance between the note and the judge line. | – | – |
 
 - `alpha control` controls the opacity of notes.
 - It can be used together with the note’s `alpha` field without conflict. The blending formula is: `noteAlpha = noteAlpha * nowAlpha` (after converting from 0–255 to 0–1).
@@ -39,8 +39,8 @@ When `alpha control` is defined as follows:
 }
 ```
 
-- The note’s opacity is `0.5` until it is `100` y‑coordinate units away from the judgeline.  
-- After that, it eases to opacity `1.0` using the `Out Sine` easing function until it reaches the judgeline.
+- The note's opacity is `0.5` until it is `100` Y-coordinate units away from the judge line.  
+- After that, it eases to opacity `1.0` using the `Out Sine` easing function until it reaches the judge line.
 
 ## Size Control
 
@@ -48,7 +48,7 @@ When `alpha control` is defined as follows:
 |:------:|:-----:|:----------------------------------------------:|:---:|:----:|
 | `easing` | `int` | Easing type to the next keyframe value. See [reference table](./extend.md#easingType). | `1` | – |
 | `size` | `float` | Note size multiplier. | `1.0` | – |
-| `x` | `float` | Vertical distance between the note and the judgeline. | – | – |
+| `x` | `float` | Vertical distance between the note and the judge line. | – | – |
 
 - `size control` truly controls the note’s overall size, not just its width.
 - It can be used together with the note’s width field without conflict.
@@ -80,8 +80,8 @@ When `size control` is defined as follows:
 }
 ```
 
-- The note’s size is `1.5` times its original size until it is `200` y‑coordinate units away from the judgeline.  
-- After that, it eases to `1.0` times its original size using the `Out Sine` easing function until it reaches the judgeline.
+- The note's size is `1.5` times its original size until it is `200` Y-coordinate units away from the judge line.  
+- After that, it eases to `1.0` times its original size using the `Out Sine` easing function until it reaches the judge line.
 
 ## pos Control (X Control)  
 
@@ -89,7 +89,7 @@ When `size control` is defined as follows:
 |:------:|:-----:|:----------------------------------------------:|:---:|:----:|
 | `easing` | `int` | Easing type to the next keyframe value. See [reference table](./extend.md#easingType). | `1` | – |
 | `pos` | `float` | Multiplier for the note’s `positionX` parameter. | – | – |
-| `x` | `float` | Vertical distance between the note and the judgeline. | – | – |
+| `x` | `float` | Vertical distance between the note and the judge line. | – | – |
 
 - `pos control` dynamically controls the multiplier for the note’s `positionX`.
 
@@ -119,15 +119,15 @@ When `pos control` is defined as follows:
 }
 ```
 
-- The note’s `positionX` is `2.0` times its original value until it is `100` y‑coordinate units away from the judgeline.  
-- After that, it eases to `1.0` times its original `positionX` using the `Out Sine` easing function until it coincides with the judgeline.
+- The note's `positionX` is `2.0` times its original value until it is `100` Y-coordinate units away from the judge line.  
+- After that, it eases to `1.0` times its original `positionX` using the `Out Sine` easing function until it coincides with the judge line.
 
 ## y Control  
 
 |:------:|:-----:|:----------------------------------------------:|:---:|:----:|
 | `easing` | `int` | Easing type to the next keyframe value. See [reference table](./extend.md#easingType). | `1` | – |
 | `y` | `float` | (To be documented) | – | – |
-| `x` | `float` | Vertical distance between the note and the judgeline. | – | – |
+| `x` | `float` | Vertical distance between the note and the judge line. | – | – |
 
 - Behaviors are to be documented.
 
@@ -137,7 +137,7 @@ When `pos control` is defined as follows:
 |:------:|:-----:|:----------------------------------------------:|:---:|:----:|
 | `easing` | `int` | Easing type to the next keyframe value. See [reference table](./extend.md#easingType). | `1` | – |
 | `skew` | `float` | (To be documented) | – | – |
-| `x` | `float` | Vertical distance between the note and the judgeline. | – | – |
+| `x` | `float` | Vertical distance between the note and the judge line. | – | – |
 
 - Has no effect on `Hold`‑type notes.
 - Behaviors are to be documented.

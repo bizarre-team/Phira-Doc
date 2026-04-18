@@ -1,6 +1,6 @@
 # Event
 
-This page describes all judge line events.
+This page describes all judge line events in the official Phigros chart format.
 
 ## speedEvent
 

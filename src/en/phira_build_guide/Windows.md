@@ -11,21 +11,21 @@
 2. Download the source code from GitHub to your local machine:
     - If you have git installed, use `git clone https://github.com/TeamFlos/phira.git` to clone the repository locally.
     - If you do not have git installed, you can also click the Code button on the Phira repository page, select `Download ZIP` to download the code locally, then extract it to any directory on your machine.
-    - **If you cannot connect to GitHub, you can also use the accelerated addresses provided by git acceleration websites to clone or download.**
+    - **GitHub should be your primary source. Only use mirrors or acceleration services if GitHub is genuinely inaccessible in your network environment.**
     - **If you want to build a specific version of Phira, go to the release page and select `Source code(zip)` under Assets to download it locally, then extract it to any path.**
-    - **Warning: To prevent build issues, we do not recommend including any characters other than those in the ASCII encoding in the path.**
+    - **Warning: To avoid hard-to-diagnose build issues, we recommend using a path that contains only ASCII characters.**
 3. Perl: You can use `perl -v` in Command Prompt (cmd) or PowerShell to check if perl is installed. If not, search for and open `MSYS2 UCRT64` and enter `pacman -S perl` to install perl.
-4. Static library files: You can download from [here](https://s.07210700.xyz/prpr-avc.zip) . After downloading, extract the files directly to the root directory of the code. If prompted to overwrite files, click "Overwrite."
+4. Static library files: Download the static library archive from [here](https://s.07210700.xyz/prpr-avc.zip). After downloading, extract it directly into the project root. If prompted to overwrite files, choose **Overwrite**.
 
 ## Starting the Build
 
 1. In Command Prompt (cmd) or PowerShell, navigate to the root directory of the code (e.g., `D:\phira\`).
 2. In Command Prompt (cmd) or PowerShell, use `cargo build -r --bin phira-main`. If everything goes smoothly, you will be stuck for a very long time at `openssl-sys(build)`. Do not exit; this is normal.
 3. After the build is complete, you can find the compiled main program in the `.\target\release\` directory.
-4. Copy all files from the `.\assets\` directory to `.\target\release\assets\`. At this point, the entire build process is complete. You can directly run `phira-main.exe` to check if the resource files are intact.
+4. Copy all files from `.\assets\` to `.\target\release\assets\`. The build process is then complete. You can run `phira-main.exe` directly to check whether the resource files are intact.
 
 :::warning
-Note: At the time of writing this document, the resource files in the code directory are not complete. If you find that the main program crashes, you can go to the release page to download any version to obtain the resource files.
+Note: At the time this document was written, the repository did not include a complete set of resource files. If the main program crashes on startup, download any package from the [Releases](https://github.com/TeamFlos/phira/releases) page and copy the missing resource files from there.
 :::
 
 ## 32-bit Version
@@ -34,7 +34,7 @@ Note: At the time of writing this document, the resource files in the code direc
 2. Download the static library files mentioned above and extract them to `phira\prpr-avc\static-lib`, or build them yourself.
 3. In Command Prompt (cmd) or PowerShell, use `cargo build --target=i686-pc-windows-gnu --release --package phira-main`. If everything goes smoothly, you will be stuck for a very long time at `openssl-sys(build)`. Do not exit; this is normal.
 4. After the build is complete, you can find the compiled main program in the `.\target\release\` directory.
-5. Copy all files from the `.\assets\` directory to `.\target\release\assets\`. At this point, the entire build process is complete. You can directly run `phira-main.exe` to check if the resource files are intact.
+5. Copy all files from `.\assets\` to `.\target\release\assets\`. The build process is then complete. You can run `phira-main.exe` directly to check whether the resource files are intact.
 
 ## About Building Static Libraries (Using i686-pc-windows-gnu as an Example)
 
@@ -55,7 +55,7 @@ Then, copy all files in the `build` folder that look like `*.a` to `phira\prpr-a
 
 Q. Error: `failed to send request: operation timed out`
 
-A. Please check your network environment to ensure you can access GitHub normally.
+A. Please check your network environment and make sure GitHub is accessible. Mirrors should be treated as a fallback, not the default source.
 
 Q. Error: `failed to send request: could not resolve server name or address`
 
@@ -89,4 +89,4 @@ A. There is an issue with the `libiconv` being used. Please use `pacman -S libic
 
 Q. This is too troublesome.
 
-A. Just go to the release page and download it. We have every right to love Microsoft.
+A. At that point, it may be easier to download a release build directly.

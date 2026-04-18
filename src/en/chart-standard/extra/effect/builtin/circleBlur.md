@@ -1,9 +1,9 @@
 # `circleBlur`
 
-Circular blur. Blurs and magnifies pixels into bright spots. Works well with parameter animation.
+Circular blur. Blurs and enlarges pixels into bright spots. It is best used together with parameter animation.
 
 ![Example](image/circleBlur.png)
 
 ## Parameters
 
-- `size` (float, default `10.0`): Size of each spot in pixels.
+- `size` (float, default `10.0`): Size of each spot, in pixels.

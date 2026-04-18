@@ -6,5 +6,5 @@ Noise effect. Adds a layer of random blur to the image.
 
 ## Parameters
 
-- `seed` (float, default `81.0`): Seed for the random pattern. Animating the seed gives continuous change.
-- `power` (float, default `0.03`, range 0–1): Blur amount (pixel offset range); see image.
+- `seed` (float, default `81.0`): Seed used to generate the random pattern. Continuously animating this value will make the pattern change continuously as well.
+- `power` (float, default `0.03`, range 0–1): Amount of blur, that is, the range of pixel offset; see the image above.

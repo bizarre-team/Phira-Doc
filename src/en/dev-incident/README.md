@@ -1,3 +1,3 @@
-# Incidents during development and operations
+# Incidents During Development and Operations
 
-It was all sjfhsjfh's fault, really.
+Basically, all of them were sjfhsjfh's fault.

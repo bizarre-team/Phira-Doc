@@ -1,12 +1,12 @@
-# Comment expressions
+# Comment Expressions
 
-Comment expressions are special comments for backward compatibility; they are executed. Format:
+Comment expressions are a special kind of comment retained for backward compatibility. Unlike ordinary comments, they are executable. Their format is:
 
 ```js
 #>exp(attr1: value1, attr2: value2, ...)
 ```
 
-`exp` is the expression type; the parentheses hold optional attributes. Many expressions must be followed by a `#>pop` to end their scope (from that line to the next `#>pop`).
+Here, `exp` is the expression type. The parentheses contain optional attributes. Many comment expressions must be followed by `#>pop` to end their scope, which runs from the line where the expression appears to the next `#>pop`.
 
 ## End `#>pop`
 

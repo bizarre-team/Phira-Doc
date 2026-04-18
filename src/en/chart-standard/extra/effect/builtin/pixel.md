@@ -6,4 +6,4 @@ Pixelation effect.
 
 ## Parameters
 
-- `size` (float, default `10.0`): Size of each “pixel” block.
+- `size` (float, default `10.0`): Size of each pixel block after pixelation.

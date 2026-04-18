@@ -1,12 +1,12 @@
 # Unlock Animation
 
-**Note the difference between unlock animation and video background.**
+**Note that unlock animations and video backgrounds are different features.**
 
-Unlock animation allows a video to play before the player plays the chart for the first time.
+An unlock animation lets a video play before the player starts the chart for the first time.
 
 ## How to use
 
-The UI for this is not fully in place yet, so the process is a bit cumbersome. The steps below are best done on Windows.
+The UI for this feature is not fully implemented yet, so the setup process is a bit cumbersome. The steps below are easiest to perform on Windows.
 
 If your chart already has `info.yml`, skip to step 3.
 

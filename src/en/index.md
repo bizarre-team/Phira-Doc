@@ -4,10 +4,10 @@ layout: home
 
 hero:
   name: Phira
-  text: Phigros Fan Community
+  text: A Phigros Fan Community
   actions:
     - theme: brand
-      text: About
+      text: About This Site
       link: /en/README
     - theme: alt
       text: Multiplayer Server Status
@@ -98,4 +98,4 @@ features:
 </style>
 
 
-Note: This documentation is based on https://teamflos.github.io/phira-docs/ and has been migrated and revised.
+Note: This documentation was adapted from https://teamflos.github.io/phira-docs/ and has been revised for this site.

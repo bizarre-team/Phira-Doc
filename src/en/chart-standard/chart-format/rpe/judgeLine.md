@@ -21,10 +21,10 @@ Each judge line has these fields:
 | bpmfactor | float | BPM factor (not editable in RPE) | 1.0 | - |
 | rotateWithFather | bool | Child inherits parent rotation if true | true | 163 |
 
-- Empty layers: in some versions the field was `null`; from some version (e.g. 143) empty layers have no field. If a layer has no events of a type, that event field is omitted. If all layers are empty, `eventLayers` may be omitted.
-- Effective BPM = current BPM / bpmfactor (not ×).
+- Empty layers: in some versions this field was `null`; in later versions, such as 143, empty layers may have no field at all. If a layer has no events of a certain type, that event field is omitted. If all layers are empty, `eventLayers` itself may be omitted.
+- Effective BPM = current BPM / bpmfactor, not multiplied by it.
 - Parent nesting is allowed. Parent rotation affects child only if `rotateWithFather` is true; if the field is missing, treat as false (pre-163).
-- `isCover` 1 = mask: notes on the back side of the line (or front when note `Above` ≠ 1) are not rendered until hit.
+- `isCover` = 1 means masking is enabled: notes on the back side of the line, or on the front when note `Above` ≠ 1, are not rendered until they are hit.
 
 ## Event interpolation
 
@@ -437,4 +437,4 @@ def load(chart: dict):
 result = load({}) # Pass your chart here
 ```
 
-- Finally, call `result.JudgeLineList[i].GetState`, passing in the current beat number `t`, the default color of the decision line `defaultColor`, and the chart object `master`, to get all the judgeline states for the current beat number.
+- Finally, call `result.JudgeLineList[i].GetState`, passing in the current beat value `t`, the default color of the judge line `defaultColor`, and the chart object `master`, to obtain the full state of that judge line at the current time.

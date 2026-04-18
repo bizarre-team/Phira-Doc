@@ -1,6 +1,6 @@
 # Notes
 
-Notes are a main part of the chart. Example:
+Notes are another major part of the chart. Example:
 
 ```text
 n1 0 0.500 -40.000 1 0
@@ -14,7 +14,7 @@ n2 0 0.250 2.000 -320.000 1 0
 
 ## Fields
 
-- Lines starting with `n` plus a digit are notes. The digit is the note type:
+- Lines that start with `n` followed by a digit represent notes. The digit indicates the note type:
 
 | Value | Description |
 |:---:|:-----:|
@@ -35,5 +35,5 @@ n2 judge_line start_beat end_beat X from_below fake
 # speed multiplier
 & width multiplier
 ```
-- `from_below`: `2` = from below, `1` = from above.
+- `from_below`: `2` means the note comes from below, and `1` means it comes from above.
 - `fake`: `1` = fake note.

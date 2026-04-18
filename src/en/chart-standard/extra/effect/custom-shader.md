@@ -1,6 +1,6 @@
 # Custom Shaders
 
-Effect shaders are fragment shaders. You can write your own and ship them in the chart package. In the `shader` field use `/path/to/shader`; the leading `/` is required to distinguish custom from built-in shaders.
+Effect shaders are fragment shaders. You can write your own and include them in the chart package. In the `shader` field, use `/path/to/shader`; the leading `/` is required so custom shaders can be distinguished from built-in ones.
 
 Use GLSL 1.00 for compatibility.
 
@@ -15,7 +15,7 @@ uniform sampler2D screenTexture; // screen texture (full screen)
 uniform float time; // chart time in seconds
 ```
 
-These exist but are not meaningful in the fragment shader; avoid reusing their names:
+These names also exist, but they are not meaningful in the fragment shader, so avoid reusing them:
 
 ```glsl
 uniform mat4 Model;
@@ -25,13 +25,13 @@ uniform vec2 UVScale;
 
 ## Shader parameters
 
-To expose parameters from the chart, define uniforms like:
+To expose chart-controlled parameters, define uniforms like this:
 
 ```glsl
 uniform type name; // %def%
 ```
 
-`type` is the type (`float`, `vec2`, `vec4` supported); `name` is the name; `def` is the default. All three are required.
+Here, `type` is the type (`float`, `vec2`, and `vec4` are supported), `name` is the uniform name, and `def` is the default value. All three are required.
 
 ## Example
 

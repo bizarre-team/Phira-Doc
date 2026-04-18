@@ -1,4 +1,4 @@
-# Button element `btn`
+# Button Element `btn`
 
 ```js
 btn(id, r, action)
@@ -8,7 +8,7 @@ btn(id, r, action)
 - `r` (required): display rectangle, type `Rect`
 - `action` (optional): click action; see [data types](../type.md#data-types)
 
-After definition, the element’s `id` (besides the Rect) has:
+After the element is defined, its `id` also provides the following values in addition to the `Rect`:
 
 - `id.pressing`: 1 if the button is currently pressed, 0 otherwise
 - `id.last`: time of last press in seconds; -1 if never pressed

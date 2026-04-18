@@ -12,7 +12,7 @@ Each judge line has these fields:
 | judgeLineRotateEvents | JsonArray | Rotate events |
 | judgeLineDisappearEvents | JsonArray | Opacity events |
 
-- **All event and note time fields use units `1.875 / bpm` seconds.**
-- **Definitions:** "width unit" = `0.05625 * chart render width`; "height unit" = `0.6 * chart render height`.
+- **All event and note time fields use the unit `1.875 / bpm` seconds.**
+- **Definitions:** a "width unit" equals `0.05625 * chart render width`, and a "height unit" equals `0.6 * chart render height`.
 - [Events](./event.md)
 - [Note](./note.md)

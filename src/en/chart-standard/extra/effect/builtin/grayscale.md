@@ -6,4 +6,4 @@ Grayscale effect.
 
 ## Parameters
 
-- `factor` (float, default `1.0`): Amount of grayscale; 0 = none, 1 = full.
+- `factor` (float, default `1.0`): Strength of the grayscale effect. `0` means no grayscale is applied, and `1` means full grayscale.

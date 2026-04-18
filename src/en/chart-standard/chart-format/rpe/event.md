@@ -1,10 +1,10 @@
 # Event
 
-This page describes **regular** judgeline events. Refer to [Extended events](./extendEvent.md) for extended events.
+This page describes **regular** judge line events. For special events, see [Extended Events](./extendEvent.md).
 
 - In RPE, there are five types of regular events: `moveXEvents` (X‑axis movement events), `moveYEvents` (Y‑axis movement events), `rotateEvents` (rotation events), `alphaEvents` (opacity events), and `speedEvents` (note speed events).
 - At this level, each of these fields corresponds to a `JsonArray`, where each element represents one event.
-- If a judgeline does not have a certain type of event, the corresponding field will be absent rather than being an empty array.
+- If a judge line does not use a certain event type, the corresponding field is omitted instead of being an empty array.
 
 Each regular event (except `speedEvents`) has these fields:
 
@@ -21,9 +21,9 @@ Each regular event (except `speedEvents`) has these fields:
 | end | float | Event end value. | - | - |
 | endTime | [beat](./beat.md) | Event end time. | - | - |
 
-- The coordinate system’s origin is at the center of the screen. The X‑axis range is `-675` to `675`, and the Y‑axis range is `-450` to `450`.
+- The coordinate system is anchored at the center of the screen. The X-axis ranges from `-675` to `675`, and the Y-axis ranges from `-450` to `450`.
 - The normal range for `Alpha` events is `0` to `255`. `0` means fully transparent, `255` means fully opaque.
-    - If an `Alpha` event value is negative, the judgment line will be hidden along with all `Notes` on that line. (According to cmdysj, this is a deprecated and unintended feature, but it still works.)
+    - If an `Alpha` event value is negative, the judge line and all `Notes` on that line will be hidden. According to cmdysj, this is a deprecated and unintended behavior, but it still works.
 - ~~Speed events only have the fields `startTime`, `endTime`, `start`, `end`, and `linkgroup` mentioned above.~~
 
 ::: danger
@@ -31,11 +31,11 @@ Speed events in version `162` support all easing fields, but still do not suppor
 
 ~~Original note from the RPE author: When the easing type of a speed event is not `1`, the actual speed change follows the derivative shape of the easing function, so the change in `floorposition` adheres to the easing curve. For compatibility, when easing is `1`, we keep the original meaning unchanged—meaning easing type `1` and easing type `5` both represent a quadratic change in `floorposition`.~~
 
-In RPE version 1.7.0, speed event easing has reverted to the earliest logic: the easing function is applied to the speed value itself. Behaveiors remains to be verified.  
+In RPE version 1.7.0, speed event easing reverted to its earliest logic: the easing function is applied directly to the speed value itself. The exact behavior still needs verification.  
 :::
 
 - ~~Note speed events do not support easing; only linear changes are applied.~~
-- When the speed value is negative, notes will fly upward. If a note is a `Hold`, the entire note will appear when its tail appears (even if the `Hold` has not fully returned to the front side of the judgment line). (This behavior differs from the original game’s behavior; use with discretion.)
+- When the speed value is negative, notes fly upward. If a note is a `Hold`, the entire note appears as soon as its tail appears, even if the `Hold` has not fully returned to the front side of the judge line. This behavior differs from the original game, so use it with caution.
 
 ## Python example (no bezier)
 
