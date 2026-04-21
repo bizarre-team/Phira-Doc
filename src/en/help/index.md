@@ -11,9 +11,9 @@ Below are the updates in v0.7.1:
 - Fixed an issue where notes could not be judged after dragging the progress bar in Practice Mode
 - Fixed an issue where online charts could not be added to local favorites
 - Fixed an issue where Hold notes were not supported in the RPE judgment area
-- Fixed the missing "score will not be uploaded" prompt when playing with a keyboard
+- Fixed an issue where the “score will not be recorded” prompt was missing when playing with a keyboard.
 
-For issues with this document, contact @Dmocken in the [Phira QQ Channel](https://pd.qq.com/s/ezgv3q71g), or use [Feedback](https://phira.dmocken.top/report).
+If you find any issues in this document, contact [@Dmocken](https://github.com/Dmocken) in the [Phira QQ channel](https://pd.qq.com/s/ezgv3q71g) or use the [Feedback](https://phira.dmocken.top/report) page.
 
 ## Before you start
 
@@ -21,29 +21,29 @@ For issues with this document, contact @Dmocken in the [Phira QQ Channel](https:
 2. A personal email address.
 3. An AI assistant, so you can ask about any step you do not understand.
 
-## Android download
+## Download for Android
 
 1. Download sources for users in mainland China:
    - [好游快爆](https://www.3839.com/a/154061.htm) (officially authorized; real-name verification required)
    - [Dmocken's Phira download site](https://phira.dmocken.top) (third-party mirror)
    Download the latest APK from whichever source is most accessible to you.
-2. International source:
+2. International download source:
    - [GitHub Releases](https://github.com/TeamFlos/phira/releases)
-3. If you see "device not supported", "CPU incompatible", or an installation failure, try the **32-bit** build.
+3. If you see “device not supported”, “CPU incompatible”, or an installation failure message, try installing the **32-bit** build.
 
-## iOS download
+## Download for iOS
 
 1. Recommended: if you use an Apple ID outside mainland China, you can search for and download Phira from the [App Store](https://apps.apple.com/us/app/phira/id6447435864).
 2. You can also install it by sideloading an IPA. Download links:
    - [Official GitHub](https://github.com/F-Unction/phira_ipa/releases)
    - [Dmocken's Phira download site](https://phira.dmocken.top) (third-party mirror for users in mainland China)
-3. IPA sideloading usually requires a computer, or tools such as TrollStore. [See tutorial](https://zhuanlan.zhihu.com/p/11349191286).
-4. If you see an "Untrusted Enterprise Developer" prompt, go to Settings -> General -> VPN & Device Management and trust the developer. If you are asked to enable Developer Mode, turn it on first in Settings.
+3. IPA sideloading usually requires a computer or tools such as TrollStore.[See the tutorial](https://zhuanlan.zhihu.com/p/11349191286).
+4. If you see an “Untrusted Enterprise Developer” prompt, go to Settings -> General -> VPN & Device Management and trust the developer. If you are prompted to enable Developer Mode, turn it on first in Settings.
 
-## HarmonyOS download
+## Download for HarmonyOS
 
-- Native HarmonyOS builds are not currently available on App Gallery.
-- If you need a **.hap/.app sideloading guide**, see: [HarmonyOS HAP Sideloading Guide](/en/help/harmony-sideload).
+- Native HarmonyOS builds are not currently available in AppGallery.
+- If you need a **sideloading guide for .hap/.app files**, see [the HarmonyOS HAP Sideloading Guide](/en/help/harmony-sideload).
 
 
 ## FAQ
@@ -51,22 +51,22 @@ For issues with this document, contact @Dmocken in the [Phira QQ Channel](https:
 ### [Terms of Service](https://phira.moe/terms-of-use) and [Privacy Policy](https://phira.moe/privacy-policy)
 
 - You must read and agree to the [Terms of Service](https://phira.moe/terms-of-use) and [Privacy Policy](https://phira.moe/privacy-policy). If you do not agree, Phira may refuse to provide services to you.
-- After you read the [Terms of Service](https://phira.moe/terms-of-use) and [Privacy Policy](https://phira.moe/privacy-policy), the pop-up window will disappear automatically, which is treated as your agreement to those terms.
+- After you read the [Terms of Service](https://phira.moe/terms-of-use) and [Privacy Policy](https://phira.moe/privacy-policy), the pop-up window will close automatically, which will be taken as your confirmation that you have read and agreed to the terms.
 
 ### Account and password
 
-- After registering, please check your email promptly. A verification email will be sent. If you haven't received it, please check your spam/junk mail folder or refresh the page.
+- After registering, please check your email promptly. A verification email will be sent to you. If you do not receive it, please check your spam/junk folder or refresh the page.
 - If the invitation link displays "Invalid Activation Code" within 10 minutes of receiving it, it may be a system bug. In this case, please try logging in to Phira using your registered account and password.
-- To change your password, go to [Reset password](https://phira.5wyxi.com/reset-password). After entering your email address, a password reset link will be sent to your inbox. If the page turns blank after you enter your email, that is a known bug. If you still do not receive the reset link within 5 minutes, try submitting the request again.
+- To change your password, go to [Reset password](https://phira.5wyxi.com/reset-password). After entering your email address, a password reset link will be sent to your inbox. You can reset your password through that link. If the page turns blank after you enter your email, that is a known bug. If you do not receive the reset link within 5 minutes, try submitting the password reset request again.
 ::: warning
-If you cannot open the link in the email, replace the leading `api.phira.cn` in the URL with `phira.5wyxi.com`.
+If you cannot open the link in the email, replace `api.phira.cn` at the beginning of the URL with `phira.5wyxi.com`.
 :::
 
 ### Online services
 
 - If chart loading or downloading fails, first check whether you are using the latest version of the app (`0.7.1`). If you are already on the latest version, the problem is likely on the server side, or your access may be temporarily restricted due to frequent requests. Try again later.
 - If score upload fails and you see a message saying the score is still being uploaded, that usually means the server connection is unstable. If you do not care about uploading the score, you can switch to offline mode.
-- If charts recently fail to download with a long error message, or downloads are unusually slow, try the following:
+- If charts fail to download and show a long error message, or if downloads are unusually slow, try the following:
   - Wait an hour and then try again
   - Switch networks, for example from Wi-Fi to mobile data
   - Enable Insecure Mode in the game and restart it
@@ -75,7 +75,7 @@ If you cannot open the link in the email, replace the leading `api.phira.cn` in 
   - Use a network proxy tool
   - Wait for the server to recover
 
-### Multiplayer
+### Multiplayer service issues
 
 - The official Phira multiplayer server (`mp2.phira.cn:12345`) is currently unavailable.
 - A third-party monitoring site currently tracks multiplayer server addresses: [Status page](https://phira.dmocken.top/status)
@@ -98,7 +98,7 @@ If you cannot open the link in the email, replace the leading `api.phira.cn` in 
 - QQ Channel: [Phira Resource Pack Creation & Sharing](https://pd.qq.com/s/blwfryimz)
 - (Android) Files downloaded through QQ are usually saved under `Android/data/com.tencent.mobileqq/Tencent/QQfile_recv`.
 - Importing resource packs on iOS: TestFlight installs can import directly. On self-signed IPA installs, file importing often fails on many devices, including local charts, resource packs, and avatars.
-- To import a resource pack, go to Home > Resource Packs > the plus button on the left. To import a chart, go to Play > Import in the top-right corner. You can also choose "Phira (Resource Pack)" as the app used to open the zip file. If you see a purple title bar with a white screen, try opening the zip again from your file manager with "Phira (Resource Pack)".
+- To import a resource pack, go to Home > Resource Packs > the plus button on the left. To import a chart, go to Play > “Import” in the top-right corner. You can also choose "Phira (Resource Pack)" as the app used to open the zip file. If you see a purple title bar with a white screen, try opening the zip again from your file manager with "Phira (Resource Pack)".
 
 ::: warning
 The *Phigros Official Resource Pack* is copyrighted by Pigeon Games. Phira does not have the right to distribute it and no longer provides it. Please respect the copyright and do not redistribute it freely.
@@ -111,7 +111,7 @@ The *Phigros Official Resource Pack* is copyrighted by Pigeon Games. Phira does 
 - For non-exclusive songs, please do not use the original artwork. As long as your chart design differs from the official chart, it may be uploaded. For more details, refer to the upload guidelines.
 - To protect the copyright of in-game charts and artwork, story charts and character illustrations cannot be used on Windows or Linux.
 
-### Official contacts
+### Official contact channels
 
 - QQ groups:
   - Group 1: `688798221` (full)

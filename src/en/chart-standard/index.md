@@ -21,4 +21,4 @@ TBD
 
 ## FAQ
 
-RPE chart JSON files can store metadata such as the creator, difficulty, and chart name, but this is **not recommended**. Doing so may duplicate information that is already recorded elsewhere and lead to inconsistencies. In Phira, `info.yml` is the source of truth.
+RPE chart JSON files can store metadata such as the creator, difficulty, and chart name, but this is **not recommended**. Doing so may duplicate information that is already recorded elsewhere and lead to inconsistencies. Phira uses `info.yml` as the source of truth.

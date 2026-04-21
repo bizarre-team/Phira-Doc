@@ -1,6 +1,6 @@
 # RPE Chart Root Structure
 
-**Warning: This page was written against RPE 1.4.1 as of 2024-07-25. Information for older versions and detailed version history has not been added yet.**
+**Warning: This page was written based on RPE 1.4.1 as of 2024-07-25. Information such as added versions for older content has not been added yet.**
 
 ## Root structure
 
@@ -47,6 +47,7 @@ _Not needed for simulators._
 
 - `chartTime` is a `double` in seconds (editing duration), added in version 141.
 - If RPE loses focus, timing continues; when focus returns, time is rolled back to when focus was lost.
+The previous behavior where the timer stopped changing after 30 seconds of inactivity has been removed.
 
 ### judgeLineGroup
 
