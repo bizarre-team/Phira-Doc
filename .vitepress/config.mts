@@ -40,7 +40,7 @@ export default defineConfig({
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "vcwukneqc8");`],
-    ['script', { src: 'https://umami.analytics.07210700.xyz/script.js' , 'data-website-id': '7431dadf-dee8-4463-9743-340cbc89cdd9' }]
+    ['script', { src: 'https://u.a.07210700.xyz/script.js' , 'data-website-id': '7431dadf-dee8-4463-9743-340cbc89cdd9' }]
   ],
   themeConfig: {// https://vitepress.dev/reference/default-theme-config
     search: {
