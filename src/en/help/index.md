@@ -94,7 +94,7 @@ If you cannot open the link in the email, replace `api.phira.cn` at the beginnin
 ### Resource packs
 
 - Resource packs are imported as zip files. Do not unzip them first.
-- Resource pack site: [prprBlog](https://prprblog.kevin2106.top/) (you may need special network access to open it)
+- Resource pack site: [prprBlog](https://prprbako.kevin2106.top/) (you may need special network access to open it)
 - QQ Channel: [Phira Resource Pack Creation & Sharing](https://pd.qq.com/s/blwfryimz)
 - (Android) Files downloaded through QQ are usually saved under `Android/data/com.tencent.mobileqq/Tencent/QQfile_recv`.
 - Importing resource packs on iOS: TestFlight installs can import directly. On self-signed IPA installs, file importing often fails on many devices, including local charts, resource packs, and avatars.

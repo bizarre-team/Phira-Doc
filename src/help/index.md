@@ -91,7 +91,7 @@
 ## 资源包相关问题：
    
    - 资源包（皮肤和谱面）导入的是zip文件，不需要解压喔。
-   - 资源包下载站：[prprBlog](https://prprblog.kevin2106.top/)（如果无法访问需要使用特殊网络环境）
+   - 资源包下载站：[prprBlog](https://prprbako.kevin2106.top/)（如果无法访问需要使用特殊网络环境）
    - QQ频道[Phira资源包制作分享](https://pd.qq.com/s/blwfryimz)
    - （安卓）QQ群文件下载的文件保存的地址：Android/data/com\.tencent\.mobileqq/Tencent/QQfile\_recv
    - 资源包导入（iOS）：Testflight安装可直接导入，ipa（自签）安装的Phira会有很多设备/很大概率，不能导入文件（如：本地谱面导入/资源包导入/头像导入等都均会失效）。
