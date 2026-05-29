@@ -117,8 +117,8 @@
      - 4群：`685895528`（会不定期清理Lv\.1人员）
    - QQ频道名称：Phira
      - 频道邀请链接: [https://pd.qq.com/s/ezgv3q71g](https://pd.qq.com/s/ezgv3q71g)
-     - 频道号：r48eajexth
-     - 密码：`prpr2022`
+     - 频道号：`r48eajexth`
+     - 密码：`下载就看帮助文档`
    - Telegram名称：[Phira](https://t\.me/phira\_official)
    - Discord名称：[Phira Official](https://discord.gg/9fH8UA9DgR)
    - 哔哩哔哩官方账号：[Phira官方](https://space\.bilibili\.com/3493259571628094)
