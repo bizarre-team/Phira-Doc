@@ -109,7 +109,7 @@ The *Phigros Official Resource Pack* is copyrighted by Pigeon Games. Phira does 
 - To find custom charts for a specific song, the fastest way is to search on Bilibili and download them under the guidance of the chart creator.
 - Before uploading a chart, make sure you have fully read, understood, and agreed to the [Phira Chart Upload Guidelines](https://docs.qq.com/doc/DU2dUaEt5WnFJV2Zh) and the [Phira Chart Content Policy (for charters)](https://docs.qq.com/doc/DU1dISHdEb0NuYVpB). In addition, **all Phigros-exclusive songs, original artwork, official charts, and enhanced versions of official charts are prohibited from being uploaded. Violations may result in account bans.**
 - For non-exclusive songs, please do not use the original artwork. As long as your chart design differs from the official chart, it may be uploaded. For more details, refer to the upload guidelines.
-- To protect the copyright of in-game charts and artwork, story charts and character illustrations cannot be used on Windows or Linux.
+
 
 ### Official contact channels
 
