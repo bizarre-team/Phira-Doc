@@ -4,7 +4,7 @@
 
 1. Download and install [ZeroTermux](https://github.com/hanxinhao000/ZeroTermux/releases/tag/ZeroTermux-0.118.3.53) (Termux also works).
 2. Run `apt update && apt upgrade`.
-3. Copy the URL of the prebuilt binary from the [Phira download site](https://phira.dmocken.top/mulity).
+3. Copy the URL of the prebuilt binary from the [Phira download site](https://phira.dmocken.top/mulity?name=%E5%A4%9C%E6%B0%8F%E6%A2%A6%E6%83%B3%E5%AE%B6#mulity-download).
 4. Run `wget [url]` to download.
 5. Run `./phira-mp-server` or `RUST_LOG=debug ./phira-mp-server` to start (second adds logging).
 6. To use a custom port, add `--port [port]`, e.g. `RUST_LOG=debug ./phira-mp-server --port 11451`.

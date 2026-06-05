@@ -2,16 +2,16 @@
 
 This is the *Phira FAQ* written by Phira support volunteers. Before playing Phira, please read and agree to the official [Terms of Service](https://phira.moe/terms-of-use) and [Privacy Policy](https://phira.moe/privacy-policy).
 
-Below are the updates in v0.7.1:
-
-- ! Added chart collaborators. For details, see https://teamflos.github.io/phira-docs/chart-management/collaborator.html
-- Added pull-to-refresh for favorites
-- Fixed an issue where some resource packs caused judge lines and effects to disappear
-- Fixed an issue where charts could not be exported in batches
-- Fixed an issue where notes could not be judged after dragging the progress bar in Practice Mode
-- Fixed an issue where online charts could not be added to local favorites
-- Fixed an issue where Hold notes were not supported in the RPE judgment area
-- Fixed an issue where the “score will not be recorded” prompt was missing when playing with a keyboard.
+::: details Below are the updates in v0.7.1:
+   - ! Added chart collaborators. For details, see https://teamflos.github.io/phira-docs/chart-management/collaborator.html
+   - Added pull-to-refresh for favorites
+   - Fixed an issue where some resource packs caused judge lines and effects to disappear
+   - Fixed an issue where charts could not be exported in batches
+   - Fixed an issue where notes could not be judged after dragging the progress bar in Practice Mode
+   - Fixed an issue where online charts could not be added to local favorites
+   - Fixed an issue where Hold notes were not supported in the RPE judgment area
+   - Fixed an issue where the "score will not be recorded" prompt was missing when playing with a keyboard.
+:::
 
 If you find any issues in this document, contact [@Dmocken](https://github.com/Dmocken) in the [Phira QQ channel](https://pd.qq.com/s/ezgv3q71g) or use the [Feedback](https://phira.dmocken.top/report) page.
 
@@ -66,7 +66,7 @@ If you cannot open the link in the email, replace `api.phira.cn` at the beginnin
 
 - If chart loading or downloading fails, first check whether you are using the latest version of the app (`0.7.1`). If you are already on the latest version, the problem is likely on the server side, or your access may be temporarily restricted due to frequent requests. Try again later.
 - If score upload fails and you see a message saying the score is still being uploaded, that usually means the server connection is unstable. If you do not care about uploading the score, you can switch to offline mode.
-- If charts fail to download and show a long error message, or if downloads are unusually slow, try the following:
+::: details If charts fail to download and show a long error message, or if downloads are unusually slow, try the following:
   - Wait an hour and then try again
   - Switch networks, for example from Wi-Fi to mobile data
   - Enable Insecure Mode in the game and restart it
@@ -74,16 +74,19 @@ If you cannot open the link in the email, replace `api.phira.cn` at the beginnin
   - Switch mobile carriers
   - Use a network proxy tool
   - Wait for the server to recover
+:::
 
 ### Multiplayer service issues
 
 - The official Phira multiplayer server (`mp2.phira.cn:12345`) is currently unavailable.
 - A third-party monitoring site currently tracks multiplayer server addresses: [Status page](https://phira.dmocken.top/status)
 - We support and recommend self-hosting private multiplayer servers. See [official GitHub](https://github.com/TeamFlos/phira-mp)
-- If you want prebuilt server files that are ready to use, go to: [Multiplayer server](https://phira.dmocken.top/mulity)
+- If you want prebuilt server files that are ready to use, go to: [Multiplayer server](https://phira.dmocken.top/mulity?name=%E5%A4%9C%E6%B0%8F%E6%A2%A6%E6%83%B3%E5%AE%B6#mulity-download)
+::: details Multiplayer server setup guides
 - [Android: Phira multiplayer server (Termux)](/en/mp_build_guide/Termux)
 - [Windows: Phira multiplayer server](/en/mp_build_guide/Windows)
 - [Linux server deployment](/en/mp_build_guide/Linux)
+:::
 
 ### Touch / input issues
 
@@ -96,9 +99,18 @@ If you cannot open the link in the email, replace `api.phira.cn` at the beginnin
 - Resource packs are imported as zip files. Do not unzip them first.
 - Resource pack site: [prprbako](https://prprbako.kevin2106.top/) (you may need special network access to open it)
 - QQ Channel: [Phira Resource Pack Creation & Sharing](https://pd.qq.com/s/blwfryimz)
-- (Android) Files downloaded through QQ are usually saved under `Android/data/com.tencent.mobileqq/Tencent/QQfile_recv`.
-- Importing resource packs on iOS: TestFlight installs can import directly. On self-signed IPA installs, file importing often fails on many devices, including local charts, resource packs, and avatars.
-- To import a resource pack, go to Home > Resource Packs > the plus button on the left. To import a chart, go to Play > “Import” in the top-right corner. You can also choose "Phira (Resource Pack)" as the app used to open the zip file. If you see a purple title bar with a white screen, try opening the zip again from your file manager with "Phira (Resource Pack)".
+- Importing resource packs on iOS: TestFlight installs can import directly. On self-signed IPA installs, file importing often fails on many devices, including local charts and resource packs.
+- To import resource packs on Android:
+   1. In-game: For skins, go to Home > Resource Packs > the plus button on the left. For charts, go to Play > the plus button on the top-right.
+   2. Outside the game: Choose "Phira" as the app to open chart files, or "Phira (Resource Pack)" for skin files.
+- If you see a purple title bar with a white screen, try opening the zip file again from your file manager with "Phira (Resource Pack)".
+::: details If you encounter the following error, try switching to the default resource pack. This bug will be fixed in a future version:
+   Chart loading failed
+   Caused by:
+   1. Failed to load resources
+   2. Failed to load resource pack
+   3. No such file or directory (os error 2)
+:::
 
 ::: warning
 The *Phigros Official Resource Pack* is copyrighted by Pigeon Games. Phira does not have the right to distribute it and no longer provides it. Please respect the copyright and do not redistribute it freely.
@@ -117,7 +129,7 @@ The *Phigros Official Resource Pack* is copyrighted by Pigeon Games. Phira does 
   - Group 1: `688798221` (full)
   - Group 2: `738179721` (full)
   - Group 3: `874761842` (full)
-  - Group 4: `685895528` (Lv.1 members may be removed periodically)
+  - Group 4: `685895528`
 - QQ Channel: Phira
   - Invite link: [https://pd.qq.com/s/ezgv3q71g](https://pd.qq.com/s/ezgv3q71g)
   - Channel ID: `r48eajexth`

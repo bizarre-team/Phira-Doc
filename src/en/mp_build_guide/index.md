@@ -10,7 +10,7 @@
 
 ## Other Dev Languages
 
-If you need a prebuilt package, see [Dmocken's download site](https://phira.dmocken.top/mulity).
+If you need a prebuilt package, see [Dmocken's download site](https://phira.dmocken.top/mulity?name=%E5%A4%9C%E6%B0%8F%E6%A2%A6%E6%83%B3%E5%AE%B6#mulity-download).
 
 | Project Name     | Development Language | Developer |
 | -----------  | ----------- | ----------- |

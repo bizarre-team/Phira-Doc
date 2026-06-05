@@ -4,7 +4,7 @@
 
 1. 首先[下载ZeroTermux](https://github.com/hanxinhao000/ZeroTermux/releases/tag/ZeroTermux-0.118.3.53)并安装（Termux也可以）。
 2. 执行 apt update && apt upgrade 更新库
-3. 前往[Phira下载站](https://phira.dmocken.top/mulity)复制预编译的程序链接
+3. 前往[Phira下载站](https://phira.dmocken.top/mulity?name=%E5%A4%9C%E6%B0%8F%E6%A2%A6%E6%83%B3%E5%AE%B6#mulity-download)复制预编译的程序链接
 4. 执行 ```wget [链接]```下载已经预编译的文件
 5. 执行 ` ./phira-mp-server `  或 ` RUST_LOG=debug ./phira-mp-server ` 开启服务端。第二个区别于第一个多了日志显示。
 6. 如需自定义运行端口请在命令后添加 \-\-port \[端口号\]  例如``` RUST_LOG=debug ./phira-mp-server --port 11451```。

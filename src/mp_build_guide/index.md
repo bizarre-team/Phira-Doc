@@ -10,7 +10,7 @@
 
 ## Other Dev Languages
 
-如需已经构建好的包可前往 [Dmocken 的下载站](https://phira.dmocken.top/mulity)
+如需已经构建好的包可前往 [Dmocken 的下载站](https://phira.dmocken.top/mulity?name=%E5%A4%9C%E6%B0%8F%E6%A2%A6%E6%83%B3%E5%AE%B6#mulity-download)
 
 | 项目名称      |    开发语言    |    开发者    |
 | -----------  | ----------- | ----------- |

@@ -2,7 +2,7 @@
 
 ## Using Pre-compiled Binaries (Easiest Method)
 
-1. Go to the [Phira download site](https://phira.dmocken.top/mulity) to download the prebuilt Windows package.
+1. Go to the [Phira download site](https://phira.dmocken.top/mulity?name=%E5%A4%9C%E6%B0%8F%E6%A2%A6%E6%83%B3%E5%AE%B6#mulity-download) to download the prebuilt Windows package.
 2. Double-click to run the executable or run it via **CMD**.
 3. **Custom Ports:** If you need to specify a custom port, run it via CMD and add the `--port` flag. 
    Example: `RUST_LOG=debug ./phira-mp-server --port 11451`

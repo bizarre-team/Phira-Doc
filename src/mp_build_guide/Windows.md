@@ -2,7 +2,7 @@
 
 ## 直接使用已编译程序
 
-1. 前往[Phira下载站](https://phira.dmocken.top/mulity)下载Windows预编译程序包
+1. 前往[Phira下载站](https://phira.dmocken.top/mulity?name=%E5%A4%9C%E6%B0%8F%E6%A2%A6%E6%83%B3%E5%AE%B6#mulity-download)下载Windows预编译程序包
 2. 双击运行或使用cmd运行
 3. 如需自定义运行端口请在使用cmd运行，并在命令后添加 \-\-port \[端口号\]  例如``` RUST_LOG=debug ./phira-mp-server --port 11451```。
 4. 需要映射到公网请自行配置内网穿透。

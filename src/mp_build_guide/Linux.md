@@ -2,7 +2,7 @@
 
 ### 对于想要使用一键端的用户
 
-1. 前往[Phira下载站](https://phira.dmocken.top/mulity)（或其他来源）获得已预编译的可执行文件
+1. 前往[Phira下载站](https://phira.dmocken.top/mulity?name=%E5%A4%9C%E6%B0%8F%E6%A2%A6%E6%83%B3%E5%AE%B6#mulity-download)（或其他来源）获得已预编译的可执行文件
 2. 使用` wget [链接]`下载可执行文件到服务器内，如果下载下来是压缩包（.zip）文件，需要先解压，并使用` cd [路径]`定位到可执行程度所在位置
 3. 使用` ./[文件名]`或` ./[文件名] --port [端口]`直接运行即可
 

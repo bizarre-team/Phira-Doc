@@ -2,7 +2,7 @@
 
 ### Using a prebuilt server binary
 
-1. Go to the [Phira download site](https://phira.dmocken.top/mulity) or another trusted source to obtain the precompiled executable files.
+1. Go to the [Phira download site](https://phira.dmocken.top/mulity?name=%E5%A4%9C%E6%B0%8F%E6%A2%A6%E6%83%B3%E5%AE%B6#mulity-download) or another trusted source to obtain the precompiled executable files.
 2. Use `wget [link]` to download the executable file to the server. If the downloaded file is a compressed archive (.zip), you need to extract it first and use `cd [path]` to navigate to the location of the executable.
 3. Run it with `./[filename]` or `./[filename] --port [port]`.
 
