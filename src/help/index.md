@@ -15,6 +15,11 @@
 
 本文档问题请在[Phira官方](https://pd.qq.com/s/ezgv3q71g)QQ频道联系@Dmocken，或前往[问题反馈](https://phira.dmocken.top/report)提交反馈。
 
+::: danger 新人必看！！！
+- 如果你是从视频平台来的Phira新人，或者是第一次玩这种下落式的音乐游戏，强烈建议你先[前往TapTap下载Phigros](https://www.taptap.cn/app/165287)熟悉相关玩法!
+- Phira是基于[Phigros](https://www.taptap.cn/app/165287)玩法制作的社区游戏，**主要面向的用户群体是Phigros或其它音游的高水平玩家，没有新手教程**，对新人来说极其不友好，糟糕的游戏体验只会影响你的心情。如果你真的很感兴趣，仍然强烈建议先去[游玩Phigros](https://www.taptap.cn/app/165287)后再来！
+:::
+
 ## 开始前，你需要准备：
 
 1. 一部游玩的设备（安卓如需使用在线服务请至少Android 7及以上，苹果设备至少iOS12及以上）。
