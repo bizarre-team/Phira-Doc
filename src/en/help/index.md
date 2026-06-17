@@ -29,7 +29,7 @@ If you find any issues in this document, contact [@Dmocken](https://github.com/D
 ## Download for Android
 
 1. Download sources for users in mainland China:
-   - [好游快爆](https://www.3839.com/a/154061.htm) (officially authorized; real-name verification required)
+   - [好游快爆](https://www.3839.com/a/154061.htm) (officially authorized)
    - [Dmocken's Phira download site](https://phira.dmocken.top) (third-party mirror)
    Download the latest APK from whichever source is most accessible to you.
 2. International download source:
