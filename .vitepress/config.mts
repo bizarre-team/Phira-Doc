@@ -154,6 +154,16 @@ export default defineConfig({
           { text: '标准', link: '/chart-standard/' },
           { text: '谱面信息', link: '/chart-standard/chartinfo' },
           {
+            text: '谱面管理',
+            link: '/chart-standard/chart-management/README.md',
+            collapsed: true,
+            items: [
+              { text: '谱面上传指南', link: '/chart-standard/chart-management/upload-guide' },
+              { text: '审核与上架指南', link: '/chart-standard/chart-management/review-and-stable' },
+              { text: '协作者功能', link: '/chart-standard/chart-management/collaborator' },
+            ]
+          },
+          {
             text: '谱面文件格式',
             link: '/chart-standard/chart-format/',
             collapsed: true,
@@ -373,6 +383,16 @@ export default defineConfig({
             items: [
               { text: 'Standard', link: '/en/chart-standard/' },
               { text: 'Chart Info', link: '/en/chart-standard/chartinfo' },
+              {
+                text: 'Chart Management',
+                link: '/en/chart-standard/chart-management/',
+                collapsed: true,
+                items: [
+                  { text: 'Upload Guide', link: '/en/chart-standard/chart-management/upload-guide' },
+                  { text: 'Review & Stable Guide', link: '/en/chart-standard/chart-management/review-and-stable' },
+                  { text: 'Collaborator Feature', link: '/en/chart-standard/chart-management/collaborator' },
+                ]
+              },
               {
                 text: 'Chart File Formats',
                 link: '/en/chart-standard/chart-format/',
