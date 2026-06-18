@@ -133,7 +133,7 @@
    - QQ频道名称：Phira
      - 频道邀请链接: [https://pd.qq.com/s/ezgv3q71g](https://pd.qq.com/s/ezgv3q71g)
      - 频道号：`r48eajexth`
-     - 密码：`有问题看帮助文档`
+     - 密码：`先看文档再来提问`
    - Telegram名称：[Phira](https://t\.me/phira\_official)
    - Discord名称：[Phira Official](https://discord.gg/9fH8UA9DgR)
    - 哔哩哔哩官方账号：[Phira官方](https://space\.bilibili\.com/3493259571628094)
