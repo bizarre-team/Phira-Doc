@@ -16,7 +16,7 @@ This is the *Phira FAQ* written by Phira support volunteers. Before playing Phir
 If you find any issues in this document, contact [@Dmocken](https://github.com/Dmocken) in the [Phira QQ channel](https://pd.qq.com/s/ezgv3q71g) or use the [Feedback](https://phira.dmocken.top/report) page.
 
 ::: danger MUST-READ FOR NEW PLAYERS!!!
-- If you are a new Phira player coming from video platforms, or if this is your first time playing a falling-note music game, it is highly recommended that you first [head to TapTap to download Phigros](https://play.google.com/store/apps/details?id=com.PigeonGames.Phigros) to familiarize yourself with the gameplay!
+- If you are a new Phira player coming from video platforms, or if this is your first time playing a falling-note music game, it is highly recommended that you first [head to Google Play to download Phigros](https://play.google.com/store/apps/details?id=com.PigeonGames.Phigros) to familiarize yourself with the gameplay!
 - Phira is a community game based on the gameplay of [Phigros](https://play.google.com/store/apps/details?id=com.PigeonGames.Phigros). **Its target audience is primarily high-skill players of Phigros or other rhythm games, and it does not feature a tutorial.** It is extremely unfriendly to beginners, and a frustrating experience will only ruin your mood. If you are genuinely interested, we still strongly advise you to [play Phigros](https://play.google.com/store/apps/details?id=com.PigeonGames.Phigros) first before coming here!
 :::
 
@@ -134,7 +134,7 @@ The *Phigros Official Resource Pack* is copyrighted by Pigeon Games. Phira does 
   - Group 1: `688798221` (full)
   - Group 2: `738179721` (full)
   - Group 3: `874761842` (full)
-  - Group 4: `685895528`
+  - Group 4: `685895528` (full)
 - QQ Channel: Phira
   - Invite link: [https://pd.qq.com/s/ezgv3q71g](https://pd.qq.com/s/ezgv3q71g)
   - Channel ID: `r48eajexth`
