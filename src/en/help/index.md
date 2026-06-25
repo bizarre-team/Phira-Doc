@@ -128,7 +128,7 @@ The *Phigros Official Resource Pack* is copyrighted by Pigeon Games. Phira does 
 - For non-exclusive songs, please do not use the original artwork. As long as your chart design differs from the official chart, it may be uploaded. For more details, refer to the upload guidelines.
 
 
-### Official contact channels
+## Official contact channels
 
 - QQ groups:
   - Group 1: `688798221` (full)
