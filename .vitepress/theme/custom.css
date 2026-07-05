@@ -1,5 +1,4 @@
 @import './fonts/JetBrainsMono/JetBrainsMono.css';
-@import './fonts/MiSans/MiSans.css';
 @import './fonts/GoogleSans/GoogleSans.css';
 @import './css/vp-code-group.css';
 @import './css/custom-block.css';
@@ -15,7 +14,7 @@
 }
 
 :root {
-  --vp-font-family-base: 'Google Sans', 'MiSans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --vp-font-family-base: 'Google Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
   --vp-font-family-mono: 'JetBrains Mono', "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
