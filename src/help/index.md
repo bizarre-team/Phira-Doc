@@ -84,43 +84,47 @@
 :::
 
 ### 多人联机服务相关问题
-   - Phira官方联机服务器（mp2.phira.cn:12345）目前暂时不可用。
-   - 目前有第三方监测站用于收集多人游戏服务器地址，[前往监测站](https://phira.dmocken.top/status)
-   - 我们支持并且建议个人开设私服进行多人联机，详见[官方GitHub](https://github.com/TeamFlos/phira-mp)
-   - 如需获取即开即用的已编译服务器文件，请前往：[多人游戏服务端](https://phira.dmocken.top/mulity?name=%E5%A4%9C%E6%B0%8F%E6%A2%A6%E6%83%B3%E5%AE%B6#mulity-download)
-   ::: details 多人联机服务搭建教程
+- Phira官方联机服务器（mp2.phira.cn:12345）目前暂时不可用。
+- 目前有第三方监测站用于收集多人游戏服务器地址，[前往监测站](https://phira.dmocken.top/status)
+- 我们支持并且建议个人开设私服进行多人联机，详见[官方GitHub](https://github.com/TeamFlos/phira-mp)
+- 如需获取即开即用的已编译服务器文件，请前往：[多人游戏服务端](https://phira.dmocken.top/mulity?name=%E5%A4%9C%E6%B0%8F%E6%A2%A6%E6%83%B3%E5%AE%B6#mulity-download)
+::: details 多人联机服务搭建教程
    - [安卓搭建Phira多人游戏服务器教程](/mp_build_guide/Termux)
    - [Windows搭建Phira多人游戏服务器教程](/mp_build_guide/Windows)
    - [Linux服务端部署教程](/mp_build_guide/Linux)
-
+   
    或者...试试其他语言的？
    - [Other Language](/mp_build_guide/#other-dev-languages)
-   :::
+:::
 ### 关于设备使用断触问题
-   - iOS：请开启引导式访问。
-   - 安卓：请放入系统自带的游戏空间内，或关闭所有多指手势等辅助型功能。
-   - 通用问题：激进优化关闭/低画质开启；设备温度过高导致 CPU 降频，影响设备性能。设备屏幕过脏，影响设备触控。若还是断触请检查屏幕是否支持多指触控。
+- iOS：请开启引导式访问。
+- 安卓：请放入系统自带的游戏空间内，或关闭所有多指手势等辅助型功能。
+- 通用问题：激进优化关闭/低画质开启；设备温度过高导致 CPU 降频，影响设备性能。设备屏幕过脏，影响设备触控。若还是断触请检查屏幕是否支持多指触控。
 
 ### 资源包相关问题
-   
-   - 资源包（皮肤和谱面）导入的是zip文件，不需要解压喔。
-   - 资源包下载站：[prprbako](https://prprbako.kevin2106.top/)（如果无法访问需要使用特殊网络环境）
-   - QQ频道[Phira资源包制作分享](https://pd.qq.com/s/blwfryimz)
-   - 资源包导入（iOS）：Testflight安装可直接导入，ipa（自签）安装的Phira会有很多设备/很大概率，不能导入文件（如：本地谱面导入/资源包导入等都均会失效）。
-   - 资源包导入（安卓）：
-      1. 游戏内：皮肤包：主页——资源包——左边加号；谱面：游玩——右上角加号。
-      2. 游戏外：谱面文件的打开方式选择`Phira`；皮肤包的打开方式选择`Phira(资源包)`
-   - 若出现紫色标题、白色界面的情况，尝试在文件管理内使用Phira（资源包）方式打开zip压缩包即可导入
 
-   - 如果出现以下报错，请尝试更换为默认资源包或导入新的资源包游玩，该bug后续版本会修复：
-   ```log
-   加载谱面失败
-   
-      Caused by:
-      1. Failed to load resources
-      2. Failed to load resource pack
-      3. No such file or directory (os error 2)
-   ```
+:::danger
+注意！当前版本（v0.7.1）导入错误东西将会导致皮肤清空！为已知bug，请等待下个版本修复
+:::
+
+- 资源包（皮肤和谱面）导入的是zip文件，不需要解压喔。
+- 资源包下载站：[prprbako](https://prprbako.kevin2106.top/)（如果无法访问需要使用特殊网络环境）
+- QQ频道[Phira资源包制作分享](https://pd.qq.com/s/blwfryimz)
+- 资源包导入（iOS）：Testflight安装可直接导入，ipa（自签）安装的Phira会有很多设备/很大概率，不能导入文件（如：本地谱面导入/资源包导入等都均会失效）。
+- 资源包导入（安卓）：
+   1. 游戏内：皮肤包：主页——资源包——左边加号；谱面：游玩——右上角加号。
+   2. 游戏外：谱面文件的打开方式选择`Phira`；皮肤包的打开方式选择`Phira(资源包)`
+- 若出现紫色标题、白色界面的情况，尝试在文件管理内使用Phira（资源包）方式打开zip压缩包即可导入
+
+- 如果出现以下报错，请尝试更换为默认资源包或导入新的资源包游玩，该bug后续版本会修复：
+```log
+加载谱面失败
+
+Caused by:
+   1. Failed to load resources
+   2. Failed to load resource pack
+   3. No such file or directory (os error 2)
+```
 
 :::warning 警告！
 《Phigros官方资源包》 的版权属于鸽游公司，Phira并不拥有其使用权，已停止提供，也请各位玩家尊重版权，不要随意传播。
@@ -128,23 +132,23 @@
 
 ### 自制谱面相关问题
    
-   - 如果想要找特定歌曲的自制谱，最快的方式是在b站搜索并在谱面作者的引导下下载；
-   - 自制谱上传：上传谱面前，请确保您已认真并完整阅读、知晓且同意[Phira谱面上传须知](https://docs.qq.com/doc/DU2dUaEt5WnFJV2Zh)、[Phira谱面内容机制(谱师须知)](https://docs.qq.com/doc/DU1dISHdEb0NuYVpB)中的所有条款及内容！另外，**有关Phigros所有独占曲/原创曲绘/谱面/官谱加强谱面等都禁止上传，违者可能会被封禁帐号。**
-   - 非独占曲上传请勿使用原创曲绘，保证谱面思路与官谱不一致即可上传，如有其他问题，谱面上传须知内有详细介绍。
+- 如果想要找特定歌曲的自制谱，最快的方式是在b站搜索并在谱面作者的引导下下载；
+- 自制谱上传：上传谱面前，请确保您已认真并完整阅读、知晓且同意[Phira谱面上传须知](https://docs.qq.com/doc/DU2dUaEt5WnFJV2Zh)、[Phira谱面内容机制(谱师须知)](https://docs.qq.com/doc/DU1dISHdEb0NuYVpB)中的所有条款及内容！另外，**有关Phigros所有独占曲/原创曲绘/谱面/官谱加强谱面等都禁止上传，违者可能会被封禁帐号。**
+- 非独占曲上传请勿使用原创曲绘，保证谱面思路与官谱不一致即可上传，如有其他问题，谱面上传须知内有详细介绍。
   
 ## Phira的官方联系渠道
    
-   - QQ群：
-     - 好游快爆官方群：`576660653`
-     - ~~官方1群：`688798221`（已满）~~
-     - ~~官方2群：`738179721`（已满）~~
-     - ~~官方3群：`874761842`（已满）~~
-     - ~~官方4群：`685895528`（已满）~~
-   - QQ频道名称：Phira
-     - 频道邀请链接: [https://pd.qq.com/s/ezgv3q71g](https://pd.qq.com/s/ezgv3q71g)
-     - 频道号：`r48eajexth`
-     - 密码：`先看文档再来提问`
-   - Telegram名称：[Phira](https://t\.me/phira\_official)
-   - Discord名称：[Phira Official](https://discord.gg/9fH8UA9DgR)
-   - 哔哩哔哩官方账号：[Phira官方](https://space\.bilibili\.com/3493259571628094)
-   - 官方网站：[https://phira.moe](https://phira.moe)
+- QQ群：
+  - 好游快爆官方群：`576660653`
+  - ~~官方1群：`688798221`（已满）~~
+  - ~~官方2群：`738179721`（已满）~~
+  - ~~官方3群：`874761842`（已满）~~
+  - 官方4群：`685895528`（试试碰碰运气说不定没满人）
+- QQ频道名称：Phira
+  - 频道邀请链接: [https://pd.qq.com/s/ezgv3q71g](https://pd.qq.com/s/ezgv3q71g)
+  - 频道号：`r48eajexth`
+  - 密码：`先看文档再来提问`
+- Telegram名称：[Phira](https://t\.me/phira\_official)
+- Discord名称：[Phira Official](https://discord.gg/9fH8UA9DgR)
+- 哔哩哔哩官方账号：[Phira官方](https://space\.bilibili\.com/3493259571628094)
+- 官方网站：[https://phira.moe](https://phira.moe)

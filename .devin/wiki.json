@@ -1,0 +1,301 @@
+{
+  "repo_notes": [
+    {
+      "content": "请直接在下面对话框提问"
+    }
+  ],
+  "pages": [
+    {
+      "title": "Phira-Doc Overview",
+      "purpose": "High-level introduction to the Phira-Doc repository: what Phira is, what this documentation covers, how it is organized, and how to navigate it. Links to all major child sections.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "What is Phira?",
+      "purpose": "Explains the Phira rhythm game platform: its origins as a Phigros-inspired community engine, supported platforms (Android, iOS, HarmonyOS), online services (leaderboards, chart distribution, multiplayer), and key gameplay concepts.",
+      "parent": "Phira-Doc Overview",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Documentation Site Infrastructure",
+      "purpose": "Describes how this documentation site is built: VitePress framework, dual-locale (zh-Hans / en) structure, Algolia search, Mermaid diagrams, Giscus comments, Asciinema terminal recordings, custom fonts, and the NPM build pipeline.",
+      "parent": "Phira-Doc Overview",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Player Guide & FAQ",
+      "purpose": "Overview of end-user documentation: installation, account management, gameplay features, and troubleshooting. Links to platform-specific child pages.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Installation & Platform Setup",
+      "purpose": "Covers how to install Phira on each supported platform: Android APK sideloading, iOS App Store and IPA (TrollStore/AltStore), and HarmonyOS HAP sideloading via the Auto Installer (Xiaobai Debugging Assistant) and Wireless Debugging.",
+      "parent": "Player Guide & FAQ",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Account Management & Online Services",
+      "purpose": "Explains user registration (email activation codes), password reset via api.phira.cn / phira.5wyxi.com, score uploading, offline mode, insecure mode, and the content policy (copyright restrictions on Phigros-exclusive assets).",
+      "parent": "Player Guide & FAQ",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Gameplay Features & Troubleshooting",
+      "purpose": "Documents gameplay mechanics: practice mode, resource pack import, touch dropout fixes (Guided Access / Game Space), low graphics mode, keyboard detection (unranked play), and common error messages (os error 2, score upload notifications).",
+      "parent": "Player Guide & FAQ",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Chart Standard",
+      "purpose": "Overview of the Phira chart packaging and format specification. Introduces the chart ZIP structure, info.yml as the authoritative metadata source, supported chart formats, and links to detailed child pages.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Chart Package Structure & info.yml",
+      "purpose": "Details the ZIP archive layout, the mandatory info.yml (ChartInfo) fields (name, difficulty, level, charter, composer, illustrator, chart, music, illustration, aspectRatio, offset, tags, etc.), BriefChartInfo, supported music formats (.ogg, .mp3, .wav), and the unlock video feature.",
+      "parent": "Chart Standard",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "RPE Chart Format",
+      "purpose": "Full specification of the RPE (Re-Phigros Editor) JSON format: root structure (BPMList, META, judgeLineList, xybind), the beat time unit, JudgeLine object, Note types, Event and ExtendEvent arrays, and the controls system for advanced line movement.",
+      "parent": "Chart Standard",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "PE and Phi Chart Formats",
+      "purpose": "Documents the PEC (Phigros Editor Chart) format (basic info, event, note sections) and the Official Phi format compatibility layer, including their differences from RPE and how Phira's engine handles format inference.",
+      "parent": "Chart Standard",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Extended Features (extra.json)",
+      "purpose": "Covers prpr-specific chart extensions stored in extra.json: BPM configuration, animation variables (float/vec2/color with easing), shader effects (Effect array with start/end/shader/vars), and video backgrounds (Video array with path/time/scale/alpha/dim).",
+      "parent": "Chart Standard",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Built-in Shaders",
+      "purpose": "Reference for all built-in GLSL post-processing shaders available in prpr: chromatic (色差), circleBlur (圆周模糊), fisheye (鱼眼), glitch (故障), grayscale (灰度), noise (噪声), pixel (像素化), radialBlur (径向模糊), shockwave (冲击波), vignette (晕影) — with their uniform parameters.",
+      "parent": "Chart Standard",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Chart Management & Publishing",
+      "purpose": "Explains the full chart lifecycle on phira.moe: upload slot limits, upload requirements, the two-stage review process (2 Reviewers → Public; 4 Supervisors → Stable/Ranked), RKS scoring, asset locking on Stable, and the collaborator mention/confirmation workflow.",
+      "parent": "Chart Standard",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Resource Packs",
+      "purpose": "Overview of the Phira resource pack system: what resource packs are, how to import them, and links to the detailed specification child page.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Resource Pack Specification",
+      "purpose": "Full specification of the resource pack ZIP format: required assets (click/drag/flick/hold PNGs, hit_fx.png), optional audio files (click/drag/flick.ogg, ending.ogg with 44100 Hz requirement), and the info.yml configuration fields (name, author, hitFx, holdAtlas, holdAtlasMH, hitFxDuration, hitFxScale, hitFxRotate, hitFxTinted, hideParticles, holdKeepHead, holdRepeat, holdCompact, colorPerfect, colorGood).",
+      "parent": "Resource Packs",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "UML Scripting Language",
+      "purpose": "Overview of the UML domain-specific language used to design Phira event/activity pages. Introduces the language purpose, file format, and links to syntax and advanced usage child pages.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "UML Syntax Reference",
+      "purpose": "Complete syntax reference: element definition syntax (type(attr: value) { content }), element types (p, img, col, btn), coordinate system, type system, expressions, variables (including Rect auto-variables from element IDs), comments, and comment expressions.",
+      "parent": "UML Scripting Language",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "UML Advanced Usage & Examples",
+      "purpose": "Covers advanced UML patterns: page switching, combining elements for complex layouts, debugging techniques, and worked examples including the xmas-2024 event template.",
+      "parent": "UML Scripting Language",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Phira Events & Activity System",
+      "purpose": "Explains how Phira events work: the event/activity data model (owner, start/end times, locking), chart collections, the process for third-party organizers to submit event materials (UML source, art assets, chart collections) to TeamFlos, and leaderboard mechanics.",
+      "parent": "UML Scripting Language",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Building Phira (Client)",
+      "purpose": "Overview of how to compile the Phira client from source. Covers the Rust/Cargo toolchain prerequisite and links to platform-specific build guides.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Cargo & Rust Toolchain Setup",
+      "purpose": "Step-by-step instructions for installing the Rust toolchain (rustup) on all platforms: Windows GNU (MSYS2/MinGW), Windows MSVC (Visual Studio + Windows 11 SDK), Debian Linux (apt), and macOS (Xcode Command Line Tools). Includes PATH verification with cargo -V.",
+      "parent": "Building Phira (Client)",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Building for Desktop (Windows & Linux)",
+      "purpose": "Platform-specific build instructions for Windows (cargo build -r --bin phira-main, static library setup, 32-bit i686 target, common errors) and Linux (Debian dependencies, cargo build command, asset copying).",
+      "parent": "Building Phira (Client)",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Building for Mobile & Embedded (Android, OpenHarmony, StaticLib)",
+      "purpose": "Build instructions for Android (NDK setup, cargo target), OpenHarmony/HarmonyOS (HAP project structure, ohos_project_structure), and the StaticLib target for embedding the Phira engine in other applications.",
+      "parent": "Building Phira (Client)",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Multiplayer Server (Phira MP)",
+      "purpose": "Overview of the Phira multiplayer system: decentralized architecture, official Rust server vs. community reimplementations, the standardized protocol, and links to deployment child pages.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Deploying on Linux & Docker",
+      "purpose": "Step-by-step guide for building and running phira-mp-server on Linux (Debian, RHEL, Arch, openSUSE): dependency installation (rustc, cargo, openssl, pkg-config), cargo build --release -p phira-mp-server, CLI flags (--port), RUST_LOG environment variable, Docker deployment (ubuntu:22.04 base image, Dockerfile), and monitoring with ps/netstat.",
+      "parent": "Multiplayer Server (Phira MP)",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Deploying on Windows",
+      "purpose": "Build and deployment instructions for phira-mp-server on Windows: Rust toolchain setup, cargo build command, running the server binary, and common Windows-specific issues.",
+      "parent": "Multiplayer Server (Phira MP)",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Deploying on Android (Termux)",
+      "purpose": "Guide for running phira-mp-server on Android via Termux/ZeroTermux: aarch64 environment setup, cargo update before build, chmod 755 on the binary, RUST_LOG=debug, intranet penetration (内网穿透) for public access, and network error troubleshooting.",
+      "parent": "Multiplayer Server (Phira MP)",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Community Server Implementations",
+      "purpose": "Registry of all community-maintained Phira MP server reimplementations: tphira-mp (TypeScript), jphiramp (Java), pyphira-mp (Python), gphira-mp (Go), dotphira-mp (C#), phira-mp-nodejsver (Node.js), PhiraMpServerCSharp (C#), PhiraMpServerCPP (C++). Explains the shared protocol that enables interoperability and links to Dmocken's prebuilt binary download site.",
+      "parent": "Multiplayer Server (Phira MP)",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Development Incidents & Changelog",
+      "purpose": "Documents notable development and operational incidents in Phira's history, including the 6th PEC Jam event, the v0.6.0 update message, and the ForeverYoung incident. Provides context for understanding the project's evolution.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    }
+  ]
+}
