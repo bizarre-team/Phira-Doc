@@ -101,21 +101,28 @@ If you cannot open the link in the email, replace `api.phira.cn` at the beginnin
 
 ### Resource packs
 
-- Resource packs are imported as zip files. Do not unzip them first.
-- Resource pack site: [prprbako](https://prprbako.kevin2106.top/) (you may need special network access to open it)
-- QQ Channel: [Phira Resource Pack Creation & Sharing](https://pd.qq.com/s/blwfryimz)
-- Importing resource packs on iOS: TestFlight installs can import directly. On self-signed IPA installs, file importing often fails on many devices, including local charts and resource packs.
-- To import resource packs on Android:
-   1. In-game: For skins, go to Home > Resource Packs > the plus button on the left. For charts, go to Play > the plus button on the top-right.
-   2. Outside the game: Choose "Phira" as the app to open chart files, or "Phira (Resource Pack)" for skin files.
-- If you see a purple title bar with a white screen, try opening the zip file again from your file manager with "Phira (Resource Pack)".
-::: details If you encounter the following error, try switching to the default resource pack. This bug will be fixed in a future version:
-   Chart loading failed
-   Caused by:
+:::danger
+- **Important!** In the current version (v0.7.1), importing an incorrect file will clear your skins! This is a known bug. Please try <u>switching to the default resource pack or importing a new resource pack</u> to play. This will be fixed in a future version.
+```log
+Chart loading failed
+
+Caused by:
    1. Failed to load resources
    2. Failed to load resource pack
    3. No such file or directory (os error 2)
+Resource packs (skins and charts) are imported as zip files. Do not unzip them.
 :::
+
+- Resource pack sites:
+   1. By kevin2106: [prprbako](https://prprbako.kevin2106.top/)
+   2. By 好游快爆 (requires [好游快爆APP](https://www.3839.com/app.html)): [Click here](https://www.onebiji.com/hykb_tools/phira/index.php)
+   3. QQ Channel: [Phira资源包制作分享](https://pd.qq.com/s/blwfryimz)
+- Importing resource packs 
+   1. on iOS: TestFlight installs can import directly. On self-signed IPA installs, file importing (including local charts and resource packs) often fails on many devices.
+   2. To import resource packs on Android:
+      * In-game: For skins, go to Home > Resource Packs > the plus button on the left. For charts, go to Play > the plus button on the top-right.
+      * Outside the game: Choose `Phira` as the app to open chart files, or `Phira (Resource Pack)` for skin files.
+      * If you see a purple title bar with a white screen, try opening the zip file again from your file manager using `Phira (Resource Pack)`.
 
 ::: warning
 The *Phigros Official Resource Pack* is copyrighted by Pigeon Games. Phira does not have the right to distribute it and no longer provides it. Please respect the copyright and do not redistribute it freely.
