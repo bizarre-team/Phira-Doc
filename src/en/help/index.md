@@ -63,9 +63,6 @@ If you find any issues in this document, contact [@Dmocken](https://github.com/D
 - After registering, please check your email promptly. A verification email will be sent to you. If you do not receive it, please check your spam/junk folder or refresh the page.
 - If the invitation link displays "Invalid Activation Code" within 10 minutes of receiving it, it may be a system bug. In this case, please try logging in to Phira using your registered account and password.
 - To change your password, go to [Reset password](https://phira.5wyxi.com/reset-password). After entering your email address, a password reset link will be sent to your inbox. You can reset your password through that link. If the page turns blank after you enter your email, that is a known bug. If you do not receive the reset link within 5 minutes, try submitting the password reset request again.
-::: warning
-If you cannot open the link in the email, replace `api.phira.cn` at the beginning of the URL with `phira.5wyxi.com`.
-:::
 
 ### Online services
 
@@ -115,8 +112,7 @@ Resource packs (skins and charts) are imported as zip files. Do not unzip them.
 
 - Resource pack sites:
    1. By kevin2106: [prprbako](https://prprbako.kevin2106.top/)
-   2. By 好游快爆 (requires [好游快爆APP](https://www.3839.com/app.html)): [Click here](https://www.onebiji.com/hykb_tools/phira/index.php)
-   3. QQ Channel: [Phira资源包制作分享](https://pd.qq.com/s/blwfryimz)
+   2. QQ Channel: [Phira资源包制作分享](https://pd.qq.com/s/blwfryimz)
 - Importing resource packs 
    1. on iOS: TestFlight installs can import directly. On self-signed IPA installs, file importing (including local charts and resource packs) often fails on many devices.
    2. To import resource packs on Android:
