@@ -26,6 +26,14 @@ If you find any issues in this document, contact [@Dmocken](https://github.com/D
 2. A personal email address.
 3. An AI assistant, so you can ask about any step you do not understand.
 
+## Login Method
+   <!-- Downloaded via [好游快爆](https://www.3839.com/a/154061.htm), the future version will support one‑click login with 好游快爆. It is recommended to bind an email address for account recovery.~-->
+   **Currently, only email registration/login is supported!**
+   1. Go to [QQ Mail (recommended)](http://mail.qq.com/) or [NetEase Mail](https://email.163.com/) to register an email account. (If you already have a QQ account, you can directly use “QQnumber@qq.com” to register for Phira without creating a new email address.)
+   2. Register in‑game or on the [official website](https://phira.moe/register) by entering your email address, username, and a password of your choice.
+   3. After agreeing to the [Terms of Service](https://phira.moe/terms-of-use) and [Privacy Policy](https://phira.moe/privacy-policy), an account activation email will be sent to your inbox. Follow the link in the email to activate your account. **If you do not receive the email, remember to check your spam folder. If it is still not there, please wait 20 minutes and try again!**
+   4. Once activated, you can log in to Phira and enjoy online services.
+
 ## Download for Android
 
 1. Download sources for users in mainland China:
@@ -137,11 +145,12 @@ The *Phigros Official Resource Pack* is copyrighted by Pigeon Games. Phira does 
 
 ## Official contact channels
 
-- QQ groups:
-  - Group 1: `688798221` (full)
-  - Group 2: `738179721` (full)
-  - Group 3: `874761842` (full)
-  - Group 4: `685895528` (full)
+- QQ Group (Please do not join the group repeatedly!):
+- Official Group from "好游快爆": `576660653` (Recommended! There are many available slots!)
+- ~~Official Group 1: `688798221` (Full)~~
+- ~~Official Group 2: `738179721` (Full)~~
+- ~~Official Group 3: `874761842` (Full)~~
+- Official Group 4: `685895528` (Try it! You might have luck and it's not full)
 - QQ Channel: Phira
   - Invite link: [https://pd.qq.com/s/ezgv3q71g](https://pd.qq.com/s/ezgv3q71g)
   - Channel ID: `r48eajexth`
