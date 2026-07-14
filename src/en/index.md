@@ -7,8 +7,8 @@ hero:
   text: A Phigros Fan Community
   actions:
     - theme: brand
-      text: About This Site
-      link: /en/README
+      text: Help
+      link: /en/help/
     - theme: alt
       text: Multiplayer Server Status
       link: "https://phira.dmocken.top/status/"
@@ -96,6 +96,3 @@ features:
   }
 }
 </style>
-
-
-Note: This documentation was adapted from https://teamflos.github.io/phira-docs/ and has been revised for this site.

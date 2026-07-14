@@ -131,13 +131,12 @@ export default defineConfig({
         returnToTopLabel: '返回顶部',
         sidebarMenuLabel: '目录',
         nav: [
-          { text: '简介', link: '/README' },
           { text: '常见问题', link: '/help/' }
         ],
         sidebar: [
       {
-        text: '简介',
-        link: '/README'
+        text: '帮助文档',
+        link: '/help/',
       }, 
       {
         text: '常见问题',
@@ -148,169 +147,6 @@ export default defineConfig({
         ]
       },
       {
-        text: '谱面标准',
-        collapsed: true,
-        items: [
-          { text: '标准', link: '/chart-standard/' },
-          { text: '谱面信息', link: '/chart-standard/chartinfo' },
-          {
-            text: '谱面管理',
-            link: '/chart-standard/chart-management/README.md',
-            collapsed: true,
-            items: [
-              { text: '谱面上传指南', link: '/chart-standard/chart-management/upload-guide' },
-              { text: '审核与上架指南', link: '/chart-standard/chart-management/review-and-stable' },
-              { text: '协作者功能', link: '/chart-standard/chart-management/collaborator' },
-            ]
-          },
-          {
-            text: '谱面文件格式',
-            link: '/chart-standard/chart-format/',
-            collapsed: true,
-            items: [
-              {
-                text: 'RPE',
-                collapsed: true,
-                items: [
-                  { text: '谱面根目录', link: '/chart-standard/chart-format/rpe/root' },
-                  { text: '判定线', link: '/chart-standard/chart-format/rpe/judgeLine' },
-                  { text: 'beat', link: '/chart-standard/chart-format/rpe/beat' },
-                  { text: '音符', link: '/chart-standard/chart-format/rpe/note' },
-                  { text: '普通事件', link: '/chart-standard/chart-format/rpe/event' },
-                  { text: '特殊事件', link: '/chart-standard/chart-format/rpe/extendEvent' },
-                  { text: '扩展特性', link: '/chart-standard/chart-format/rpe/extend' },
-                  { text: 'Controls', link: '/chart-standard/chart-format/rpe/controls' },
-                ]
-              },
-              {
-                text: 'PE',
-                link: '/chart-standard/chart-format/pe/',
-                collapsed: true,
-                items: [
-                  { text: '基本信息', link: '/chart-standard/chart-format/pe/basic' },
-                  { text: '事件', link: '/chart-standard/chart-format/pe/event' },
-                  { text: '音符', link: '/chart-standard/chart-format/pe/note' },
-                ]
-              },
-              {
-                text: 'Official',
-                collapsed: true,
-                items: [
-                  { text: '谱面根目录', link: '/chart-standard/chart-format/phi/root' },
-                  { text: '音符', link: '/chart-standard/chart-format/phi/note' },
-                  { text: '事件', link: '/chart-standard/chart-format/phi/event' },
-                  { text: '判定线', link: '/chart-standard/chart-format/phi/judgeLine' },
-                ]
-              }
-            ]
-          },
-          { text: '音乐文件格式', link: '/chart-standard/music' },
-          {
-            text: '扩展特性',
-            link: '/chart-standard/extra/',
-            collapsed: true,
-            items: [
-              {
-                text: '特效',
-                link: '/chart-standard/extra/effect/',
-                collapsed: true,
-                items: [
-                  {
-                    text: '内置着色器',
-                    collapsed: true,
-                    items: [
-                      { text: 'chromatic', link: '/chart-standard/extra/effect/builtin/chromatic' },
-                      { text: 'circleBlur', link: '/chart-standard/extra/effect/builtin/circleBlur' },
-                      { text: 'fisheye', link: '/chart-standard/extra/effect/builtin/fisheye' },
-                      { text: 'glitch', link: '/chart-standard/extra/effect/builtin/glitch' },
-                      { text: 'grayscale', link: '/chart-standard/extra/effect/builtin/grayscale' },
-                      { text: 'noise', link: '/chart-standard/extra/effect/builtin/noise' },
-                      { text: 'pixel', link: '/chart-standard/extra/effect/builtin/pixel' },
-                      { text: 'radialBlur', link: '/chart-standard/extra/effect/builtin/radialBlur' },
-                      { text: 'shockwave', link: '/chart-standard/extra/effect/builtin/shockwave' },
-                      { text: 'vignette', link: '/chart-standard/extra/effect/builtin/vignette' },
-                    ]
-                  },
-                  { text: '自行编写着色器', link: '/chart-standard/extra/effect/custom-shader' },
-                ]
-              },
-              { text: '视频背景', link: '/chart-standard/extra/video/' },
-            ]
-          },
-          { text: '解锁动画', link: '/chart-standard/unlock_video/' },
-        ]
-      },
-      {
-        text: '资源包说明',
-        link: '/respack/'
-      },
-      {
-        text: '活动指南',
-        link: '/event/'
-      },
-      {
-        text: 'UML文档',
-        collapsed: true,
-        items: [
-          {
-            text: '语法',
-            link: '/uml/syntax/README',
-            collapsed: true,
-            items: [
-              { text: '坐标', link: '/uml/syntax/coordinate' },
-              { text: '数据类型', link: '/uml/syntax/type' },
-              { text: '表达式', link: '/uml/syntax/expression' },
-              { text: '变量', link: '/uml/syntax/variable' },
-              {
-                text: '元素',
-                link: '/uml/syntax/element',
-                collapsed: true,
-                items: [
-                  { text: '段落元素 p', link: '/uml/syntax/elements/p' },
-                  { text: '图片元素 img', link: '/uml/syntax/elements/img' },
-                  { text: '谱面合集元素 col', link: '/uml/syntax/elements/col' },
-                  { text: '按钮元素 btn', link: '/uml/syntax/elements/btn' },
-                ]
-              },
-              { text: '注释', link: '/uml/syntax/comment' },
-              { text: '注释表达式', link: '/uml/syntax/comment_expression' },
-            ]
-          },
-          { text: '如何调试', link: '/uml/debugging' },
-          {
-            text: '样例 UML',
-            collapsed: true,
-            items: [
-              { text: '模板活动', link: '/uml/examples/template_event' },
-              { text: '2024 圣诞夜惊魂', link: '/uml/examples/xmas-2024' },
-            ]
-          },
-          {
-            text: '使用进阶',
-            link: '/uml/advanced/README',
-            collapsed: true,
-            items: [
-              { text: '页面切换', link: '/uml/advanced/page_switch' },
-            ]
-          }
-        ]
-      },
-      {
-        text: 'Phira 构建指南',
-        collapsed: true,
-        items: [
-          { text: 'cargo 安装教程', link: '/phira_build_guide/cargo' },
-          { text: 'Windows', link: '/phira_build_guide/Windows' },
-          { text: 'Linux', link: '/phira_build_guide/Linux' },
-          { text: 'macOS', link: '/phira_build_guide/macOS' },
-          { text: 'Android', link: '/phira_build_guide/Android' },
-          { text: 'OpenHarmony', link: '/phira_build_guide/OpenHarmony' },
-          { text: '静态库构建', link: '/phira_build_guide/StaticLib' },
-          { text: 'Windows GNU', link: '/phira_build_guide/Windows_Gnu' },
-          { text: 'Windows MSVC', link: '/phira_build_guide/Windows_Msvc' },
-        ]
-      },
-      {
         text: 'Phira MP 构建指南',
         collapsed: true,
         items: [
@@ -318,18 +154,6 @@ export default defineConfig({
           { text: 'Termux（安卓）', link: '/mp_build_guide/Termux' },
           { text: 'Windows', link: '/mp_build_guide/Windows' },
           { text: 'Linux', link: '/mp_build_guide/Linux' },
-        ]
-      },
-      {
-        text: '糗事集锦',
-        collapsed: true,
-        items: [
-          { text: '总结', link: '/dev-incident/README' },
-          { text: '长风的柳絮', link: '/dev-incident/长风的柳絮' },
-          { text: 'v0.6.0 更新消息', link: '/dev-incident/v0.6.0更新消息' },
-          { text: '6th PecJam', link: '/dev-incident/6thpecjam' },
-          { text: '天空之城', link: '/dev-incident/天空之城' },
-          { text: 'Forever Young', link: '/dev-incident/ForeverYoung' },
         ]
       }
     ]
@@ -364,174 +188,17 @@ export default defineConfig({
         returnToTopLabel: 'Back to top',
         sidebarMenuLabel: 'Contents',
         nav: [
-          { text: 'About', link: '/en/README' },
+          { text: 'Help', link: '/en/help' },
           { text: 'FAQ', link: '/en/help/' }
         ],
         sidebar: [
-          { text: 'About', link: '/en/README' },
+          { text: 'Help', link: '/en/help' },
           {
             text: 'FAQ',
             collapsed: true,
             items: [
               { text: 'FAQ Home', link: '/en/help/' },
               { text: 'HarmonyOS HAP Sideloading Guide', link: '/en/help/harmony-sideload' },
-            ]
-          },
-          {
-            text: 'Chart Standard',
-            collapsed: true,
-            items: [
-              { text: 'Standard', link: '/en/chart-standard/' },
-              { text: 'Chart Info', link: '/en/chart-standard/chartinfo' },
-              {
-                text: 'Chart Management',
-                link: '/en/chart-standard/chart-management/',
-                collapsed: true,
-                items: [
-                  { text: 'Upload Guide', link: '/en/chart-standard/chart-management/upload-guide' },
-                  { text: 'Review & Stable Guide', link: '/en/chart-standard/chart-management/review-and-stable' },
-                  { text: 'Collaborator Feature', link: '/en/chart-standard/chart-management/collaborator' },
-                ]
-              },
-              {
-                text: 'Chart File Formats',
-                link: '/en/chart-standard/chart-format/',
-                collapsed: true,
-                items: [
-                  {
-                    text: 'RPE',
-                    collapsed: true,
-                    items: [
-                      { text: 'Root', link: '/en/chart-standard/chart-format/rpe/root' },
-                      { text: 'Judge Line', link: '/en/chart-standard/chart-format/rpe/judgeLine' },
-                      { text: 'beat', link: '/en/chart-standard/chart-format/rpe/beat' },
-                      { text: 'Note', link: '/en/chart-standard/chart-format/rpe/note' },
-                      { text: 'Events', link: '/en/chart-standard/chart-format/rpe/event' },
-                      { text: 'Extended Events', link: '/en/chart-standard/chart-format/rpe/extendEvent' },
-                      { text: 'Extended Params', link: '/en/chart-standard/chart-format/rpe/extend' },
-                      { text: 'Controls', link: '/en/chart-standard/chart-format/rpe/controls' },
-                    ]
-                  },
-                  {
-                    text: 'PE',
-                    link: '/en/chart-standard/chart-format/pe/',
-                    collapsed: true,
-                    items: [
-                      { text: 'Basic', link: '/en/chart-standard/chart-format/pe/basic' },
-                      { text: 'Events', link: '/en/chart-standard/chart-format/pe/event' },
-                      { text: 'Notes', link: '/en/chart-standard/chart-format/pe/note' },
-                    ]
-                  },
-                  {
-                    text: 'Official',
-                    collapsed: true,
-                    items: [
-                      { text: 'Root', link: '/en/chart-standard/chart-format/phi/root' },
-                      { text: 'Note', link: '/en/chart-standard/chart-format/phi/note' },
-                      { text: 'Events', link: '/en/chart-standard/chart-format/phi/event' },
-                      { text: 'Judge Line', link: '/en/chart-standard/chart-format/phi/judgeLine' },
-                    ]
-                  }
-                ]
-              },
-              { text: 'Music Format', link: '/en/chart-standard/music' },
-              {
-                text: 'Extended Features',
-                link: '/en/chart-standard/extra/',
-                collapsed: true,
-                items: [
-                  {
-                    text: 'Effects',
-                    link: '/en/chart-standard/extra/effect/',
-                    collapsed: true,
-                    items: [
-                      {
-                        text: 'Built-in Shaders',
-                        collapsed: true,
-                        items: [
-                          { text: 'chromatic', link: '/en/chart-standard/extra/effect/builtin/chromatic' },
-                          { text: 'circleBlur', link: '/en/chart-standard/extra/effect/builtin/circleBlur' },
-                          { text: 'fisheye', link: '/en/chart-standard/extra/effect/builtin/fisheye' },
-                          { text: 'glitch', link: '/en/chart-standard/extra/effect/builtin/glitch' },
-                          { text: 'grayscale', link: '/en/chart-standard/extra/effect/builtin/grayscale' },
-                          { text: 'noise', link: '/en/chart-standard/extra/effect/builtin/noise' },
-                          { text: 'pixel', link: '/en/chart-standard/extra/effect/builtin/pixel' },
-                          { text: 'radialBlur', link: '/en/chart-standard/extra/effect/builtin/radialBlur' },
-                          { text: 'shockwave', link: '/en/chart-standard/extra/effect/builtin/shockwave' },
-                          { text: 'vignette', link: '/en/chart-standard/extra/effect/builtin/vignette' },
-                        ]
-                      },
-                      { text: 'Custom Shaders', link: '/en/chart-standard/extra/effect/custom-shader' },
-                    ]
-                  },
-                  { text: 'Video Background', link: '/en/chart-standard/extra/video/' },
-                ]
-              },
-              { text: 'Unlock Animation', link: '/en/chart-standard/unlock_video/' },
-            ]
-          },
-          { text: 'Resource Packs', link: '/en/respack/' },
-          { text: 'Events', link: '/en/event/' },
-          {
-            text: 'UML',
-            collapsed: true,
-            items: [
-              {
-                text: 'Syntax',
-                link: '/en/uml/syntax/README',
-                collapsed: true,
-                items: [
-                  { text: 'Coordinates', link: '/en/uml/syntax/coordinate' },
-                  { text: 'Data Types', link: '/en/uml/syntax/type' },
-                  { text: 'Expressions', link: '/en/uml/syntax/expression' },
-                  { text: 'Variables', link: '/en/uml/syntax/variable' },
-                  {
-                    text: 'Elements',
-                    link: '/en/uml/syntax/element',
-                    collapsed: true,
-                    items: [
-                      { text: 'Paragraph p', link: '/en/uml/syntax/elements/p' },
-                      { text: 'Image img', link: '/en/uml/syntax/elements/img' },
-                      { text: 'Chart collection col', link: '/en/uml/syntax/elements/col' },
-                      { text: 'Button btn', link: '/en/uml/syntax/elements/btn' },
-                    ]
-                  },
-                  { text: 'Comments', link: '/en/uml/syntax/comment' },
-                  { text: 'Comment Expressions', link: '/en/uml/syntax/comment_expression' },
-                ]
-              },
-              { text: 'Debugging', link: '/en/uml/debugging' },
-              {
-                text: 'UML Examples',
-                collapsed: true,
-                items: [
-                  { text: 'Template event', link: '/en/uml/examples/template_event' },
-                  { text: '2024 Christmas', link: '/en/uml/examples/xmas-2024' },
-                ]
-              },
-              {
-                text: 'Advanced',
-                link: '/en/uml/advanced/README',
-                collapsed: true,
-                items: [
-                  { text: 'Page switching', link: '/en/uml/advanced/page_switch' },
-                ]
-              }
-            ]
-          },
-          {
-            text: 'Phira Build Guide',
-            collapsed: true,
-            items: [
-              { text: 'Cargo install', link: '/en/phira_build_guide/cargo' },
-              { text: 'Windows', link: '/en/phira_build_guide/Windows' },
-              { text: 'Windows GNU', link: '/en/phira_build_guide/Windows_Gnu' },
-              { text: 'Windows MSVC', link: '/en/phira_build_guide/Windows_Msvc' },
-              { text: 'Linux', link: '/en/phira_build_guide/Linux' },
-              { text: 'macOS', link: '/en/phira_build_guide/macOS' },
-              { text: 'Android', link: '/en/phira_build_guide/Android' },
-              { text: 'OpenHarmony', link: '/en/phira_build_guide/OpenHarmony' },
-              { text: 'Static Library', link: '/en/phira_build_guide/StaticLib' },
             ]
           },
           {
@@ -542,18 +209,6 @@ export default defineConfig({
               { text: 'Termux (Android)', link: '/en/mp_build_guide/Termux' },
               { text: 'Windows', link: '/en/mp_build_guide/Windows' },
               { text: 'Linux', link: '/en/mp_build_guide/Linux' },
-            ]
-          },
-          {
-            text: 'Dev incidents',
-            collapsed: true,
-            items: [
-              { text: 'Overview', link: '/en/dev-incident/README' },
-              { text: '长风的柳絮', link: '/en/dev-incident/长风的柳絮' },
-              { text: 'v0.6.0 update message', link: '/en/dev-incident/v0.6.0更新消息' },
-              { text: '6th PecJam', link: '/en/dev-incident/6thpecjam' },
-              { text: '天空之城', link: '/en/dev-incident/天空之城' },
-              { text: 'Forever Young', link: '/en/dev-incident/ForeverYoung' },
             ]
           }
         ],

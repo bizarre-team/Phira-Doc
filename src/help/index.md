@@ -41,8 +41,8 @@
 ## 安卓下载看这里
 
 1. 国内下载源：
-   - [好游快爆](https://www.3839.com/a/154061.htm)（官方授权）、
-   - [Dmocken的Phira下载站](https://phira.dmocken.top)（第三方）、
+   - [好游快爆](https://www.3839.com/a/154061.htm)（官方授权）
+   - [Dmocken的Phira下载站](https://phira.dmocken.top)（第三方）
    下载最新版本即可。
 2. 国外下载源:
    - [Github](https://github.com/TeamFlos/phira/releases)
@@ -73,9 +73,6 @@
 - 注册后请及时查看邮箱，会有一封验证邮件发过来，没发过来请检查垃圾箱或者刷新。
 - 邀请链接在收到的10分钟内进去提示“无效的激活码”，可能是系统bug，此时请到Phira中使用您注册的账号密码尝试能否成功登录。
 - 如需修改密码请前往：[重置密码](https://phira.5wyxi.com/reset-password)，点击链接输入邮箱后，会向邮箱发送修改密码的链接，进入即可修改密码。输入邮箱后白屏是bug，如果在5分钟内没有收到重置密码链接，请尝试再次提交重置密码请求。
-::: tip
-若出现邮箱内链接无法访问的情况，请将链接开头的 `api.phira.cn` 换成 `phira.5wyxi.com`
-:::
 
 ### 在线服务相关问题
 
@@ -123,16 +120,23 @@ Caused by:
 ```
 - 资源包（皮肤和谱面）导入的是zip文件，不需要解压喔。
 :::
-- 资源包下载站：
+
+- 资源包下载：
+   :::tip 推荐使用[好游快爆](https://m.3839.com/)
+    来自好游快爆：[点击前往](https://www.onebiji.com/hykb_tools/phira/index.php)
+   :::
+
+   其他下载途径：
+
    1. 来自kevin2106：[prprbako](https://prprbako.kevin2106.top/)（如果无法访问需要使用特殊网络环境）
-   2. 来自好游快爆（需下载[好游快爆APP](https://www.3839.com/app.html)）：[点击前往](https://www.onebiji.com/hykb_tools/phira/index.php)
-   3. QQ频道[Phira资源包制作分享](https://pd.qq.com/s/blwfryimz)
+   2. QQ频道[Phira资源包制作分享](https://pd.qq.com/s/blwfryimz)
 - 资源包导入
    1. iOS：Testflight安装可直接导入，ipa（自签）安装的Phira会有很多设备/很大概率，不能导入文件（如：本地谱面导入/资源包导入等都均会失效）。
    2. 资源包导入（安卓）：
       * 游戏内：皮肤包：主页—>资源包—>左边加号；谱面：游玩—>右上角加号
       * 游戏外：谱面文件的打开方式选择`Phira`；皮肤包的打开方式选择`Phira(资源包)`
       * 若出现紫色标题、白色界面的情况，尝试在文件管理内使用Phira（资源包）方式打开zip压缩包即可导入
+      * 或来自好游快爆的教程：[点我前往](https://bbs.3839.com/thread-8888625.htm)
 
 :::warning 警告！
 《Phigros官方资源包》 的版权属于鸽游公司，Phira并不拥有其使用权，已停止提供，也请各位玩家尊重版权，不要随意传播。

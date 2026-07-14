@@ -7,8 +7,8 @@ hero:
   text: Phigros 二创社区
   actions:
     - theme: brand
-      text: 说明
-      link: README
+      text: 帮助
+      link: help/
     - theme: alt
       text: 多人联机服务器状态
       link: "https://phira.dmocken.top/status/"
@@ -96,6 +96,3 @@ features:
   }
 }
 </style>
-
-
-注：本文档基于 https://teamflos.github.io/phira-docs/ 搬来并二次编写
