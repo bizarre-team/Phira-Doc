@@ -1,4 +1,8 @@
-# Phira FAQ
+# Phira FAQ Self-Help Documentation
+
+:::tip Heads up
+If you find it hard to follow or just want to save time, you can use [Deepwiki](https://deepwiki.com/Bizarre-Team/Phira-Doc) and ask questions directly in your preferred language.
+:::
 
 This is the *Phira FAQ* written by Phira support volunteers. Before playing Phira, please read and agree to the official [Terms of Service](https://phira.moe/terms-of-use) and [Privacy Policy](https://phira.moe/privacy-policy).
 
@@ -26,13 +30,13 @@ If you find any issues in this document, contact [@Dmocken](https://github.com/D
 2. A personal email address.
 3. An AI assistant, so you can ask about any step you do not understand.
 
-## Login Method
-   <!-- Downloaded via [好游快爆](https://www.3839.com/a/154061.htm), the future version will support one‑click login with 好游快爆. It is recommended to bind an email address for account recovery.~-->
-   **Currently, only email registration/login is supported!**
-   1. Go to [QQ Mail (recommended)](http://mail.qq.com/) or [NetEase Mail](https://email.163.com/) to register an email account. (If you already have a QQ account, you can directly use “QQnumber@qq.com” to register for Phira without creating a new email address.)
-   2. Register in‑game or on the [official website](https://phira.moe/register) by entering your email address, username, and a password of your choice.
-   3. After agreeing to the [Terms of Service](https://phira.moe/terms-of-use) and [Privacy Policy](https://phira.moe/privacy-policy), an account activation email will be sent to your inbox. Follow the link in the email to activate your account. **If you do not receive the email, remember to check your spam folder. If it is still not there, please wait 20 minutes and try again!**
-   4. Once activated, you can log in to Phira and enjoy online services.
+## Registration / Login
+   - Starting from **v0.8.0**, the version of Phira downloaded via [好游快爆](https://www.3839.com/a/154061.htm) supports one-click login without email verification.
+   - Email registration/login steps:
+      1. Go to [QQ Mail (recommended)](http://mail.qq.com/) or [NetEase Mail](https://email.163.com/) to register an email account. (If you already have a QQ account, you can directly use “QQnumber@qq.com” to register for Phira without creating a new email address.)
+      2. Go to the in-game registration page or the [official website](https://phira.moe/register), and enter your email address, username, and a password of your choice.
+      3. After agreeing to the [Terms of Service](https://phira.moe/terms-of-use) and [Privacy Policy](https://phira.moe/privacy-policy), an account activation email will be sent to your inbox. Follow the link in the email to activate your account. **If you do not receive the email, remember to check your spam folder. If it is still not there, try again after 20 minutes!**
+      4. Once activated, you can log in to Phira and enjoy online services.
 
 ## Download for Android
 
@@ -66,6 +70,18 @@ If you find any issues in this document, contact [@Dmocken](https://github.com/D
 - You must read and agree to the [Terms of Service](https://phira.moe/terms-of-use) and [Privacy Policy](https://phira.moe/privacy-policy). If you do not agree, Phira may refuse to provide services to you.
 - After you read the [Terms of Service](https://phira.moe/terms-of-use) and [Privacy Policy](https://phira.moe/privacy-policy), the pop-up window will close automatically, which will be taken as your confirmation that you have read and agreed to the terms.
 
+### 好游快爆 account binding
+
+- In v0.8.0 and above, after logging into Phira you are required to bind a 好游快爆 account before you can play. Once bound, your account will support one-click login via 好游快爆.
+::: details How to switch your bound 好游快爆 account:
+   1. Tap the avatar in the top-right corner
+   2. Tap `Unbind 好游快爆` — this will log you out
+   3. Use `One-click login with 好游快爆` to log into a new 好游快爆 account
+   4. Tap the avatar in the top-right corner -> Migrate old account
+   5. Enter the email address of your old account, and an account transfer email will be sent to your inbox
+   6. Open the email and verify to complete the switch
+:::
+
 ### Account and password
 
 - After registering, please check your email promptly. A verification email will be sent to you. If you do not receive it, please check your spam/junk folder or refresh the page.
@@ -74,7 +90,7 @@ If you find any issues in this document, contact [@Dmocken](https://github.com/D
 
 ### Online services
 
-- If chart loading or downloading fails, first check whether you are using the latest version of the app (`0.7.1`). If you are already on the latest version, the problem is likely on the server side, or your access may be temporarily restricted due to frequent requests. Try again later.
+- If chart loading or downloading fails, first check whether you are using the latest version of the app (`0.8.0`). If you are already on the latest version, the problem is likely on the server side, or your access may be temporarily restricted due to frequent requests. Try again later.
 - If score upload fails and you see a message saying the score is still being uploaded, that usually means the server connection is unstable. If you do not care about uploading the score, you can switch to offline mode.
 ::: details If charts fail to download and show a long error message, or if downloads are unusually slow, try the following:
   - Wait an hour and then try again
@@ -93,9 +109,12 @@ If you find any issues in this document, contact [@Dmocken](https://github.com/D
 - We support and recommend self-hosting private multiplayer servers. See [official GitHub](https://github.com/TeamFlos/phira-mp)
 - If you want prebuilt server files that are ready to use, go to: [Multiplayer server](https://phira.dmocken.top/mulity?name=%E5%A4%9C%E6%B0%8F%E6%A2%A6%E6%83%B3%E5%AE%B6#mulity-download)
 ::: details Multiplayer server setup guides
-- [Android: Phira multiplayer server (Termux)](/en/mp_build_guide/Termux)
-- [Windows: Phira multiplayer server](/en/mp_build_guide/Windows)
-- [Linux server deployment](/en/mp_build_guide/Linux)
+   - [Android: Phira multiplayer server (Termux)](/en/mp_build_guide/Termux)
+   - [Windows: Phira multiplayer server](/en/mp_build_guide/Windows)
+   - [Linux server deployment](/en/mp_build_guide/Linux)
+   
+   Or... try another language?
+   - [Other Language](/mp_build_guide/#other-dev-languages)
 :::
 
 ### Touch / input issues
@@ -107,26 +126,22 @@ If you find any issues in this document, contact [@Dmocken](https://github.com/D
 ### Resource packs
 
 :::danger
-- **Important!** In the current version (v0.7.1), importing an incorrect file will clear your skins! This is a known bug. Please try <u>switching to the default resource pack or importing a new resource pack</u> to play. This will be fixed in a future version.
-```log
-Chart loading failed
-
-Caused by:
-   1. Failed to load resources
-   2. Failed to load resource pack
-   3. No such file or directory (os error 2)
-Resource packs (skins and charts) are imported as zip files. Do not unzip them.
+- **Important!** In v0.7.1, importing an incorrect file will clear your skins! This is a known bug. Please try <u>updating to v0.8.0 or above</u>.
 :::
-
-- Resource pack sites:
-   1. By kevin2106: [prprbako](https://prprbako.kevin2106.top/)
+- Resource packs (skins and charts) are imported as zip files — no need to unzip them.
+- Downloading resource packs:
+   :::tip Recommended: [好游快爆](https://www.onebiji.com/hykb_tools/phira/index.php)
+   :::
+   Other download sources:
+   1. By kevin2106: [prprbako](https://prprbako.kevin2106.top/) (requires a special network environment if inaccessible)
    2. QQ Channel: [Phira资源包制作分享](https://pd.qq.com/s/blwfryimz)
-- Importing resource packs 
-   1. on iOS: TestFlight installs can import directly. On self-signed IPA installs, file importing (including local charts and resource packs) often fails on many devices.
-   2. To import resource packs on Android:
+- Importing resource packs
+   1. iOS: TestFlight installs can import directly. On self-signed IPA installs, file importing (including local charts and resource packs) often fails on many devices.
+   2. Importing resource packs (Android):
       * In-game: For skins, go to Home > Resource Packs > the plus button on the left. For charts, go to Play > the plus button on the top-right.
       * Outside the game: Choose `Phira` as the app to open chart files, or `Phira (Resource Pack)` for skin files.
-      * If you see a purple title bar with a white screen, try opening the zip file again from your file manager using `Phira (Resource Pack)`.
+      * If you see a purple title bar with a white screen, try opening the zip file from your file manager using `Phira (Resource Pack)`.
+      * Or check out the tutorial from 好游快爆: [Click here](https://bbs.3839.com/thread-8888625.htm)
 
 ::: warning
 The *Phigros Official Resource Pack* is copyrighted by Pigeon Games. Phira does not have the right to distribute it and no longer provides it. Please respect the copyright and do not redistribute it freely.
