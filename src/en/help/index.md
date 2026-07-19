@@ -6,15 +6,12 @@ If you find it hard to follow or just want to save time, you can use [Deepwiki](
 
 This is the *Phira FAQ* written by Phira support volunteers. Before playing Phira, please read and agree to the official [Terms of Service](https://phira.moe/terms-of-use) and [Privacy Policy](https://phira.moe/privacy-policy).
 
-::: details Below are the updates in v0.7.1:
-   - ! Added chart collaborators. For details, see https://teamflos.github.io/phira-docs/chart-management/collaborator.html
-   - Added pull-to-refresh for favorites
-   - Fixed an issue where some resource packs caused judge lines and effects to disappear
-   - Fixed an issue where charts could not be exported in batches
-   - Fixed an issue where notes could not be judged after dragging the progress bar in Practice Mode
-   - Fixed an issue where online charts could not be added to local favorites
-   - Fixed an issue where Hold notes were not supported in the RPE judgment area
-   - Fixed an issue where the "score will not be recorded" prompt was missing when playing with a keyboard.
+::: details Below are the updates in v0.8.0 & v0.8.1:
+v0.8.0:
+   - Fixed the issue of resource packs disappearing in some cases
+   - UI bug fixes
+v0.8.1:
+   - Fixed the issue of long presses being triggered incorrectly when scrolling
 :::
 
 If you find any issues in this document, contact [@Dmocken](https://github.com/Dmocken) in the [Phira QQ channel](https://pd.qq.com/s/ezgv3q71g) or use the [Feedback](https://phira.dmocken.top/report) page.
@@ -72,7 +69,7 @@ If you find any issues in this document, contact [@Dmocken](https://github.com/D
 
 ### 好游快爆 account binding
 
-- In v0.8.0 and above, after logging into Phira you are required to bind a 好游快爆 account before you can play. Once bound, your account will support one-click login via 好游快爆.
+- In v0.8.0 and above, after logging into Phira you are required to bind a [好游快爆version](https://www.3839.com/a/154061.htm) account before you can play. Once bound, your account will support one-click login via 好游快爆.
 ::: details How to switch your bound 好游快爆 account:
    1. Tap the avatar in the top-right corner
    2. Tap `Unbind 好游快爆` — this will log you out
