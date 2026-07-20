@@ -70,13 +70,20 @@ If you find any issues in this document, contact [@Dmocken](https://github.com/D
 ### 好游快爆 account binding
 
 - In v0.8.0 and above, after logging into Phira you are required to bind a [好游快爆version](https://www.3839.com/a/154061.htm) account before you can play. Once bound, your account will support one-click login via 好游快爆.
-::: details How to switch your bound 好游快爆 account:
-   1. Tap the avatar in the top-right corner
-   2. Tap `Unbind 好游快爆` — this will log you out
-   3. Use `One-click login with 好游快爆` to log into a new 好游快爆 account
-   4. Tap the avatar in the top-right corner -> Migrate old account
-   5. Enter the email address of your old account, and an account transfer email will be sent to your inbox
-   6. Open the email and verify to complete the switch
+::: Details on how to switch to a bound 好游快爆 account:
+- In the game:
+   1. Click the avatar in the upper right corner
+   2. Click `Unbind HYKB`, and this will log you out
+   3. Use the `Log in with HYKB` to log in with the new 好游快爆 account
+   4. Click the avatar in the upper right corner -> Migrate the old account
+   5. Enter the email address of the old account and a transfer email will be sent to your email
+   6. Open the email, verify and pass the verification to switch
+- On the website:
+   1. Go to the website [https://phira.moe](https://phira.moe)
+   2. Log in using your email and password
+   3. Click the avatar in the upper right corner -> Settings -> Security -> 好游快爆 Account -> Unbind to unbind the 好游快爆 account
+   4. Re-enter the game and log in using the email
+   5. Authorize 好游快爆 login to proceed 
 :::
 
 ### Account and password
