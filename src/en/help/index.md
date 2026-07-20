@@ -154,7 +154,8 @@ The *Phigros Official Resource Pack* is copyrighted by Pigeon Games. Phira does 
 ## Official contact channels
 
 - QQ Group (Please do not join the group repeatedly!):
-- Official Group from "好游快爆": `576660653` (Recommended! There are many available slots!)
+- ~~ Official Group 1 from "好游快爆": `576660653` ~~
+- Official Group 2 from "好游快爆": `370532960`
 - ~~Official Group 1: `688798221` (Full)~~
 - ~~Official Group 2: `738179721` (Full)~~
 - ~~Official Group 3: `874761842` (Full)~~
