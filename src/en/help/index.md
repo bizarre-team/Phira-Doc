@@ -70,7 +70,7 @@ If you find any issues in this document, contact [@Dmocken](https://github.com/D
 ### 好游快爆 account binding
 
 - In v0.8.0 and above, after logging into Phira you are required to bind a [好游快爆version](https://www.3839.com/a/154061.htm) account before you can play. Once bound, your account will support one-click login via 好游快爆.
-::: Details on how to switch to a bound 好游快爆 account:
+::: details How to switch to a bound 好游快爆 account:
 - In the game:
    1. Click the avatar in the upper right corner
    2. Click `Unbind HYKB`, and this will log you out
