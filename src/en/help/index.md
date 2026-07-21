@@ -10,6 +10,7 @@ This is the *Phira FAQ* written by Phira support volunteers. Before playing Phir
 v0.8.0:
    - Fixed the issue of resource packs disappearing in some cases
    - UI bug fixes
+
 v0.8.1:
    - Fixed the issue of long presses being triggered incorrectly when scrolling
 :::
@@ -161,7 +162,7 @@ The *Phigros Official Resource Pack* is copyrighted by Pigeon Games. Phira does 
 ## Official contact channels
 
 - QQ Group (Please do not join the group repeatedly!):
-- ~~ Official Group 1 from "好游快爆": `576660653` ~~
+- ~~Official Group 1 from "好游快爆": `576660653` (Full)~~
 - Official Group 2 from "好游快爆": `370532960`
 - ~~Official Group 1: `688798221` (Full)~~
 - ~~Official Group 2: `738179721` (Full)~~
