@@ -171,7 +171,7 @@ The *Phigros Official Resource Pack* is copyrighted by Pigeon Games. Phira does 
 - QQ Channel: Phira
   - Invite link: [https://pd.qq.com/s/ezgv3q71g](https://pd.qq.com/s/ezgv3q71g)
   - Channel ID: `r48eajexth`
-  - Password：`先看文档再来提问`
+  - Password：`游戏内容全部免费`
 - Telegram: [Phira](https://t.me/phira_official)
 - Discord: [Phira Official](https://discord.gg/9fH8UA9DgR)
 - Bilibili: [Phira Official](https://space.bilibili.com/3493259571628094)
