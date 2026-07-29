@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Sitemap: https://docs.dmocken.top/sitemap.xml
 # Algolia-Crawler-Verif: D6029FE82849A6D9

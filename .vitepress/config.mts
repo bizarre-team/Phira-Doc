@@ -1,3 +1,4 @@
+/// <reference path="./markdown-it-task-checkbox.d.ts" />
 import { defineConfig } from 'vitepress'
 import { MermaidMarkdown, MermaidPlugin } from 'vitepress-plugin-mermaid';
 import markdownItTaskCheckbox from 'markdown-it-task-checkbox';
@@ -35,6 +36,16 @@ export default defineConfig({
   srcDir: './src',
   head: [
     ['link', { rel: 'icon', href: '/favicon.png' }],
+    ['meta', { name: 'msvalidate.01', content: 'C1317A954C0AAF74C61A45FAD5BCF242' }],
+    ['meta', { name: 'robots', content: 'index, follow' }],
+    ['meta', { name: 'keywords', content: 'Phira,音游,文档,教程,帮助,MP构建,常见问题,安装指南,rhythm game,documentation' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: 'Phira 文档' }],
+    ['meta', { property: 'og:image', content: 'https://docs.dmocken.top/favicon.png' }],
+    ['meta', { property: 'og:image:width', content: '256' }],
+    ['meta', { property: 'og:image:height', content: '256' }],
+    ['meta', { name: 'twitter:card', content: 'summary' }],
+    ['meta', { name: 'twitter:image', content: 'https://docs.dmocken.top/favicon.png' }],
     ['script',{ type: 'text/javascript' },`(function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
@@ -106,8 +117,12 @@ export default defineConfig({
       label: '简体中文',
       lang: 'zh-Hans',
       dir: 'ltr',
-      title: "Phira 文档",
-      description: "有关Phira的文档",
+      title: "Phira 文档 | 使用教程与常见问题解答",
+      description: "Phira 社区志愿者编写的使用文档，涵盖安装教程、常见问题解答、MP 构建指南等内容，帮助新手快速上手 Phira 音游。",
+      head: [
+        ['meta', { property: 'og:locale', content: 'zh-Hans' }],
+        ['meta', { property: 'og:locale:alternate', content: 'en' }],
+      ],
       themeConfig: {
         editLink: {
           pattern: 'https://github.com/Bizarre-Team/Phira-Doc/edit/main/src/:path',
@@ -163,8 +178,12 @@ export default defineConfig({
       label: 'English',
       lang: 'en',
       dir: 'ltr',
-      title: "Phira Documentation",
-      description: "Documentation for Phira",
+      title: "Phira Documentation | Guides & FAQ",
+      description: "Community-maintained documentation for Phira, including installation guides, FAQ, and MP build tutorials to help new users get started.",
+      head: [
+        ['meta', { property: 'og:locale', content: 'en' }],
+        ['meta', { property: 'og:locale:alternate', content: 'zh-Hans' }],
+      ],
       themeConfig: {
         editLink: {
           pattern: 'https://github.com/OrbiterStellarTrek/Phira-Doc/edit/main/src/:path',
@@ -255,6 +274,32 @@ export default defineConfig({
     transformItems(items) {
       return items.filter((item) => !item.url.includes('migration'))
     }
+  },
+  cleanUrls: true,
+  transformHead: (ctx) => {
+    const { pageData } = ctx
+    const extraHead: any[] = []
+
+    // 动态 per-page OG 标签
+    if (pageData.title) {
+      extraHead.push(['meta', { property: 'og:title', content: pageData.title }])
+      extraHead.push(['meta', { name: 'twitter:title', content: pageData.title }])
+    }
+    if (pageData.description) {
+      extraHead.push(['meta', { property: 'og:description', content: pageData.description }])
+      extraHead.push(['meta', { name: 'twitter:description', content: pageData.description }])
+    }
+
+    // canonical URL
+    let path = pageData.relativePath
+      .replace(/\.md$/, '')
+      .replace(/\/index$/, '')
+    if (path === 'index') path = ''
+    const canonicalUrl = path ? `https://docs.dmocken.top/${path}` : 'https://docs.dmocken.top/'
+    extraHead.push(['link', { rel: 'canonical', href: canonicalUrl }])
+    extraHead.push(['meta', { property: 'og:url', content: canonicalUrl }])
+
+    return extraHead
   },
   lastUpdated: true,
 })
