@@ -6,13 +6,26 @@ If you find it hard to follow or just want to save time, you can use [Deepwiki](
 
 This is the *Phira FAQ* written by Phira support volunteers. Before playing Phira, please read and agree to the official [Terms of Service](https://phira.moe/terms-of-use) and [Privacy Policy](https://phira.moe/privacy-policy).
 
-::: details Below are the updates in v0.8.0 & v0.8.1:
-v0.8.0:
-   - Fixed the issue of resource packs disappearing in some cases
-   - UI bug fixes
-
-v0.8.1:
-   - Fixed the issue of long presses being triggered incorrectly when scrolling
+::: details Below are the updates in v0.8.2:
+v0.8.2:
+   - New Features & Improvements:
+     - Multiplayer room member page now supports multi-column display
+     - In-game profile page now supports displaying more badges
+     - Updated video decoder version
+   - Platform Compatibility:
+     - Fixed an issue where games couldn't auto-pause on HarmonyOS
+   - Bug Fixes:
+     - Login Logic: Fixed a mismatch between the logged-in Hao Play account and the current Phira account
+     - Performance: Fixed excessive battery drain in the background in some cases
+     - UI:
+       - Favorited charts no longer ignore the sorting settings
+       - Fixed the "Play Unlock Animation" button appearing incorrectly in some cases
+       - Fixed the back button turning black when the game entered the background
+       - Fixed volume adjustment not affecting UI sound effects
+       - Fixed incorrect default language on some Huawei devices
+     - Crashes: Fixed a possible crash on exit on desktop
+   - Localization:
+     - Fixed and supplemented translations for multiple languages
 :::
 
 If you find any issues in this document, contact [@Dmocken](https://github.com/Dmocken) in the [Phira QQ channel](https://pd.qq.com/s/ezgv3q71g) or use the [Feedback](https://phira.dmocken.top/report) page.
@@ -95,7 +108,7 @@ If you find any issues in this document, contact [@Dmocken](https://github.com/D
 
 ### Online services
 
-- If chart loading or downloading fails, first check whether you are using the latest version of the app (`0.8.0`). If you are already on the latest version, the problem is likely on the server side, or your access may be temporarily restricted due to frequent requests. Try again later.
+- If chart loading or downloading fails, first check whether you are using the latest version of the app (`0.8.2`). If you are already on the latest version, the problem is likely on the server side, or your access may be temporarily restricted due to frequent requests. Try again later.
 - If score upload fails and you see a message saying the score is still being uploaded, that usually means the server connection is unstable. If you do not care about uploading the score, you can switch to offline mode.
 ::: details If charts fail to download and show a long error message, or if downloads are unusually slow, try the following:
   - Wait an hour and then try again
