@@ -148,9 +148,6 @@ If you find any issues in this document, contact [@Dmocken](https://github.com/D
 :::
 - Resource packs (skins and charts) are imported as zip files — no need to unzip them.
 - Downloading resource packs:
-   :::tip Recommended: [好游快爆](https://www.onebiji.com/hykb_tools/phira/index.php)
-   :::
-   Other download sources:
    1. By kevin2106: [prprbako](https://prprbako.kevin2106.top/) (requires a special network environment if inaccessible)
    2. QQ Channel: [Phira资源包制作分享](https://pd.qq.com/s/blwfryimz)
 - Importing resource packs
@@ -175,7 +172,7 @@ The *Phigros Official Resource Pack* is copyrighted by Pigeon Games. Phira does 
 ## Official contact channels
 
 - QQ Group (Please do not join the group repeatedly!):
-- ~~Official Group 1 from "好游快爆": `576660653` (Full)~~
+- Official Group 1 from "好游快爆": `576660653` 
 - Official Group 2 from "好游快爆": `370532960`
 - ~~Official Group 1: `688798221` (Full)~~
 - ~~Official Group 2: `738179721` (Full)~~
