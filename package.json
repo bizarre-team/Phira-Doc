@@ -26,6 +26,7 @@
     "preview": "vitepress preview"
   },
   "devDependencies": {
-    "@types/node": "^25.9.4"
+    "@types/node": "^25.9.4",
+    "vitepress-plugin-annotation": "0.11.0"
   }
 }

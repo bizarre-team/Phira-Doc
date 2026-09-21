@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 import { MermaidMarkdown, MermaidPlugin } from 'vitepress-plugin-mermaid';
 import markdownItTaskCheckbox from 'markdown-it-task-checkbox';
 import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons';
+import { annotationMarkdownPlugin } from 'vitepress-plugin-annotation';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -239,6 +240,7 @@ export default defineConfig({
       md.use(MermaidMarkdown);
       md.use(markdownItTaskCheckbox); //todo
       md.use(groupIconMdPlugin) //代码组图标
+      md.use(annotationMarkdownPlugin) //名词/注释浮层
       const fence = md.renderer.rules.fence!
       md.renderer.rules.fence = function (tokens, idx, options, env, self) {
         const { localeIndex = 'root' } = env
