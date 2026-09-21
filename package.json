@@ -15,11 +15,6 @@
     "vitepress-plugin-group-icons": "^1.7.5",
     "vitepress-plugin-mermaid": "^2.0.17"
   },
-  "pnpm": {
-    "overrides": {
-      "less": "4.6.7"
-    }
-  },
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",

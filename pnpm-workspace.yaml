@@ -1,2 +1,13 @@
+# 未被 allowBuilds 声明的构建脚本默认会被视为“未审核”，
+# 在 strictDepBuilds=true（默认）下会导致 pnpm install 直接失败（ERR_PNPM_IGNORED_BUILDS）。
+# 这里关闭该严格模式（改为仅告警），并显式声明需要/不需要构建脚本的依赖。
+strictDepBuilds: false
 allowBuilds:
+  # esbuild 的安装脚本需要执行（平台二进制）
   esbuild: true
+  # pnpm 是部署环境 `npm install pnpm` 引入的依赖，不需要执行其构建脚本
+  pnpm: false
+
+# pnpm v11+ 不再读取 package.json 的 pnpm.overrides，依赖覆盖统一放在这里
+overrides:
+  less: 4.6.7
