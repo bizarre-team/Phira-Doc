@@ -49,7 +49,8 @@
 3. 如出现设备不支持、CPU 不兼容，或者提示安装失败等安装方面出现的错误，请尝试下载 **32 位版本**进行安装。
 
 ## iOS 下载看这里
-
+::: danger iOS 14.5及以下版本会出现**点击输入框闪退的情况**，请知悉！
+:::
 1. 非中国大陆地区的苹果账户可以在 App Store 中搜索并下载 Phira，前往[APP Store](https://apps.apple.com/us/app/phira/id6447435864)[+recommended] 。
 2. 通过 ipa 侧载安装，安装包下载链接：
    [官方 GitHub](https://github.com/F-Unction/phira_ipa/releases)[+overseas-source]、[Dmocken 的 Phira 下载站](https://phira.dmocken.top)[+third-party-cn]

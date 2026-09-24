@@ -118,7 +118,7 @@ export default defineConfig({
       label: '简体中文',
       lang: 'zh-Hans',
       dir: 'ltr',
-      title: "Phira 文档 | 使用教程与常见问题解答",
+      title: "Phira 帮助文档",
       description: "Phira 社区志愿者编写的使用文档，涵盖安装教程、常见问题解答、MP 构建指南等内容，帮助新手快速上手 Phira 音游。",
       head: [
         ['meta', { property: 'og:locale', content: 'zh-Hans' }],
@@ -179,7 +179,7 @@ export default defineConfig({
       label: 'English',
       lang: 'en',
       dir: 'ltr',
-      title: "Phira Documentation | Guides & FAQ",
+      title: "Phira Guides & FAQ",
       description: "Community-maintained documentation for Phira, including installation guides, FAQ, and MP build tutorials to help new users get started.",
       head: [
         ['meta', { property: 'og:locale', content: 'en' }],

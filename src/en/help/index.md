@@ -50,6 +50,8 @@ This is the *Phira FAQ Self-Help Documentation* written by Phira support volunte
 
 ## Download for iOS
 
+:::: danger On iOS 14.5 and below, **tapping an input field may crash the game**. Please be aware!
+::::
 1. Apple accounts outside mainland China can search for and download Phira from the [App Store](https://apps.apple.com/us/app/phira/id6447435864)[+recommended].
 2. Install by sideloading an IPA. Package download links:
    [Official GitHub](https://github.com/F-Unction/phira_ipa/releases)[+overseas-source], [Dmocken's Phira download site](https://phira.dmocken.top)[+third-party-cn]
