@@ -16,7 +16,7 @@
 - 另一个可以为任意平台
 - **注意下载的版本号需要相同才能正常工作**
 
-（或许可以通过**卓易通**安装apk版小白调试助手进行操作？本人没尝试过，希望有动手能力的同学可以试试看！[下载链接点此](https://github.com/likuai2010/auto-installer/releases/tag/2.5.0)）
+（鸿蒙6.1.0.130以下版本可以通过**卓易通**安装apk版小白调试助手进行操作[下载链接点此](https://github.com/likuai2010/auto-installer/releases/tag/2.5.0)）
 ::: tip
 **Windows**：首次打开会提示安装 Java，下载安装即可。
 
