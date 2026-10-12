@@ -42,6 +42,7 @@
 
 1. 国内下载源：
    - [好游快爆](https://www.3839.com/a/154061.htm)[+official-authorized]
+   - [Konmai音游下载站](https://616.sb/?app=org.flos.phira)
    - [Dmocken 的 Phira 下载站](https://phira.dmocken.top)[+third-party]
    下载最新版本即可。
 2. 国外下载源：
@@ -125,6 +126,12 @@
 - 使用网络代理工具
 - 等待服务器恢复访问
 ::::
+
+### 游戏问题反馈（工单系统）
+
+- 游戏内的 bug、异常等问题可通过[问题反馈工单系统](https://phira.moe/my/issues)提交，由开发组跟进处理。
+- 提交工单需要先登录 Phira 账号。
+- 注意：本文档本身的问题反馈不在此处，请见下方「Phira 的官方联系渠道」。
 
 ### 关于 RKS[+rks]
 

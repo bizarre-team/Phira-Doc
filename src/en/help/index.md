@@ -42,6 +42,7 @@ This is the *Phira FAQ Self-Help Documentation* written by Phira support volunte
 
 1. Sources in mainland China:
    - [好游快爆](https://www.3839.com/a/154061.htm)[+official-authorized]
+   - [Konmai Academy](https://616.sb/?app=org.flos.phira)
    - [Dmocken's Phira download site](https://phira.dmocken.top)[+third-party]
    Just download the latest version.
 2. International source:
@@ -126,6 +127,12 @@ This is the *Phira FAQ Self-Help Documentation* written by Phira support volunte
 - Use a network proxy tool
 - Wait for the server to recover access
 :::::
+
+### Game issue feedback (ticket system)
+
+- In-game bugs and other issues can be submitted through the [issue feedback ticket system](https://phira.moe/my/issues), and the dev team will follow up.
+- Submitting a ticket requires logging in to a Phira account first.
+- Note: this is for issues with the game itself; problems with this documentation are not handled here — see "Phira's official contact channels" below.
 
 ### About RKS[+rks]
 
