@@ -11,3 +11,6 @@ allowBuilds:
 # pnpm v11+ 不再读取 package.json 的 pnpm.overrides，依赖覆盖统一放在这里
 overrides:
   less: 4.6.7
+  # 固定 algoliasearch，避免解析到镜像尚未同步的新版本
+  # （其依赖 @algolia/monitoring@1.60.0 在部署环境缺失，导致 npm/pnpm 安装 ETARGET 失败）
+  algoliasearch: 5.55.1

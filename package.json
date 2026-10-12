@@ -1,6 +1,9 @@
 {
   "name": "phira-docs",
   "author": "OrbiterStellarTrek，Teamflos",
+  "overrides": {
+    "algoliasearch": "5.55.1"
+  },
   "dependencies": {
     "@nolebase/ui-asciinema": "^2.18.2",
     "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.18.2",
