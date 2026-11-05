@@ -11,23 +11,23 @@ This is the *Phira FAQ Self-Help Documentation* written by Phira support volunte
 - Phira is a community game built on the gameplay of [Phigros](https://play.google.com/store/apps/details?id=com.PigeonGames.Phigros)[+phigros]. **Its main audience is high-level players of Phigros or other rhythm games[+rhythm-game], and it has no tutorial.** It is extremely unfriendly to newcomers, and a bad experience will only ruin your mood. If you are genuinely interested, we still strongly recommend that you [play Phigros](https://play.google.com/store/apps/details?id=com.PigeonGames.Phigros) first before coming here!
 :::::
 
-::::: details Click to view what's new in v0.8.2:
+::::: details Click to view what's new in v0.8.3 (2026.11.05):
 - New features & improvements:
-  - Multiplayer room member page now supports multi-column display
-  - In-game profile page now supports displaying more badges
-  - Updated the video decoder version
+  - Personal page: added an entry to log in via the website
+  - Settings → Debug: added log export, making it easier to attach logs when reporting issues
+  - Resource pack page now supports exporting resource packs
+  - Offset adjustment screen: added automatic latency analysis
+  - Charts can now be imported and chart detail pages opened via external links
+  - Multiplayer server addresses can now omit the port
 - Platform compatibility:
-  - HarmonyOS: fixed an issue where the game could not auto-pause on HarmonyOS
+  - 好游快爆: email login no longer requires binding a 好游快爆 account
 - Fixes:
-  - Login logic: fixed the "the logged-in 好游快爆 account does not match this Phira account" issue
-  - Performance: fixed abnormal battery drain in the background in some cases
-  - UI:
-    - Fixed favorited charts not following the sorting settings
-    - Fixed the "Play Unlock Animation" button appearing incorrectly in some cases
-    - Fixed the back button turning black when the game entered the background
-    - Fixed volume adjustment having no effect on UI sound effects
-    - Fixed the wrong default language on some Huawei devices
-  - Crashes: fixed a possible crash when exiting on desktop
+  - Judgment sync: fixed judgment timing drifting out of sync with the music after pause/resume
+  - Login state: fixed access tokens not refreshing properly after expiry, and a crash when opening the personal page after login expiry
+  - Chart rendering: fixed incorrect scaling of custom judgment line textures when there is no zoom event
+  - Video playback: improved video frame updates; fixed a memory leak when decoding video audio
+  - iOS: fixed a crash when opening charts that contain video
+  - Other: various UI-related fixes
 - Localization:
   - Fixed and supplemented translations for multiple languages
 :::::
@@ -38,7 +38,9 @@ This is the *Phira FAQ Self-Help Documentation* written by Phira support volunte
 2. A personal email address.
 3. An AI.
 
-## Download for Android
+## Downloads
+
+### Download for Android
 
 1. Sources in mainland China:
    - [好游快爆](https://www.3839.com/a/154061.htm)[+official-authorized]
@@ -49,31 +51,32 @@ This is the *Phira FAQ Self-Help Documentation* written by Phira support volunte
    - [GitHub](https://github.com/TeamFlos/phira/releases)
 3. If you see installation errors such as "device not supported", "CPU incompatible", or an installation failure prompt, try installing the **32-bit version**.
 
-## Download for iOS
+### Download for iOS
 
-:::: danger On iOS 14.5 and below, **tapping an input field may crash the game**. Please be aware!
-::::
+::::: danger On iOS 14.5 and below, **tapping an input field may crash the game**. Please be aware!
+:::::
 1. Apple accounts outside mainland China can search for and download Phira from the [App Store](https://apps.apple.com/us/app/phira/id6447435864)[+recommended].
 2. Install by sideloading an IPA. Package download links:
    [Official GitHub](https://github.com/F-Unction/phira_ipa/releases)[+overseas-source], [Dmocken's Phira download site](https://phira.dmocken.top)[+third-party-cn]
 3. On iOS, sideloading via IPA requires a computer, or jailbreak tools such as TrollStore. [See the tutorial](https://zhuanlan.zhihu.com/p/11349191286).
 4. If you see an "Untrusted Enterprise Developer" prompt, go to Settings → General → VPN & Device Management and trust the developer. If you are prompted to "enable Developer Mode", turn on "Developer Mode" in Settings first.
 
-## Download for HarmonyOS
+### Download for HarmonyOS
 
 - Native HarmonyOS is not available on App Gallery yet.
 - If you need a **sideloading guide for .app files**, see: [HarmonyOS HAP Sideloading Guide](/en/help/harmony-sideload).
 
-## Registration / Login
+## Account
+
+### Registration / Login
 
 - Starting from **v0.8.0**, Phira downloaded via [好游快爆](https://www.3839.com/a/154061.htm) supports one-click login without email verification.
+- Starting from **v0.8.3**, email login no longer requires binding a 好游快爆 account; you can log in with your email directly.
 - Email registration/login steps:
   1. Go to [QQ Mail (recommended)](http://mail.qq.com/) or [NetEase Mail](https://email.163.com/) to register an email address.[+qq-email]
   2. Go to the in-game registration page or the [official website](https://phira.moe/register), and enter your email address, username, and the password you want to set.
   3. After agreeing to the [Terms of Service](https://phira.moe/terms-of-use) and [Privacy Policy](https://phira.moe/privacy-policy), an account activation email will be sent to your inbox. Follow the link in the email to activate your account. **If you do not receive the email, remember to check your spam folder in case it was blocked. If it is still missing, we suggest trying again after 20 minutes!**
   4. Once activated, you can log in to Phira and enjoy online services.
-
-## FAQ
 
 ### About the [Terms of Service](https://phira.moe/terms-of-use) and [Privacy Policy](https://phira.moe/privacy-policy)
 
@@ -82,7 +85,8 @@ This is the *Phira FAQ Self-Help Documentation* written by Phira support volunte
 
 ### About 好游快爆 account binding
 
-- When logging into Phira v0.8.0 or above (the [好游快爆 version](https://www.3839.com/a/154061.htm)), you are required to bind a 好游快爆 account before you can play normally. Once bound, the account supports one-click login via 好游快爆.
+- Starting from **v0.8.3**, email login no longer requires binding a 好游快爆 account; you can log in with your email directly. Bind a 好游快爆 account if you want one-click login via 好游快爆.
+- In v0.8.0 to v0.8.2, logging into Phira (the [好游快爆 version](https://www.3839.com/a/154061.htm)) still required binding a 好游快爆 account before you could play normally.
 
 ::::: details How to switch the bound 好游快爆 account:
 - In-game:
@@ -106,6 +110,21 @@ This is the *Phira FAQ Self-Help Documentation* written by Phira support volunte
 - If an invitation link shows "Invalid activation code" within 10 minutes of receiving it, it may be a system bug. In that case, try logging in to Phira with the account and password you registered.
 - To change your password, go to [Reset password](https://phira.5wyxi.com/reset-password). After clicking the link and entering your email, a password-reset link will be sent to your inbox; open it to change the password. A blank screen after entering your email is a known bug. If you do not receive the reset link within 5 minutes, try submitting the reset request again.
 
+### How to delete your account
+
+- You can currently submit an account deletion request in `In-game -> top-right avatar -> Delete account`; after you submit the request, the dev team will manually delete the account data.
+- To cancel a deletion request, log in on the [official website](https://phira.moe) or in the game, and you can cancel the request.
+- The in-game personal page provides a "Log in on the website" entry, letting you go straight to website login and account management.
+
+### Data export and backup
+
+- The server only keeps **scores of online charts** and **account information**. It does not store imported charts, chart files downloaded from the library, or imported resource packs.
+- To back up your data or switch devices, export these yourself:
+  - **Charts**: long-press a chart in the chart list to enter multi-select, then tap Export in the top-right corner.
+  - **Resource packs**: open the Resource Packs page and tap Export in the top-right corner.
+
+## Online services & multiplayer
+
 ### Online service issues
 
 - If chart loading or downloading fails, check whether the app is the latest version[+version-check]. If it is already the latest version, then it is a server issue, or your access is being restricted due to frequent requests; it will recover after a while.
@@ -128,22 +147,11 @@ This is the *Phira FAQ Self-Help Documentation* written by Phira support volunte
 - Wait for the server to recover access
 :::::
 
-### Game issue feedback (ticket system)
-
-- In-game bugs and other issues can be submitted through the [issue feedback ticket system](https://phira.moe/my/issues), and the dev team will follow up.
-- Submitting a ticket requires logging in to a Phira account first.
-- Note: this is for issues with the game itself; problems with this documentation are not handled here — see "Phira's official contact channels" below.
-
-### About RKS[+rks]
-
-- Phira's RKS mechanism is similar to the ptt mechanism in early Arcaea; RKS can go up or down.
-- Currently only **some listed charts** can increase RKS.
-- A chart must first pass normal review, then the uploader applies for listing; the listing review is voted on by reviewers, and only after 4 votes pass is the chart marked as stable and ranked. Only from this step do scores count toward RKS.
-
 ### Multiplayer service issues
 
 - The official Phira multiplayer server (mp2.phira.cn:12345) is currently unavailable.
 - There is a third-party monitoring site that collects multiplayer game server addresses: [Visit the monitoring site](https://phira.dmocken.top/status).
+- Multiplayer server addresses support SRV records, so the port can be omitted; the connection still works without specifying a port.
 - We support and recommend self-hosting a private server[+mp-server] for multiplayer. See the [official GitHub](https://github.com/TeamFlos/phira-mp).
 - If you want ready-to-use compiled server files, go to: [Multiplayer game server](https://phira.dmocken.top/mulity?name=%E5%A4%9C%E6%B0%8F%E6%A2%A6%E6%83%B3%E5%AE%B6#mulity-download).
 
@@ -157,11 +165,13 @@ Or... try other languages?
 - [Other Language](/mp_build_guide/#other-dev-languages)
 :::::
 
-### Touch drop issues on devices
+## Gameplay & content
 
-- iOS: Enable Guided Access.
-- Android: Put the app into the system's built-in game space, or turn off all multi-finger gestures and other assistive features.
-- General: Turn off aggressive optimization and enable low graphics quality; an overheated device causes CPU throttling and hurts performance; a dirty screen also affects touch. If touch drops persist[+touch-drop], check whether the screen supports multi-touch.
+### About RKS[+rks]
+
+- Phira's RKS mechanism is similar to the ptt mechanism in early Arcaea; RKS can go up or down.
+- Currently only **some listed charts** can increase RKS.
+- A chart must first pass normal review, then the uploader applies for listing; the listing review is voted on by reviewers, and only after 4 votes pass is the chart marked as stable and ranked. Only from this step do scores count toward RKS.
 
 ### Resource pack issues
 
@@ -186,17 +196,30 @@ The copyright of the *Phigros Official Resource Pack* belongs to Pigeon Games. P
 ### Custom chart issues
 
 - If you want to find custom charts[+custom-chart] for a specific song, the fastest way is to search on Bilibili and download them under the chart author's guidance;
+- When browsing charts on the official website, you can import a chart directly into Phira, or open its detail page via a chart link.
 - Uploading custom charts: before uploading a chart, please make sure you have carefully and fully read, understood, and agreed to all terms and contents of the [Phira Chart Upload Guidelines](https://docs.qq.com/doc/DU2dUaEt5WnFJV2Zh) and the [Phira Chart Content Policy (for charters)](https://docs.qq.com/doc/DU1dISHdEb0NuYVpB)[+charter]! In addition, **all of Phigros's exclusive songs, original artwork, charts, and enhanced charts based on official charts[+copyright] are prohibited from being uploaded; violators may have their accounts banned.**
 - For non-exclusive songs, do not use original artwork when uploading; just make sure your chart design differs from the official chart and it may be uploaded. For other questions, the chart upload guidelines have detailed descriptions.
 
-### How to delete your account
+## Device & input
 
-- You can currently submit an account deletion request in `In-game -> top-right avatar -> Delete account`; after you submit the request, the dev team will manually delete the account data.
-- To cancel a deletion request, log in on the [official website](https://phira.moe) and you can cancel the request.
+### Touch drop issues on devices
 
-::::: danger Note
-Because the official website currently does not support 好游快爆 one-click login, if you tap the delete account button by mistake, please send an email to `contact@phira.cn` with your username and user UID to submit a cancellation request!
-:::::
+- iOS: Enable Guided Access.
+- Android: Put the app into the system's built-in game space, or turn off all multi-finger gestures and other assistive features.
+- General: Turn off aggressive optimization and enable low graphics quality; an overheated device causes CPU throttling and hurts performance; a dirty screen also affects touch. If touch drops persist[+touch-drop], check whether the screen supports multi-touch.
+
+### Latency adjustment (audio/visual desync)
+
+- If judgment feels out of sync with the music while playing, open the chart and tap the "⋯" menu in the top-right corner → "Adjust Delay".
+- The screen supports **automatic latency analysis**: follow the on-screen instructions to measure and get a suggested delay automatically.
+
+## Feedback
+
+### Game issue feedback (ticket system)
+
+- In-game bugs and other issues can be submitted through the [issue feedback ticket system](https://phira.moe/my/issues), and the dev team will follow up.
+- Submitting a ticket requires logging in to a Phira account first.
+- Before submitting, export a log via Settings → Debug → Export Logs and attach it to the ticket so the dev team can diagnose the issue.
 
 ## Phira's official contact channels
 
@@ -222,10 +245,10 @@ For issues with this documentation, contact @Dmocken in the [Phira official](htt
 
 ## Questionnaire
 
-:::::: tip Help us improve this documentation
+::::: tip Help us improve this documentation
 If you find this document helpful, or if you would like us to add something, please fill in the questionnaire to let us know:
 👉 [Click to fill in the questionnaire](https://k0klmjupxf3.feishu.cn/share/base/form/shrcn7EDUXFDeH49zFInWrLoZ8e)
-::::::
+:::::
 
 <!--
   The following is the annotation definition area, which only covers game/gameplay-related terms.
