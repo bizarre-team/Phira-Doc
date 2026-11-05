@@ -197,7 +197,7 @@ The copyright of the *Phigros Official Resource Pack* belongs to Pigeon Games. P
 
 - If you want to find custom charts[+custom-chart] for a specific song, the fastest way is to search on Bilibili and download them under the chart author's guidance;
 - When browsing charts on the official website, you can import a chart directly into Phira, or open its detail page via a chart link.
-- Uploading custom charts: before uploading a chart, please make sure you have carefully and fully read, understood, and agreed to all terms and contents of the [Phira Chart Upload Guidelines](https://docs.qq.com/doc/DU2dUaEt5WnFJV2Zh) and the [Phira Chart Content Policy (for charters)](https://docs.qq.com/doc/DU1dISHdEb0NuYVpB)[+charter]! In addition, **all of Phigros's exclusive songs, original artwork, charts, and enhanced charts based on official charts[+copyright] are prohibited from being uploaded; violators may have their accounts banned.**
+- Uploading custom charts: before uploading a chart, please make sure you have carefully and fully read, understood, and agreed to all terms and contents of the [Phira Chart Upload Guidelines](https://docs.qq.com/doc/DU2dUaEt5WnFJV2Zh) and the [Phira Review Criteria Details](https://pd.qq.com/s/3ad4tpwrz)[+charter]! In addition, **all of Phigros's exclusive songs, original artwork, charts, and enhanced charts based on official charts[+copyright] are prohibited from being uploaded; violators may have their accounts banned.**
 - For non-exclusive songs, do not use original artwork when uploading; just make sure your chart design differs from the official chart and it may be uploaded. For other questions, the chart upload guidelines have detailed descriptions.
 
 ## Device & input

@@ -20,15 +20,27 @@ hero:
       alt: Phira
 
 features:
-  - icon: 🎮
-    title: 谱面制作
-    details: 完整的谱面标准文档，支持 RPE、PE、Official 等多种格式
-  - icon: 📚
-    title: 详细文档
-    details: 从入门到精通，涵盖所有模块和功能的完整指南
-  - icon: 🛠️
-    title: 构建指南
-    details: Windows、Linux、Android 多平台编译指南，助你快速上手
+  - icon:
+      src: /svg/gamepad.svg
+      alt: 新手入门
+      width: '48'
+      height: '48'
+    title: 新手入门
+    details: 下载安装、注册登录、账号绑定，快速开始游玩 Phira
+  - icon:
+      src: /svg/book.svg
+      alt: 常见问题
+      width: '48'
+      height: '48'
+    title: 常见问题
+    details: 安装、在线服务、联机、资源包、鸿蒙侧载等问题自助排查
+  - icon:
+      src: /svg/tools.svg
+      alt: 联机搭建
+      width: '48'
+      height: '48'
+    title: 联机搭建
+    details: Termux、Windows、Linux 多平台多人服务器部署教程
 
 ---
 

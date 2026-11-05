@@ -197,7 +197,7 @@
 
 - 如果想要找特定歌曲的自制谱[+custom-chart]，最快的方式是在 B 站搜索并在谱面作者的引导下下载；
 - 在官网浏览谱面时，可直接将谱面导入 Phira，或通过谱面链接打开谱面详情页。
-- 自制谱上传：上传谱面前，请确保您已认真并完整阅读、知晓且同意 [Phira 谱面上传须知](https://docs.qq.com/doc/DU2dUaEt5WnFJV2Zh)、[Phira 谱面内容机制（谱师须知）](https://docs.qq.com/doc/DU1dISHdEb0NuYVpB)[+charter] 中的所有条款及内容！另外，**Phigros 的所有独占曲、原创曲绘、谱面及官谱[+copyright]加强谱面等均禁止上传，违者可能会被封禁账号。**
+- 自制谱上传：上传谱面前，请确保您已认真并完整阅读、知晓且同意 [Phira 谱面上传须知](https://docs.qq.com/doc/DU2dUaEt5WnFJV2Zh)、[Phira 审核标准细则](https://pd.qq.com/s/3ad4tpwrz)[+charter] 中的所有条款及内容！另外，**Phigros 的所有独占曲、原创曲绘、谱面及官谱[+copyright]加强谱面等均禁止上传，违者可能会被封禁账号。**
 - 非独占曲上传请勿使用原创曲绘，保证谱面思路与官谱不一致即可上传，如有其他问题，谱面上传须知内有详细介绍。
 
 ## 设备与手感

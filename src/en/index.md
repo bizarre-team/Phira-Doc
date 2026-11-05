@@ -20,15 +20,27 @@ hero:
       alt: Phira
 
 features:
-  - icon: 🎮
-    title: Chart Making
-    details: Complete chart standard documentation, supporting RPE, PE, Official and more formats
-  - icon: 📚
-    title: Documentation
-    details: From beginner to advanced, a full guide covering all modules and features
-  - icon: 🛠️
-    title: Build Guide
-    details: Build instructions for Windows, Linux, and Android to get you started quickly
+  - icon:
+      src: /svg/gamepad.svg
+      alt: Getting started
+      width: '48'
+      height: '48'
+    title: Getting Started
+    details: Download, install, register and log in to start playing Phira
+  - icon:
+      src: /svg/book.svg
+      alt: FAQ
+      width: '48'
+      height: '48'
+    title: FAQ
+    details: Installation, online services, multiplayer, resource packs, HarmonyOS sideloading and more
+  - icon:
+      src: /svg/tools.svg
+      alt: Server setup
+      width: '48'
+      height: '48'
+    title: Server Setup
+    details: Multiplayer server deployment guides for Termux, Windows, and Linux
 
 ---
 
