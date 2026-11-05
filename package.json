@@ -5,8 +5,8 @@
     "algoliasearch": "5.55.1"
   },
   "dependencies": {
-    "@nolebase/ui-asciinema": "^2.18.2",
-    "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.18.2",
+    "@nolebase/ui-asciinema": "2.18.2",
+    "@nolebase/vitepress-plugin-enhanced-readabilities": "2.18.2",
     "@theojs/lumen": "^6.4.7",
     "asciinema-player": "^3.17.0",
     "canvas-confetti": "^1.9.4",
